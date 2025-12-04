@@ -79,9 +79,9 @@ src/
 
 ## ✅ Phase 1 : Setup Initial
 
-- [ ] Créer le projet Next.js
-- [ ] Pousser sur GitHub
-- [ ] Lier le repo GitHub au projet
+- [x] Créer le projet Next.js
+- [x] Pousser sur GitHub
+- [x] Lier le repo GitHub au projet
 - [ ] Installer les dépendances supplémentaires
   - [ ] `clsx` (gestion conditionnelle des classes)
   - [ ] `tailwind-merge` (merge des classes Tailwind)
