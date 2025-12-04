@@ -82,20 +82,26 @@ src/
 - [x] Créer le projet Next.js
 - [x] Pousser sur GitHub
 - [x] Lier le repo GitHub au projet
-- [ ] Installer les dépendances supplémentaires
-  - [ ] `clsx` (gestion conditionnelle des classes)
-  - [ ] `tailwind-merge` (merge des classes Tailwind)
-  - [ ] `lucide-react` (icônes)
-- [ ] Configurer la structure des dossiers
-- [ ] Créer le fichier `lib/utils.ts` avec la fonction `cn()`
-- [ ] Nettoyer les fichiers par défaut (page.tsx, globals.css)
+- [x] Installer les dépendances supplémentaires
+  - [x] `clsx` (gestion conditionnelle des classes)
+  - [x] `tailwind-merge` (merge des classes Tailwind)
+  - [x] `lucide-react` (icônes)
+- [x] Configurer la structure des dossiers
+- [x] Créer le fichier `lib/utils.ts` avec la fonction `cn()`
+- [x] Nettoyer les fichiers par défaut (page.tsx, globals.css)
+- [x] Configurer l'i18n (next-intl)
+  - [x] Créer `i18n/config.ts`, `routing.ts`, `request.ts`
+  - [x] Créer le `middleware.ts`
+  - [x] Restructurer `app/` sous `[locale]/`
+  - [x] Créer les fichiers de traduction (fr.json, en.json, nl.json)
+- [x] Définir les design tokens (couleurs, fonts) dans globals.css
 
 ---
 
 ## ✅ Phase 2 : Design System (Composants UI)
 
-- [ ] Définir la palette de couleurs dans Tailwind config
-- [ ] Définir la typographie (fonts)
+- [x] Définir la palette de couleurs dans globals.css
+- [x] Définir la typographie (Cormorant Garamond + Inter)
 - [ ] Créer les composants UI de base :
   - [ ] `Button` (variants: primary, secondary, outline, ghost)
   - [ ] `Container` (wrapper responsive)

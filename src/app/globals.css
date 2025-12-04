@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
+/* ===========================
+   DESIGN TOKENS - PARFUMERIE
+   =========================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Couleurs principales */
+  --color-primary: #1a1a1a;
+  --color-secondary: #6b5b4f;
+  --color-accent: #c9a962;
+  
+  /* Backgrounds */
+  --color-background: #faf9f7;
+  --color-background-alt: #f5f3ef;
+  
+  /* Textes */
+  --color-foreground: #1a1a1a;
+  --color-muted-foreground: #6b6b6b;
+  
+  /* Bordures */
+  --color-border: #e5e2dc;
+  --color-border-dark: #d1cdc5;
+  
+  /* États */
+  --color-success: #4a7c59;
+  --color-error: #c44536;
 }
 
+/* Thème Tailwind CSS 4 */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-background: var(--color-background);
+  --color-background-alt: var(--color-background-alt);
+  --color-foreground: var(--color-foreground);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-border-dark: var(--color-border-dark);
+  --color-success: var(--color-success);
+  --color-error: var(--color-error);
+  
+  /* Fonts */
+  --font-heading: var(--font-heading), ui-serif, Georgia, serif;
+  --font-body: var(--font-body), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ===========================
+   BASE STYLES
+   =========================== */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+}
+
+/* Titres avec font élégante */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+/* Focus visible pour accessibilité */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }

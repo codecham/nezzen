@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Perfumery | The Art of Fragrances",
+    "description": "Discover our exclusive collection of exceptional perfumes"
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Our Perfumes",
+    "about": "Our Story",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "The Art of Perfumery",
+      "subtitle": "Discover exceptional fragrances, crafted with passion and expertise",
+      "cta": "Explore the collection"
+    },
+    "featured": {
+      "title": "Our Featured Creations",
+      "subtitle": "A selection of our most beloved perfumes"
+    },
+    "about": {
+      "title": "Our Expertise",
+      "description": "For generations, we have been perpetuating the art of perfumery with passion and excellence.",
+      "cta": "Discover our story"
+    }
+  },
+  "products": {
+    "title": "Our Collection",
+    "subtitle": "Explore our olfactory universe",
+    "filters": {
+      "all": "All",
+      "forHer": "For Her",
+      "forHim": "For Him",
+      "unisex": "Unisex"
+    },
+    "sort": {
+      "label": "Sort by",
+      "newest": "Newest",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low"
+    }
+  },
+  "product": {
+    "addToCart": "Add to cart",
+    "volume": "Size",
+    "notes": {
+      "top": "Top notes",
+      "heart": "Heart notes",
+      "base": "Base notes"
+    },
+    "related": "You may also like"
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "A passion passed down through generations"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We would love to hear from you",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "submit": "Send",
+      "success": "Message sent successfully!",
+      "error": "An error occurred. Please try again."
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Stay informed",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "rights": "All rights reserved"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "new": "New",
+    "bestSeller": "Best-seller"
+  }
+}

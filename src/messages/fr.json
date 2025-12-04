@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Parfumerie | L'Art des Fragrances",
+    "description": "Découvrez notre collection exclusive de parfums d'exception"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "products": "Nos Parfums",
+    "about": "Notre Histoire",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "L'Art de la Parfumerie",
+      "subtitle": "Découvrez des fragrances d'exception, créées avec passion et savoir-faire",
+      "cta": "Explorer la collection"
+    },
+    "featured": {
+      "title": "Nos Créations Vedettes",
+      "subtitle": "Une sélection de nos parfums les plus appréciés"
+    },
+    "about": {
+      "title": "Notre Savoir-Faire",
+      "description": "Depuis des générations, nous perpétuons l'art de la parfumerie avec passion et excellence.",
+      "cta": "Découvrir notre histoire"
+    }
+  },
+  "products": {
+    "title": "Notre Collection",
+    "subtitle": "Explorez notre univers olfactif",
+    "filters": {
+      "all": "Tous",
+      "forHer": "Pour Elle",
+      "forHim": "Pour Lui",
+      "unisex": "Mixte"
+    },
+    "sort": {
+      "label": "Trier par",
+      "newest": "Nouveautés",
+      "priceAsc": "Prix croissant",
+      "priceDesc": "Prix décroissant"
+    }
+  },
+  "product": {
+    "addToCart": "Ajouter au panier",
+    "volume": "Contenance",
+    "notes": {
+      "top": "Notes de tête",
+      "heart": "Notes de cœur",
+      "base": "Notes de fond"
+    },
+    "related": "Vous aimerez aussi"
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "subtitle": "Une passion transmise de génération en génération"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous serions ravis d'échanger avec vous",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre email",
+      "message": "Votre message",
+      "submit": "Envoyer",
+      "success": "Message envoyé avec succès !",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Restez informé",
+      "placeholder": "Votre adresse email",
+      "button": "S'inscrire"
+    },
+    "rights": "Tous droits réservés"
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "viewAll": "Voir tout",
+    "back": "Retour",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "new": "Nouveau",
+    "bestSeller": "Best-seller"
+  }
+}
