@@ -178,14 +178,14 @@
 ## ✅ Phase 5 : Page d'Accueil
 
 ### Sections
-- [ ] `HeroSection` — bannière immersive avec CTA
-- [ ] `PhilosophieSection` — les 4 principes (jus, expérience, transparence, innovation)
-- [ ] `FeaturedParfums` — 3-4 parfums vedettes
-- [ ] `AteliersPreview` — teaser des ateliers
-- [ ] `TestimonialsSection` — avis clients (carousel)
-- [ ] `CertificationsSection` — badges Artisan, Art & Olfaction, Vegan
-- [ ] `CTASection` — invitation à visiter la boutique
-- [ ] `NewsletterSection` — inscription newsletter (optionnel)
+- [x] `HeroSection` — bannière immersive avec CTA
+- [x] `PhilosophieSection` — les 4 principes (jus, expérience, transparence, innovation)
+- [x] `FeaturedParfums` — 3-4 parfums vedettes
+- [x] `AteliersPreview` — teaser des ateliers
+- [x] `TestimonialsSection` — avis clients (carousel)
+- [x] `CertificationsSection` — badges Artisan, Art & Olfaction, Vegan
+- [x] `CTASection` — invitation à visiter la boutique
+- [x] `NewsletterSection` — inscription newsletter (optionnel)
 
 ### Composants partagés
 - [ ] `ProductCard` — carte produit réutilisable
