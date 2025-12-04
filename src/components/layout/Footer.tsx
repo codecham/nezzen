@@ -1,9 +1,10 @@
+// src/components/layout/Footer.tsx
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { Container } from '@/components/ui'
 import { Logo } from '@/components/shared'
 import { footerNavigation, socialLinks } from '@/data/navigation'
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Leaf, Award } from 'lucide-react'
 
 /**
  * Footer du site
@@ -93,7 +94,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
                   <span>
                     Rue Haute Marcelle 22
                     <br />
@@ -108,7 +109,7 @@ export function Footer() {
                   href="tel:+32478374858"
                   className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <Phone className="h-4 w-4 flex-shrink-0" />
+                  <Phone className="h-4 w-4 shrink-0" />
                   <span>+32 478 37 48 58</span>
                 </a>
               </li>
@@ -119,14 +120,14 @@ export function Footer() {
                   href="mailto:info@nezzen.be"
                   className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <Mail className="h-4 w-4 flex-shrink-0" />
+                  <Mail className="h-4 w-4 shrink-0" />
                   <span>info@nezzen.be</span>
                 </a>
               </li>
 
               {/* Hours */}
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
-                <Clock className="mt-0.5 h-4 w-4 flex-shrink-0" />
+                <Clock className="mt-0.5 h-4 w-4 shrink-0" />
                 <span>
                   {t('footer.hours.weekdays')}
                   <br />
@@ -145,10 +146,12 @@ export function Footer() {
             <p>© {currentYear} NeZ ZeN. {t('footer.rights')}</p>
             <div className="flex items-center gap-6">
               <span className="flex items-center gap-2">
-                🌿 {t('footer.vegan')}
+                <Leaf className="h-4 w-4" strokeWidth={1.5} />
+                {t('footer.vegan')}
               </span>
               <span className="flex items-center gap-2">
-                🏆 {t('footer.artisan')}
+                <Award className="h-4 w-4" strokeWidth={1.5} />
+                {t('footer.artisan')}
               </span>
             </div>
           </div>

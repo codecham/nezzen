@@ -19,9 +19,147 @@
   },
   "home": {
     "hero": {
-      "title": "L'Art du Parfum Artisanal",
-      "subtitle": "Créations uniques, 100% vegan, fabriquées à Namur avec passion et savoir-faire.",
-      "cta": "Découvrir nos créations"
+      "badge": "Parfumerie Artisanale Belge",
+      "title": "Voyagez au gré de nos parfums",
+      "subtitle": "Créations uniques, 100% vegan, imaginées et fabriquées avec passion dans notre atelier-boutique à Namur.",
+      "cta": {
+        "primary": "Découvrir nos créations",
+        "secondary": "Nos ateliers"
+      },
+      "trust": {
+        "artisan": "Artisan Certifié",
+        "vegan": "100% Vegan",
+        "location": "Fabriqué à Namur"
+      },
+      "scroll": "Découvrir"
+    },
+    "intro": {
+      "title": "L'histoire d'un rêve devenu réalité",
+      "paragraph1": "NeZ ZeN, c'est la rencontre entre le NeZ de Romain, parfumeur passionné, et le ZeN d'Aurélie, qui vous accueille dans une ambiance détendue et chaleureuse.",
+      "paragraph2": "Ensemble, ils créent des parfums uniques, inspirés par des voyages, des chansons, des moments de vie. Chaque flacon raconte une histoire, la vôtre peut-être.",
+      "cta": "Découvrir notre histoire",
+      "photoPlaceholder": "Romain & Aurélie",
+      "founders": {
+        "names": "Romain & Aurélie",
+        "roles": "Le NeZ & Le ZeN"
+      }
+    },
+    "philosophie": {
+      "title": "Notre approche",
+      "subtitle": "Quatre principes guident chacune de nos créations",
+      "jus": {
+        "title": "Le \"Jus\" au centre",
+        "description": "Des créations de caractère avec minimum 20% de matières aromatiques. La qualité du parfum avant tout."
+      },
+      "experience": {
+        "title": "Une expérience unique",
+        "description": "Découvrez nos matières premières, suivez nos conseils personnalisés pour trouver LE parfum qui vous correspond."
+      },
+      "transparence": {
+        "title": "La transparence",
+        "description": "Notre processus de fabrication est ouvert. Venez voir comment nos élixirs sont préparés et ce qui les rend uniques."
+      },
+      "innovation": {
+        "title": "L'innovation",
+        "description": "Des créations qui sortent des sentiers battus, loin des parfums conventionnels. L'originalité est notre signature."
+      }
+    },
+    "parfums": {
+      "title": "Nos créations",
+      "subtitle": "Découvrez nos parfums artisanaux, chacun raconte une histoire unique",
+      "cta": "Voir tous nos parfums"
+    },
+    "refill": {
+      "title": "Adoptons la \"Refill Attitude\"",
+      "subtitle": "Parce que chaque geste compte, nous vous proposons des flacons rechargeables et une carte de fidélité au re-remplissage.",
+      "points": {
+        "refill": {
+          "title": "Flacons rechargeables",
+          "description": "Gardez votre flacon, on s'occupe du reste"
+        },
+        "natural": {
+          "title": "Matières naturelles",
+          "description": "Ingrédients de qualité, majoritairement naturels"
+        },
+        "local": {
+          "title": "Circuits courts",
+          "description": "Production locale, impact réduit"
+        }
+      },
+      "quote": "Diminuer notre impact écologique est important pour nous."
+    },
+    "ateliers": {
+      "title": "Découvrez nos ateliers",
+      "subtitle": "Le NeZ et le ZeN se feront une joie de partager leur métier et leur passion",
+      "description": "Que vous souhaitiez découvrir le métier de parfumeur, créer votre bougie, ou vivre une expérience sensorielle unique autour du vin, nous avons l'atelier qu'il vous faut.",
+      "info": {
+        "duration": "1h30 à 3h selon l'atelier",
+        "capacity": "Jusqu'à 16 personnes"
+      },
+      "cta": "Découvrir nos ateliers",
+      "types": {
+        "parfumeur": {
+          "title": "Découverte parfumeur",
+          "description": "Initiez-vous à la création de parfum"
+        },
+        "bougie": {
+          "title": "Création de bougie",
+          "description": "Créez votre bougie parfumée"
+        },
+        "vin": {
+          "title": "Vin & Parfumerie",
+          "description": "Dégustation avec le nez d'un parfumeur"
+        },
+        "prive": {
+          "title": "Événements privés",
+          "description": "EVJF, anniversaires, team building..."
+        }
+      }
+    },
+    "temoignages": {
+      "title": "Ils nous ont fait confiance",
+      "subtitle": "Découvrez les expériences de nos clients",
+      "googleReviews": "sur Google (110+ avis)"
+    },
+    "certifications": {
+      "title": "Nos engagements & récompenses",
+      "artisan": {
+        "title": "Artisan Certifié",
+        "description": "Reconnu par le SPF Économie"
+      },
+      "vegan": {
+        "title": "100% Vegan",
+        "description": "Aucun ingrédient d'origine animale"
+      },
+      "artOlfaction": {
+        "title": "Art & Olfaction 2019",
+        "description": "Finaliste mondial avec \"La Bibliothèque\""
+      },
+      "trophee": {
+        "title": "Trophée Indépendant",
+        "description": "2e place parmi 250+ indépendants"
+      }
+    },
+    "cta": {
+      "title": "Venez nous rencontrer",
+      "subtitle": "Poussez la porte de notre atelier-boutique et laissez-vous guider dans un voyage olfactif unique.",
+      "buttons": {
+        "map": "Voir sur la carte",
+        "contact": "Nous contacter"
+      },
+      "info": {
+        "address": {
+          "title": "Adresse"
+        },
+        "phone": {
+          "title": "Téléphone"
+        },
+        "hours": {
+          "title": "Horaires",
+          "schedule": "Mercredi - Samedi : 10h30 - 18h",
+          "note": "Ou sur rendez-vous"
+        }
+      }
     }
   },
   "footer": {
@@ -30,8 +168,8 @@
     "company": "L'Atelier",
     "contact": "Contact",
     "hours": {
-      "weekdays": "Mar - Ven : 10h - 18h",
-      "saturday": "Sam : 10h - 17h"
+      "weekdays": "Mer - Sam : 10h30 - 18h",
+      "saturday": "Ou sur rendez-vous"
     },
     "rights": "Tous droits réservés.",
     "vegan": "100% Vegan",
@@ -40,6 +178,8 @@
   "common": {
     "learnMore": "En savoir plus",
     "viewAll": "Voir tout",
-    "backToTop": "Retour en haut"
+    "backToTop": "Retour en haut",
+    "new": "Nouveau",
+    "featured": "Coup de cœur"
   }
 }

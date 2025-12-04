@@ -19,19 +19,157 @@
   },
   "home": {
     "hero": {
-      "title": "De Kunst van Ambachtelijke Parfumerie",
-      "subtitle": "Unieke creaties, 100% vegan, met passie en vakmanschap vervaardigd in Namen.",
-      "cta": "Ontdek onze creaties"
+      "badge": "Belgische Ambachtelijke Parfumerie",
+      "title": "Reis door onze geuren",
+      "subtitle": "Unieke creaties, 100% vegan, met passie bedacht en handgemaakt in ons atelier-winkel in Namen.",
+      "cta": {
+        "primary": "Ontdek onze creaties",
+        "secondary": "Onze workshops"
+      },
+      "trust": {
+        "artisan": "Gecertificeerd Ambachtsman",
+        "vegan": "100% Vegan",
+        "location": "Gemaakt in Namen"
+      },
+      "scroll": "Ontdekken"
+    },
+    "intro": {
+      "title": "Het verhaal van een droom die werkelijkheid werd",
+      "paragraph1": "NeZ ZeN is de ontmoeting tussen Romains NeZ (Neus), een gepassioneerde parfumeur, en Aurélies ZeN, die u verwelkomt in een ontspannen en warme sfeer.",
+      "paragraph2": "Samen creëren ze unieke parfums geïnspireerd door reizen, liedjes, momenten van het leven. Elke fles vertelt een verhaal, misschien het uwe.",
+      "cta": "Ontdek ons verhaal",
+      "photoPlaceholder": "Romain & Aurélie",
+      "founders": {
+        "names": "Romain & Aurélie",
+        "roles": "De Neus & De Zen"
+      }
+    },
+    "philosophie": {
+      "title": "Onze aanpak",
+      "subtitle": "Vier principes leiden elk van onze creaties",
+      "jus": {
+        "title": "Het \"Sap\" centraal",
+        "description": "Karaktervolle creaties met minimaal 20% aromatische stoffen. De kwaliteit van het parfum komt eerst."
+      },
+      "experience": {
+        "title": "Een unieke ervaring",
+        "description": "Ontdek onze grondstoffen, volg ons persoonlijk advies om HET parfum te vinden dat bij u past."
+      },
+      "transparence": {
+        "title": "Transparantie",
+        "description": "Ons productieproces staat open. Kom kijken hoe onze elixers worden bereid en wat ze uniek maakt."
+      },
+      "innovation": {
+        "title": "Innovatie",
+        "description": "Creaties die buiten de gebaande paden gaan, ver van conventionele parfums. Originaliteit is onze handtekening."
+      }
+    },
+    "parfums": {
+      "title": "Onze creaties",
+      "subtitle": "Ontdek onze ambachtelijke parfums, elk vertelt een uniek verhaal",
+      "cta": "Bekijk al onze parfums"
+    },
+    "refill": {
+      "title": "Omarm de \"Refill Attitude\"",
+      "subtitle": "Omdat elk gebaar telt, bieden wij hervulbare flacons en een navul-klantenkaart aan.",
+      "points": {
+        "refill": {
+          "title": "Hervulbare flacons",
+          "description": "Houd uw flacon, wij doen de rest"
+        },
+        "natural": {
+          "title": "Natuurlijke materialen",
+          "description": "Kwaliteitsingrediënten, voornamelijk natuurlijk"
+        },
+        "local": {
+          "title": "Korte ketens",
+          "description": "Lokale productie, verminderde impact"
+        }
+      },
+      "quote": "Onze ecologische impact verminderen is belangrijk voor ons."
+    },
+    "ateliers": {
+      "title": "Ontdek onze workshops",
+      "subtitle": "De Neus en de Zen delen graag hun vak en passie met u",
+      "description": "Of u nu het parfumeursvak wilt ontdekken, uw kaars wilt maken, of een unieke zintuiglijke ervaring rond wijn wilt beleven, wij hebben de workshop voor u.",
+      "info": {
+        "duration": "1u30 tot 3u afhankelijk van workshop",
+        "capacity": "Tot 16 personen"
+      },
+      "cta": "Ontdek onze workshops",
+      "types": {
+        "parfumeur": {
+          "title": "Parfumeur ontdekking",
+          "description": "Leer de kunst van parfumcreatie"
+        },
+        "bougie": {
+          "title": "Kaars creatie",
+          "description": "Maak uw eigen geurkaars"
+        },
+        "vin": {
+          "title": "Wijn & Parfumerie",
+          "description": "Proeverij met de neus van een parfumeur"
+        },
+        "prive": {
+          "title": "Privé evenementen",
+          "description": "Vrijgezellenfeest, verjaardagen, teambuilding..."
+        }
+      }
+    },
+    "temoignages": {
+      "title": "Zij vertrouwden ons",
+      "subtitle": "Ontdek de ervaringen van onze klanten",
+      "googleReviews": "op Google (110+ beoordelingen)"
+    },
+    "certifications": {
+      "title": "Onze engagementen & prijzen",
+      "artisan": {
+        "title": "Gecertificeerd Ambachtsman",
+        "description": "Erkend door FOD Economie"
+      },
+      "vegan": {
+        "title": "100% Vegan",
+        "description": "Geen ingrediënten van dierlijke oorsprong"
+      },
+      "artOlfaction": {
+        "title": "Art & Olfaction 2019",
+        "description": "Wereldfinalist met \"La Bibliothèque\""
+      },
+      "trophee": {
+        "title": "Zelfstandigen Trofee",
+        "description": "2e plaats onder 250+ zelfstandigen"
+      }
+    },
+    "cta": {
+      "title": "Kom ons ontmoeten",
+      "subtitle": "Duw de deur van ons atelier-winkel open en laat u meenemen op een unieke olfactorische reis.",
+      "buttons": {
+        "map": "Bekijk op kaart",
+        "contact": "Contacteer ons"
+      },
+      "info": {
+        "address": {
+          "title": "Adres"
+        },
+        "phone": {
+          "title": "Telefoon"
+        },
+        "hours": {
+          "title": "Openingsuren",
+          "schedule": "Woensdag - Zaterdag: 10:30 - 18:00",
+          "note": "Of op afspraak"
+        }
+      }
     }
   },
   "footer": {
-    "description": "Belgische ambachtelijke parfumerie. Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons atelier in Namen.",
+    "description": "Belgische ambachtelijke parfumerie. Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons Naams atelier.",
     "creations": "Creaties",
     "company": "Het Atelier",
     "contact": "Contact",
     "hours": {
-      "weekdays": "Di - Vr: 10u - 18u",
-      "saturday": "Za: 10u - 17u"
+      "weekdays": "Woe - Zat: 10:30 - 18:00",
+      "saturday": "Of op afspraak"
     },
     "rights": "Alle rechten voorbehouden.",
     "vegan": "100% Vegan",
@@ -39,7 +177,9 @@
   },
   "common": {
     "learnMore": "Meer weten",
-    "viewAll": "Bekijk alles",
-    "backToTop": "Terug naar boven"
+    "viewAll": "Alles bekijken",
+    "backToTop": "Terug naar boven",
+    "new": "Nieuw",
+    "featured": "Uitgelicht"
   }
 }

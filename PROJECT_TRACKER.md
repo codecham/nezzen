@@ -129,24 +129,24 @@
 ## ✅ Phase 3 : Layout Global
 
 ### Header
-- [ ] Composant `Logo` (avec image + fallback SVG)
-- [ ] Composant `Navbar` (navigation desktop)
-- [ ] Composant `MegaMenu` (dropdown moderne)
-- [ ] Composant `MobileMenu` (menu burger responsive)
-- [ ] Composant `LanguageSwitcher` (FR/EN/NL)
-- [ ] Assembler `Header`
+- [x] Composant `Logo` (avec image + fallback SVG)
+- [x] Composant `Navbar` (navigation desktop)
+- [x] Composant `MegaMenu` (dropdown moderne)
+- [x] Composant `MobileMenu` (menu burger responsive)
+- [x] Composant `LanguageSwitcher` (FR/EN/NL)
+- [x] Assembler `Header`
 
 ### Footer
-- [ ] Composant `Footer`
-  - [ ] Infos contact (adresse, téléphone, email)
-  - [ ] Horaires d'ouverture
-  - [ ] Liens navigation
-  - [ ] Réseaux sociaux
-  - [ ] Certifications (Artisan, Vegan)
-  - [ ] Copyright
+- [x] Composant `Footer`
+  - [x] Infos contact (adresse, téléphone, email)
+  - [x] Horaires d'ouverture
+  - [x] Liens navigation
+  - [x] Réseaux sociaux
+  - [x] Certifications (Artisan, Vegan)
+  - [x] Copyright
 
 ### Intégration
-- [ ] Intégrer Header + Footer dans `app/[locale]/layout.tsx`
+- [x] Intégrer Header + Footer dans `app/[locale]/layout.tsx`
 
 ---
 
@@ -351,6 +351,74 @@
 - [ ] Configurer le domaine (si disponible)
 - [ ] Tester en production
 - [ ] Partager le lien au client pour validation
+
+---
+
+## ✅ Phase 13 : Backend & Administration (Après validation client)
+
+> **Prérequis** : Phase 12 complétée + validation du frontend par le client
+
+### Décisions techniques
+
+| Aspect | Décision | Raison |
+|--------|----------|--------|
+| **Architecture** | CMS Headless | Interface admin prête à l'emploi, moins de dev custom |
+| **CMS recommandé** | Sanity ou Payload CMS | Intégration Next.js, TypeScript natif, i18n, images |
+| **Alternative** | Strapi (si auto-hébergement) | Open source, API REST/GraphQL |
+
+### Ce qui est déjà préparé
+- [x] Types TypeScript définis (`Parfum`, `Atelier`, `Temoignage`, etc.)
+- [x] Composants découplés (données via props)
+- [x] Structure claire dans `/data/*.ts`
+- [x] Support i18n (FR/EN/NL)
+
+### Tâches
+
+#### Configuration CMS
+- [ ] Choisir le CMS final (Sanity, Payload, ou Strapi)
+- [ ] Définir les schémas (basés sur les types existants)
+- [ ] Configurer l'upload d'images
+- [ ] Migrer les données mockées vers le CMS
+
+#### Intégration
+- [ ] Remplacer les imports `/data/*.ts` par des appels API/CMS
+- [ ] Configurer le revalidation/ISR pour les pages statiques
+- [ ] Tester les performances
+
+#### Interface Admin
+- [ ] Gestion des parfums (CRUD + images + notes olfactives)
+- [ ] Gestion des ateliers (CRUD + calendrier)
+- [ ] Gestion des témoignages
+- [ ] Gestion des autres produits (cosmétiques, bougies, etc.)
+- [ ] Modification du contenu des pages
+- [ ] Gestion des traductions (FR/EN/NL)
+
+#### Authentification & Sécurité
+- [ ] Configurer l'accès admin
+- [ ] Définir les rôles (admin, éditeur)
+
+---
+
+## ✅ Phase 14 : E-commerce (Optionnel)
+
+> **Prérequis** : Phase 13 complétée + décision client
+
+- [ ] Panier & Checkout
+- [ ] Paiement en ligne (Stripe ou Mollie)
+- [ ] Gestion des commandes
+- [ ] Emails transactionnels
+- [ ] Gestion des stocks
+
+---
+
+## ✅ Phase 15 : Fonctionnalités Avancées (Optionnel)
+
+- [ ] Système de réservation ateliers avec paiement
+- [ ] Espace client (compte, historique)
+- [ ] Programme fidélité refill
+- [ ] Wishlist / Favoris
+- [ ] Avis produits
+- [ ] Blog / Actualités
 
 ---
 

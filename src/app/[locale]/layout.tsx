@@ -1,9 +1,11 @@
+// src/app/[locale]/layout.tsx
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import { routing } from '@/i18n/routing'
+import { Header, Footer } from '@/components/layout'
 import '../globals.css'
 
 // Font pour les titres (élégante, serif)
@@ -22,8 +24,20 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Parfumerie | L\'Art des Fragrances',
-  description: 'Découvrez notre collection exclusive de parfums d\'exception',
+  title: {
+    default: 'NeZ ZeN - Parfumerie Artisanale à Namur',
+    template: '%s | NeZ ZeN',
+  },
+  description:
+    'Découvrez nos parfums artisanaux 100% vegan, créés et fabriqués à Namur. Ateliers, créations sur mesure et expérience olfactive unique.',
+  keywords: [
+    'parfumerie artisanale',
+    'parfum vegan',
+    'Namur',
+    'Belgique',
+    'atelier parfum',
+    'création sur mesure',
+  ],
 }
 
 type Props = {
@@ -46,7 +60,14 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} className={`${cormorant.variable} ${inter.variable}`}>
       <body className="min-h-screen bg-background font-body text-foreground antialiased">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          {/* Header fixe */}
+          <Header />
+
+          {/* Contenu principal avec padding pour le header fixe */}
+          <main className="min-h-screen pt-20">{children}</main>
+
+          {/* Footer */}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -19,9 +19,147 @@
   },
   "home": {
     "hero": {
-      "title": "The Art of Artisan Perfumery",
-      "subtitle": "Unique creations, 100% vegan, handcrafted in Namur with passion and expertise.",
-      "cta": "Discover our creations"
+      "badge": "Belgian Artisan Perfumery",
+      "title": "Journey through our fragrances",
+      "subtitle": "Unique creations, 100% vegan, imagined and handcrafted with passion in our workshop-boutique in Namur.",
+      "cta": {
+        "primary": "Discover our creations",
+        "secondary": "Our workshops"
+      },
+      "trust": {
+        "artisan": "Certified Artisan",
+        "vegan": "100% Vegan",
+        "location": "Made in Namur"
+      },
+      "scroll": "Discover"
+    },
+    "intro": {
+      "title": "The story of a dream come true",
+      "paragraph1": "NeZ ZeN is the meeting between Romain's NeZ (Nose), a passionate perfumer, and Aurélie's ZeN, who welcomes you in a relaxed and warm atmosphere.",
+      "paragraph2": "Together, they create unique perfumes inspired by travels, songs, moments of life. Each bottle tells a story, perhaps yours.",
+      "cta": "Discover our story",
+      "photoPlaceholder": "Romain & Aurélie",
+      "founders": {
+        "names": "Romain & Aurélie",
+        "roles": "The Nose & The Zen"
+      }
+    },
+    "philosophie": {
+      "title": "Our approach",
+      "subtitle": "Four principles guide each of our creations",
+      "jus": {
+        "title": "The \"Juice\" at the center",
+        "description": "Distinctive creations with a minimum of 20% aromatic materials. The quality of the perfume comes first."
+      },
+      "experience": {
+        "title": "A unique experience",
+        "description": "Discover our raw materials, follow our personalized advice to find THE perfume that suits you."
+      },
+      "transparence": {
+        "title": "Transparency",
+        "description": "Our manufacturing process is open. Come and see how our elixirs are prepared and what makes them unique."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Creations that go off the beaten path, far from conventional perfumes. Originality is our signature."
+      }
+    },
+    "parfums": {
+      "title": "Our creations",
+      "subtitle": "Discover our artisan perfumes, each tells a unique story",
+      "cta": "View all our perfumes"
+    },
+    "refill": {
+      "title": "Embrace the \"Refill Attitude\"",
+      "subtitle": "Because every gesture counts, we offer refillable bottles and a refill loyalty card.",
+      "points": {
+        "refill": {
+          "title": "Refillable bottles",
+          "description": "Keep your bottle, we take care of the rest"
+        },
+        "natural": {
+          "title": "Natural materials",
+          "description": "Quality ingredients, mostly natural"
+        },
+        "local": {
+          "title": "Short circuits",
+          "description": "Local production, reduced impact"
+        }
+      },
+      "quote": "Reducing our ecological impact is important to us."
+    },
+    "ateliers": {
+      "title": "Discover our workshops",
+      "subtitle": "The Nose and the Zen will be happy to share their craft and passion",
+      "description": "Whether you want to discover the perfumer's craft, create your candle, or live a unique sensory experience around wine, we have the workshop for you.",
+      "info": {
+        "duration": "1h30 to 3h depending on workshop",
+        "capacity": "Up to 16 people"
+      },
+      "cta": "Discover our workshops",
+      "types": {
+        "parfumeur": {
+          "title": "Perfumer discovery",
+          "description": "Learn the art of perfume creation"
+        },
+        "bougie": {
+          "title": "Candle creation",
+          "description": "Create your own scented candle"
+        },
+        "vin": {
+          "title": "Wine & Perfumery",
+          "description": "Tasting with a perfumer's nose"
+        },
+        "prive": {
+          "title": "Private events",
+          "description": "Hen parties, birthdays, team building..."
+        }
+      }
+    },
+    "temoignages": {
+      "title": "They trusted us",
+      "subtitle": "Discover our customers' experiences",
+      "googleReviews": "on Google (110+ reviews)"
+    },
+    "certifications": {
+      "title": "Our commitments & awards",
+      "artisan": {
+        "title": "Certified Artisan",
+        "description": "Recognized by SPF Economy"
+      },
+      "vegan": {
+        "title": "100% Vegan",
+        "description": "No animal-derived ingredients"
+      },
+      "artOlfaction": {
+        "title": "Art & Olfaction 2019",
+        "description": "World finalist with \"La Bibliothèque\""
+      },
+      "trophee": {
+        "title": "Independent Trophy",
+        "description": "2nd place among 250+ independents"
+      }
+    },
+    "cta": {
+      "title": "Come meet us",
+      "subtitle": "Push the door of our workshop-boutique and let yourself be guided on a unique olfactory journey.",
+      "buttons": {
+        "map": "View on map",
+        "contact": "Contact us"
+      },
+      "info": {
+        "address": {
+          "title": "Address"
+        },
+        "phone": {
+          "title": "Phone"
+        },
+        "hours": {
+          "title": "Hours",
+          "schedule": "Wednesday - Saturday: 10:30am - 6pm",
+          "note": "Or by appointment"
+        }
+      }
     }
   },
   "footer": {
@@ -30,8 +168,8 @@
     "company": "The Workshop",
     "contact": "Contact",
     "hours": {
-      "weekdays": "Tue - Fri: 10am - 6pm",
-      "saturday": "Sat: 10am - 5pm"
+      "weekdays": "Wed - Sat: 10:30am - 6pm",
+      "saturday": "Or by appointment"
     },
     "rights": "All rights reserved.",
     "vegan": "100% Vegan",
@@ -40,6 +178,8 @@
   "common": {
     "learnMore": "Learn more",
     "viewAll": "View all",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "new": "New",
+    "featured": "Featured"
   }
 }

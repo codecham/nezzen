@@ -1,34 +1,12 @@
-// =============================================================================
-// TYPES PRODUITS - NeZ ZeN
-// =============================================================================
-
-/**
- * Type de base pour tous les produits
- */
-export interface BaseProduct {
-  id: string
-  slug: string
-  name: string
-  description: string
-  price: number
-  image: string
-  images?: string[]
-  isNew?: boolean
-  isFeatured?: boolean
-  createdAt?: string
-}
-
-// -----------------------------------------------------------------------------
-// PARFUMS
-// -----------------------------------------------------------------------------
+// src/types/product.ts
 
 /**
  * Notes olfactives d'un parfum
  */
 export interface FragranceNotes {
-  top: string[]      // Notes de tête
-  heart: string[]    // Notes de cœur
-  base: string[]     // Notes de fond
+  tete: string[]   // Notes de tête (première impression)
+  coeur: string[]  // Notes de cœur (après quelques minutes)
+  fond: string[]   // Notes de fond (plusieurs heures)
 }
 
 /**
@@ -37,132 +15,108 @@ export interface FragranceNotes {
 export interface ParfumFormat {
   size: '15ml' | '30ml' | '50ml' | '100ml'
   price: number
-  inStock?: boolean
 }
 
 /**
- * Parfum - Produit principal
+ * Produit de base
+ */
+export interface BaseProduct {
+  id: string
+  slug: string
+  name: string
+  shortDescription: string
+  fullDescription: string
+  image: string
+  images?: string[]
+  isVegan: boolean
+  isNew?: boolean
+  isFeatured?: boolean
+}
+
+/**
+ * Parfum
  */
 export interface Parfum extends BaseProduct {
-  type: 'parfum'
-  inspiration?: string           // Histoire/inspiration du parfum
+  category: 'classiques' | 'voyages' | 'gourmands' | 'floraux' | 'boisés'
   notes: FragranceNotes
   formats: ParfumFormat[]
-  concentration?: string         // Ex: "Eau de Parfum", "Extrait"
-  longevity?: string            // Durée de tenue
-  spicinessLevel?: 1 | 2 | 3 | 4 | 5  // Optionnel: intensité
+  awards?: string[]
+  inspiration?: string
 }
-
-// -----------------------------------------------------------------------------
-// PARFUMS D'AMBIANCE (NeZZen Home)
-// -----------------------------------------------------------------------------
-
-/**
- * Type de parfum d'ambiance
- */
-export type AmbianceType = 'diffuseur' | 'spray' | 'bougie'
 
 /**
  * Parfum d'ambiance
  */
+export type AmbianceType = 'diffuseur' | 'spray'
+
 export interface ParfumAmbiance extends BaseProduct {
-  type: 'ambiance'
-  ambianceType: AmbianceType
-  inspiration?: string
-  duration?: string              // Ex: "3 mois dans 50m²"
-  coverage?: string              // Surface couverte
-  volume?: string                // Ex: "200ml"
+  type: AmbianceType
+  duration?: string    // Ex: "3 mois"
+  coverage?: string    // Ex: "50m²"
+  price: number
 }
 
-// -----------------------------------------------------------------------------
-// BOUGIES
-// -----------------------------------------------------------------------------
-
 /**
- * Bougie parfumée
+ * Bougie
  */
 export interface Bougie extends BaseProduct {
-  type: 'bougie'
-  burnTime?: string              // Durée de combustion
-  weight?: string                // Poids
-  inspiration?: string
-  notes?: Partial<FragranceNotes>
+  burnTime: string     // Ex: "40h"
+  weight: string       // Ex: "200g"
+  price: number
 }
 
-// -----------------------------------------------------------------------------
-// COSMÉTIQUES
-// -----------------------------------------------------------------------------
-
 /**
- * Type de cosmétique
+ * Cosmétique (gel douche, lait)
  */
 export type CosmetiqueType = 'gel-douche' | 'lait-hydratant'
 
-/**
- * Cosmétique
- */
 export interface Cosmetique extends BaseProduct {
-  type: 'cosmetique'
-  cosmetiqueType: CosmetiqueType
-  volume: string                 // Ex: "200ml"
-  fragrance: string              // Parfum du produit
-  ingredients?: string[]         // Ingrédients clés
-  benefits?: string[]            // Bénéfices (hypoallergénique, etc.)
+  type: CosmetiqueType
+  volume: string       // Ex: "200ml"
+  price: number
+  ingredients?: string[]
 }
 
-// -----------------------------------------------------------------------------
-// PACK DÉCOUVERTE
-// -----------------------------------------------------------------------------
-
 /**
- * Pack découverte (échantillons)
+ * Pack découverte
  */
-export interface PackDecouverte extends BaseProduct {
-  type: 'pack-decouverte'
-  numberOfSamples: number        // Nombre d'échantillons
-  sampleSize: string             // Taille de chaque échantillon
-  howItWorks: string[]           // Étapes du processus
+export interface PackDecouverte {
+  id: string
+  name: string
+  description: string
+  numberOfSamples: number
+  price: number
+  image: string
 }
-
-// -----------------------------------------------------------------------------
-// BONS CADEAU
-// -----------------------------------------------------------------------------
-
-/**
- * Type de bon cadeau
- */
-export type BonCadeauType = 'parfum' | 'montant'
 
 /**
  * Bon cadeau
  */
-export interface BonCadeau extends BaseProduct {
-  type: 'bon-cadeau'
-  bonType: BonCadeauType
-  value?: number                 // Montant si type "montant"
-  validityPeriod?: string        // Durée de validité
+export type BonCadeauType = 'parfum' | 'montant'
+
+export interface BonCadeau {
+  id: string
+  type: BonCadeauType
+  name: string
+  description: string
+  value?: number       // Pour type 'montant'
+  image: string
 }
 
-// -----------------------------------------------------------------------------
-// UNION TYPE - Tous les produits
-// -----------------------------------------------------------------------------
-
-export type Product = 
-  | Parfum 
-  | ParfumAmbiance 
-  | Bougie 
-  | Cosmetique 
-  | PackDecouverte 
-  | BonCadeau
+/**
+ * Union de tous les types de produits
+ */
+export type Product = Parfum | ParfumAmbiance | Bougie | Cosmetique
 
 /**
- * Catégorie de produits pour la navigation
+ * Catégories de produits
  */
 export type ProductCategory = 
-  | 'parfums' 
-  | 'nezzen-home' 
-  | 'cosmetiques' 
-  | 'pack-decouverte' 
+  | 'parfums'
+  | 'parfums-ambiance'
+  | 'bougies'
+  | 'cosmetiques'
+  | 'pack-decouverte'
   | 'bons-cadeau'
 
 /**
@@ -170,9 +124,7 @@ export type ProductCategory =
  */
 export interface ProductFilter {
   category?: ProductCategory
-  priceMin?: number
-  priceMax?: number
+  priceRange?: [number, number]
+  isVegan?: boolean
   isNew?: boolean
-  isFeatured?: boolean
-  search?: string
 }

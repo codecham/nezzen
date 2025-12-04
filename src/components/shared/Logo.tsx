@@ -1,3 +1,6 @@
+// src/components/shared/Logo.tsx
+'use client'
+
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import { Link } from '@/i18n/routing'
