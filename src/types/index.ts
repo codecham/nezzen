@@ -1,15 +1,49 @@
 // =============================================================================
-// TYPES TÉMOIGNAGES - NeZ ZeN
+// EXPORTS CENTRALISÉS - TYPES NeZ ZeN
+// =============================================================================
+
+// Produits
+export type {
+  BaseProduct,
+  FragranceNotes,
+  ParfumFormat,
+  Parfum,
+  AmbianceType,
+  ParfumAmbiance,
+  Bougie,
+  CosmetiqueType,
+  Cosmetique,
+  PackDecouverte,
+  BonCadeauType,
+  BonCadeau,
+  Product,
+  ProductCategory,
+  ProductFilter,
+} from './product'
+
+// Ateliers
+export type {
+  AtelierType,
+  AtelierAudience,
+  AtelierSession,
+  Atelier,
+  AtelierBookingRequest,
+  PrivateEventType,
+} from './atelier'
+export { PRIVATE_EVENT_TYPES } from './atelier'
+
+// =============================================================================
+// TYPES TÉMOIGNAGES
 // =============================================================================
 
 /**
  * Type de témoignage
  */
 export type TemoignageType = 
-  | 'client'           // Achat en boutique
-  | 'atelier'          // Participation à un atelier
-  | 'entreprise'       // Client B2B
-  | 'evenement'        // Événement privé
+  | 'client'
+  | 'atelier'
+  | 'entreprise'
+  | 'evenement'
 
 /**
  * Témoignage client
@@ -17,72 +51,61 @@ export type TemoignageType =
 export interface Temoignage {
   id: string
   type: TemoignageType
-  
-  // Auteur
-  author: string                 // Prénom ou nom
-  location?: string              // Ville/Pays
-  company?: string               // Si témoignage B2B
-  
-  // Contenu
-  content: string                // Le témoignage
-  shortContent?: string          // Version courte pour cards
-  
-  // Contexte
-  context?: string               // Ex: "Atelier EVJF", "Achat Mont Blanc"
-  date?: string                  // Date du témoignage
-  
-  // Média
-  image?: string                 // Photo du client (si autorisé)
-  
-  // Rating
+  author: string
+  location?: string
+  company?: string
+  content: string
+  shortContent?: string
+  context?: string
+  date?: string
+  image?: string
   rating?: 1 | 2 | 3 | 4 | 5
-  
-  // Affichage
   isFeatured?: boolean
   showOnHomepage?: boolean
 }
 
 // =============================================================================
-// TYPES NAVIGATION - NeZ ZeN
+// TYPES NAVIGATION
 // =============================================================================
 
 /**
- * Élément de navigation
+ * Item de navigation simple
  */
 export interface NavItem {
-  id: string
-  label: string                  // Clé de traduction ou texte
+  /** Clé de traduction pour le label */
+  labelKey: string
+  /** URL de destination */
   href: string
-  children?: NavItem[]
-  isExternal?: boolean
-  icon?: string                  // Nom de l'icône Lucide
-  description?: string           // Pour mega-menu
-  image?: string                 // Image pour mega-menu
+  /** Icône optionnelle (nom Lucide) */
+  icon?: string
+  /** Description pour mega-menu */
+  description?: string
 }
 
 /**
- * Configuration du mega-menu
+ * Item de navigation avec sous-menu
  */
-export interface MegaMenuConfig {
-  columns: MegaMenuColumn[]
-  featuredItem?: MegaMenuFeatured
+export interface NavItemWithChildren extends Omit<NavItem, 'href'> {
+  /** URL optionnelle (si le parent est cliquable) */
+  href?: string
+  /** Sous-items */
+  children: NavItem[]
 }
 
-export interface MegaMenuColumn {
-  title?: string
-  items: NavItem[]
-}
+/**
+ * Type union pour tous les items de navigation
+ */
+export type NavigationItem = NavItem | NavItemWithChildren
 
-export interface MegaMenuFeatured {
-  title: string
-  description: string
-  image: string
-  href: string
-  cta: string
+/**
+ * Helper pour vérifier si un item a des enfants
+ */
+export function hasChildren(item: NavigationItem): item is NavItemWithChildren {
+  return 'children' in item && Array.isArray(item.children)
 }
 
 // =============================================================================
-// TYPES CONTACT - NeZ ZeN
+// TYPES CONTACT
 // =============================================================================
 
 /**
@@ -107,15 +130,13 @@ export interface ContactFormData {
   subject: ContactSubject
   message: string
   newsletter?: boolean
-  
-  // Pour demandes spécifiques
-  productInterest?: string       // Si commande
-  eventDate?: string             // Si atelier/événement
-  numberOfPeople?: number        // Si atelier/événement
+  productInterest?: string
+  eventDate?: string
+  numberOfPeople?: number
 }
 
 // =============================================================================
-// TYPES CERTIFICATIONS & BADGES - NeZ ZeN
+// TYPES CERTIFICATIONS & BADGES
 // =============================================================================
 
 /**
@@ -126,12 +147,12 @@ export interface Certification {
   name: string
   description: string
   year?: number
-  image?: string                 // Logo/Badge
-  link?: string                  // Lien externe
+  image?: string
+  link?: string
 }
 
 // =============================================================================
-// TYPES SEO - NeZ ZeN
+// TYPES SEO
 // =============================================================================
 
 /**
@@ -173,7 +194,7 @@ export interface StoreInfo {
     lng: number
   }
   openingHours: {
-    [key: string]: string | null  // null = fermé
+    [key: string]: string | null
   }
   socialLinks: {
     facebook?: string

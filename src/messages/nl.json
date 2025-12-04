@@ -1,87 +1,45 @@
 {
-  "metadata": {
-    "title": "Parfumerie | De Kunst van Geuren",
-    "description": "Ontdek onze exclusieve collectie uitzonderlijke parfums"
-  },
   "navigation": {
-    "home": "Home",
-    "products": "Onze Parfums",
-    "about": "Ons Verhaal",
+    "creations": "Creaties",
+    "parfums": "Parfums",
+    "nezzenHome": "NeZZen Home",
+    "cosmetiques": "Cosmetica",
+    "packDecouverte": "Ontdekkingspakket",
+    "bonsCadeau": "Cadeaubonnen",
+    "ateliers": "Workshops",
+    "surMesure": "Op Maat",
+    "particuliers": "Particulieren",
+    "entreprises": "Bedrijven",
+    "aPropos": "Over Ons",
+    "notreApproche": "Onze Aanpak",
+    "experience": "De Ervaring",
+    "galerie": "Galerij",
+    "temoignages": "Getuigenissen",
     "contact": "Contact"
   },
   "home": {
     "hero": {
-      "title": "De Kunst van Parfumerie",
-      "subtitle": "Ontdek uitzonderlijke geuren, gemaakt met passie en vakmanschap",
-      "cta": "Ontdek de collectie"
-    },
-    "featured": {
-      "title": "Onze Topproducten",
-      "subtitle": "Een selectie van onze meest geliefde parfums"
-    },
-    "about": {
-      "title": "Onze Expertise",
-      "description": "Al generaties lang zetten wij de kunst van de parfumerie voort met passie en excellentie.",
-      "cta": "Ontdek ons verhaal"
-    }
-  },
-  "products": {
-    "title": "Onze Collectie",
-    "subtitle": "Verken ons geurende universum",
-    "filters": {
-      "all": "Alles",
-      "forHer": "Voor Haar",
-      "forHim": "Voor Hem",
-      "unisex": "Unisex"
-    },
-    "sort": {
-      "label": "Sorteren op",
-      "newest": "Nieuwste",
-      "priceAsc": "Prijs: Laag naar Hoog",
-      "priceDesc": "Prijs: Hoog naar Laag"
-    }
-  },
-  "product": {
-    "addToCart": "In winkelwagen",
-    "volume": "Inhoud",
-    "notes": {
-      "top": "Topnoten",
-      "heart": "Hartnoten",
-      "base": "Basisnoten"
-    },
-    "related": "Misschien vind je dit ook leuk"
-  },
-  "about": {
-    "title": "Ons Verhaal",
-    "subtitle": "Een passie doorgegeven van generatie op generatie"
-  },
-  "contact": {
-    "title": "Contacteer Ons",
-    "subtitle": "We horen graag van u",
-    "form": {
-      "name": "Uw naam",
-      "email": "Uw e-mail",
-      "message": "Uw bericht",
-      "submit": "Versturen",
-      "success": "Bericht succesvol verzonden!",
-      "error": "Er is een fout opgetreden. Probeer het opnieuw."
+      "title": "De Kunst van Ambachtelijke Parfumerie",
+      "subtitle": "Unieke creaties, 100% vegan, met passie en vakmanschap vervaardigd in Namen.",
+      "cta": "Ontdek onze creaties"
     }
   },
   "footer": {
-    "newsletter": {
-      "title": "Blijf op de hoogte",
-      "placeholder": "Uw e-mailadres",
-      "button": "Inschrijven"
+    "description": "Belgische ambachtelijke parfumerie. Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons atelier in Namen.",
+    "creations": "Creaties",
+    "company": "Het Atelier",
+    "contact": "Contact",
+    "hours": {
+      "weekdays": "Di - Vr: 10u - 18u",
+      "saturday": "Za: 10u - 17u"
     },
-    "rights": "Alle rechten voorbehouden"
+    "rights": "Alle rechten voorbehouden.",
+    "vegan": "100% Vegan",
+    "artisan": "Gecertificeerd Ambachtsman"
   },
   "common": {
-    "learnMore": "Meer informatie",
-    "viewAll": "Alles bekijken",
-    "back": "Terug",
-    "loading": "Laden...",
-    "error": "Er is een fout opgetreden",
-    "new": "Nieuw",
-    "bestSeller": "Bestseller"
+    "learnMore": "Meer weten",
+    "viewAll": "Bekijk alles",
+    "backToTop": "Terug naar boven"
   }
 }

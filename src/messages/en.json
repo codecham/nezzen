@@ -1,87 +1,45 @@
 {
-  "metadata": {
-    "title": "Perfumery | The Art of Fragrances",
-    "description": "Discover our exclusive collection of exceptional perfumes"
-  },
   "navigation": {
-    "home": "Home",
-    "products": "Our Perfumes",
-    "about": "Our Story",
+    "creations": "Creations",
+    "parfums": "Perfumes",
+    "nezzenHome": "NeZZen Home",
+    "cosmetiques": "Cosmetics",
+    "packDecouverte": "Discovery Pack",
+    "bonsCadeau": "Gift Cards",
+    "ateliers": "Workshops",
+    "surMesure": "Bespoke",
+    "particuliers": "Individuals",
+    "entreprises": "Businesses",
+    "aPropos": "About",
+    "notreApproche": "Our Approach",
+    "experience": "The Experience",
+    "galerie": "Gallery",
+    "temoignages": "Testimonials",
     "contact": "Contact"
   },
   "home": {
     "hero": {
-      "title": "The Art of Perfumery",
-      "subtitle": "Discover exceptional fragrances, crafted with passion and expertise",
-      "cta": "Explore the collection"
-    },
-    "featured": {
-      "title": "Our Featured Creations",
-      "subtitle": "A selection of our most beloved perfumes"
-    },
-    "about": {
-      "title": "Our Expertise",
-      "description": "For generations, we have been perpetuating the art of perfumery with passion and excellence.",
-      "cta": "Discover our story"
-    }
-  },
-  "products": {
-    "title": "Our Collection",
-    "subtitle": "Explore our olfactory universe",
-    "filters": {
-      "all": "All",
-      "forHer": "For Her",
-      "forHim": "For Him",
-      "unisex": "Unisex"
-    },
-    "sort": {
-      "label": "Sort by",
-      "newest": "Newest",
-      "priceAsc": "Price: Low to High",
-      "priceDesc": "Price: High to Low"
-    }
-  },
-  "product": {
-    "addToCart": "Add to cart",
-    "volume": "Size",
-    "notes": {
-      "top": "Top notes",
-      "heart": "Heart notes",
-      "base": "Base notes"
-    },
-    "related": "You may also like"
-  },
-  "about": {
-    "title": "Our Story",
-    "subtitle": "A passion passed down through generations"
-  },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "We would love to hear from you",
-    "form": {
-      "name": "Your name",
-      "email": "Your email",
-      "message": "Your message",
-      "submit": "Send",
-      "success": "Message sent successfully!",
-      "error": "An error occurred. Please try again."
+      "title": "The Art of Artisan Perfumery",
+      "subtitle": "Unique creations, 100% vegan, handcrafted in Namur with passion and expertise.",
+      "cta": "Discover our creations"
     }
   },
   "footer": {
-    "newsletter": {
-      "title": "Stay informed",
-      "placeholder": "Your email address",
-      "button": "Subscribe"
+    "description": "Belgian artisan perfumery. Each fragrance is an invitation to travel, created with passion in our Namur workshop.",
+    "creations": "Creations",
+    "company": "The Workshop",
+    "contact": "Contact",
+    "hours": {
+      "weekdays": "Tue - Fri: 10am - 6pm",
+      "saturday": "Sat: 10am - 5pm"
     },
-    "rights": "All rights reserved"
+    "rights": "All rights reserved.",
+    "vegan": "100% Vegan",
+    "artisan": "Certified Artisan"
   },
   "common": {
     "learnMore": "Learn more",
     "viewAll": "View all",
-    "back": "Back",
-    "loading": "Loading...",
-    "error": "An error occurred",
-    "new": "New",
-    "bestSeller": "Best-seller"
+    "backToTop": "Back to top"
   }
 }

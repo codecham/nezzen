@@ -90,30 +90,30 @@
 - [x] Créer `lib/utils.ts` avec la fonction `cn()`
 - [x] Configurer l'i18n (next-intl) - FR, EN, NL
 - [x] Créer le middleware de routing i18n
-- [ ] Ajouter le logo dans `/public/images/`
-- [ ] Définir les design tokens dans globals.css
-- [ ] Configurer les fonts (Cormorant Garamond + Inter)
+- [x] Ajouter le logo dans `/public/images/`
+- [x] Définir les design tokens dans globals.css
+- [x] Configurer les fonts (Cormorant Garamond + Inter)
 
 ---
 
 ## ✅ Phase 2 : Design System (Composants UI)
 
 ### Tokens & Fondations
-- [ ] Finaliser la palette de couleurs dans `globals.css`
-- [ ] Configurer les fonts dans `layout.tsx`
-- [ ] Définir les espacements et breakpoints
+- [x] Finaliser la palette de couleurs dans `globals.css`
+- [x] Configurer les fonts dans `layout.tsx`
+- [x] Définir les espacements et breakpoints
 
 ### Composants de Base
-- [ ] `Button` — variants: primary, secondary, outline, ghost
-- [ ] `Container` — wrapper responsive avec max-width
-- [ ] `Card` — avec variants (product, testimonial, atelier)
-- [ ] `Badge` — étiquettes (Nouveau, Vegan, Artisan certifié)
-- [ ] `Input` — champs de formulaire
-- [ ] `Textarea` — zone de texte
-- [ ] `Select` — sélecteur
-- [ ] `Heading` — h1 à h4 stylisés
-- [ ] `Text` — paragraphes avec variants
-- [ ] `Link` — liens stylisés
+- [x] `Button` — variants: primary, secondary, outline, ghost
+- [x] `Container` — wrapper responsive avec max-width
+- [x] `Card` — avec variants (product, testimonial, atelier)
+- [x] `Badge` — étiquettes (Nouveau, Vegan, Artisan certifié)
+- [x] `Input` — champs de formulaire
+- [x] `Textarea` — zone de texte
+- [x] `Select` — sélecteur
+- [x] `Heading` — h1 à h4 stylisés
+- [x] `Text` — paragraphes avec variants
+- [x] `Link` — liens stylisés
 
 ### Composants Avancés
 - [ ] `Modal` — pour galerie photos
