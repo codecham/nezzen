@@ -82,7 +82,7 @@
           "description": "Quality ingredients, mostly natural"
         },
         "local": {
-          "title": "Short circuits",
+          "title": "Short supply chains",
           "description": "Local production, reduced impact"
         }
       },
@@ -90,42 +90,43 @@
     },
     "ateliers": {
       "title": "Discover our workshops",
-      "subtitle": "The Nose and the Zen will be happy to share their craft and passion",
-      "description": "Whether you want to discover the perfumer's craft, create your candle, or live a unique sensory experience around wine, we have the workshop for you.",
+      "subtitle": "The Nose and the Zen will be delighted to share their craft and passion with you",
+      "description": "Whether you want to discover the perfumer's craft, create your candle, or experience a unique sensory experience around wine, we have the workshop for you.",
+      "cta": "View all workshops",
       "info": {
         "duration": "1h30 to 3h depending on workshop",
-        "capacity": "Up to 16 people"
+        "capacity": "4 to 16 people"
       },
-      "cta": "Discover our workshops",
       "types": {
         "parfumeur": {
-          "title": "Perfumer discovery",
-          "description": "Learn the art of perfume creation"
+          "title": "Perfumer Discovery",
+          "description": "Dive into the perfumer's world"
         },
         "bougie": {
-          "title": "Candle creation",
+          "title": "Candle Creation",
           "description": "Create your own scented candle"
         },
         "vin": {
           "title": "Wine & Perfumery",
-          "description": "Tasting with a perfumer's nose"
+          "description": "A unique sensory tasting"
         },
         "prive": {
-          "title": "Private events",
+          "title": "Private Events",
           "description": "Hen parties, birthdays, team building..."
         }
       }
     },
     "temoignages": {
-      "title": "They trusted us",
-      "subtitle": "Discover our customers' experiences",
-      "googleReviews": "on Google (110+ reviews)"
+      "title": "What our clients say",
+      "subtitle": "Unique experiences shared with passion",
+      "googleReviews": "on Google"
     },
     "certifications": {
-      "title": "Our commitments & awards",
+      "title": "Recognition & Quality",
+      "subtitle": "Our commitment to artisan excellence",
       "artisan": {
         "title": "Certified Artisan",
-        "description": "Recognized by SPF Economy"
+        "description": "Belgian SPF Economy certification"
       },
       "vegan": {
         "title": "100% Vegan",
@@ -133,16 +134,18 @@
       },
       "artOlfaction": {
         "title": "Art & Olfaction 2019",
-        "description": "World finalist with \"La Bibliothèque\""
+        "description": "Finalist with \"La Bibliothèque\""
       },
       "trophee": {
-        "title": "Independent Trophy",
-        "description": "2nd place among 250+ independents"
+        "title": "Independent Trophy 2023",
+        "description": "2nd place among 250+ candidates"
       }
     },
     "cta": {
-      "title": "Come meet us",
-      "subtitle": "Push the door of our workshop-boutique and let yourself be guided on a unique olfactory journey.",
+      "title": "Want to visit us?",
+      "subtitle": "Come discover our workshop-boutique and let Romain and Aurélie guide you on a unique olfactory journey.",
+      "button": "Contact us",
+      "hours": "Wed-Sat: 10:30am-6pm or by appointment",
       "buttons": {
         "map": "View on map",
         "contact": "Contact us"
@@ -155,15 +158,183 @@
           "title": "Phone"
         },
         "hours": {
-          "title": "Hours",
+          "title": "Opening Hours",
           "schedule": "Wednesday - Saturday: 10:30am - 6pm",
           "note": "Or by appointment"
         }
       }
     }
   },
+  "creations": {
+    "meta": {
+      "title": "Our Creations",
+      "description": "Discover all our artisan creations: perfumes, home fragrances, cosmetics and more."
+    },
+    "hero": {
+      "title": "Our Creations",
+      "subtitle": "Each creation is imagined and crafted in our Namur workshop, with passion and artisan expertise."
+    },
+    "categories": {
+      "parfums": {
+        "title": "Perfumes",
+        "description": "A collection of unisex perfumes, inspired by travels, songs, moments of life. Each fragrance tells a story.",
+        "count": "19 creations"
+      },
+      "nezzenHome": {
+        "title": "NeZZen Home",
+        "description": "Reed diffusers and scented candles to create a unique atmosphere in your home.",
+        "count": "8 products"
+      },
+      "cosmetiques": {
+        "title": "Cosmetics",
+        "description": "Shower gels and body lotions with fragrances from our collection, carefully formulated.",
+        "count": "6 products"
+      },
+      "packDecouverte": {
+        "title": "Discovery Pack",
+        "description": "Test our perfumes before you decide. In store with personalized advice or delivered to your home.",
+        "count": "2 options"
+      },
+      "bonsCadeau": {
+        "title": "Gift Cards",
+        "description": "Give a unique olfactory experience. Valid on all our products and workshops.",
+        "count": "Flexible options"
+      }
+    },
+    "cta": {
+      "discover": "Discover"
+    },
+    "info": {
+      "title": "Our quality commitment",
+      "description": "All our creations are 100% vegan, mostly made from natural ingredients, and handcrafted in Namur.",
+      "badges": {
+        "vegan": "100% Vegan",
+        "refill": "Refillable bottles",
+        "local": "Made in Namur"
+      }
+    }
+  },
+  "parfums": {
+    "meta": {
+      "title": "Our Perfumes",
+      "description": "Discover our collection of artisan unisex perfumes, 100% vegan, created with passion in Namur."
+    },
+    "hero": {
+      "badge": "{count} perfumes in the collection",
+      "title": "Our Perfumes",
+      "subtitle": "Each fragrance is an invitation to travel, a story to discover, a memory to create."
+    },
+    "categories": {
+      "all": "All",
+      "classiques": "Classics",
+      "floraux": "Florals",
+      "voyages": "Journeys",
+      "gourmands": "Gourmands"
+    },
+    "empty": "No perfumes in this category.",
+    "resultsCount": "{count, plural, =0 {No perfumes} =1 {1 perfume} other {# perfumes}} in this selection",
+    "info": {
+      "refill": "All our bottles are refillable. Take advantage of our refill loyalty card!",
+      "vegan": "100% Vegan",
+      "artisan": "Certified Artisan",
+      "formats": "4 formats available"
+    }
+  },
+  "parfumDetail": {
+    "meta": {
+      "suffix": "NeZ ZeN Perfumes"
+    },
+    "back": "Back to perfumes",
+    "badges": {
+      "new": "New",
+      "awarded": "Awarded"
+    },
+    "categories": {
+      "classiques": "The Classics",
+      "floraux": "The Florals",
+      "voyages": "The Journeys",
+      "gourmands": "The Gourmands",
+      "boisés": "The Woody"
+    },
+    "pyramid": {
+      "title": "Olfactory pyramid",
+      "tete": "Top",
+      "coeur": "Heart",
+      "fond": "Base"
+    },
+    "format": {
+      "title": "Choose a format"
+    },
+    "price": {
+      "label": "Price"
+    },
+    "cta": {
+      "contact": "Order this perfume",
+      "info": "Order by phone, email or in store"
+    },
+    "features": {
+      "vegan": "100% Vegan",
+      "refill": "Refillable",
+      "local": "Made in Namur"
+    },
+    "related": {
+      "title": "You may also like",
+      "subtitle": "Other creations from the same olfactory family",
+      "viewAll": "View all perfumes"
+    }
+  },
+  "packDecouverte": {
+    "meta": {
+      "title": "Discovery Pack",
+      "description": "Test our perfumes before choosing your bottle. Two exclusive online formulas to find your olfactory signature."
+    },
+    "hero": {
+      "badge": "Web exclusive",
+      "title": "Find your perfume",
+      "subtitle": "Because choosing a perfume takes time, test our creations at home before making your decision."
+    },
+    "packs": {
+      "decouverte": {
+        "title": "Discovery Pack",
+        "description": "Receive 4 samples to test at home. Once you've made your choice, we'll send you the 50ml bottle of your favorite perfume.",
+        "samples": "4 samples + 1 x 50ml bottle",
+        "price": "€100.00",
+        "shipping": "Free shipping to Belgium",
+        "delivery": "Delivery in 3-5 days",
+        "cta": "Order this pack",
+        "features": {
+          "samples": "4 samples of your choice",
+          "bottle": "1 x 50ml bottle included",
+          "shipping": "Free shipping (Belgium)",
+          "test": "Test before you choose"
+        }
+      },
+      "echantillons": {
+        "title": "Sample Pack",
+        "description": "Choose 5 perfume samples and receive them directly at home. Ideal for discovering our collection at a low price.",
+        "samples": "5 samples",
+        "price": "€28.00",
+        "shipping": "Shipping not included",
+        "delivery": "Delivery in 3-5 days",
+        "cta": "Order this pack",
+        "features": {
+          "samples": "5 samples of your choice",
+          "price": "Affordable price",
+          "home": "Home delivery",
+          "rhythm": "Test at your own pace"
+        }
+      }
+    },
+    "orderNote": "Specify your perfumes in the notes section when ordering",
+    "info": {
+      "title": "Why test before buying?",
+      "description": "A perfume evolves on your skin throughout the day. Top notes give way to heart notes, then base notes. Testing a sample for several days allows you to truly discover a perfume and make the right choice.",
+      "quote": "\"Perfume is an encounter between a fragrance and your skin. Take time for this discovery.\"",
+      "author": "Romain, NeZ ZeN perfumer"
+    }
+  },
   "footer": {
-    "description": "Belgian artisan perfumery. Each fragrance is an invitation to travel, created with passion in our Namur workshop.",
+    "description": "Each fragrance is an invitation to travel, created with passion in our Namur workshop.",
     "creations": "Creations",
     "company": "The Workshop",
     "contact": "Contact",

@@ -78,15 +78,27 @@ export interface Cosmetique extends BaseProduct {
 }
 
 /**
- * Pack découverte
+ * Type de pack découverte
+ */
+export type PackDecouverteType = 'online'
+
+/**
+ * Pack découverte (en ligne)
  */
 export interface PackDecouverte {
   id: string
+  type: PackDecouverteType
   name: string
   description: string
   numberOfSamples: number
   price: number
+  shippingInfo?: string         // Info sur les frais de port
+  deliveryTime?: string         // Ex: "3-5 jours"
   image: string
+  features: string[]            // Points clés du pack
+  ctaType: 'contact' | 'order'  // Type de CTA
+  includesFullSize?: boolean    // Inclut un flacon taille réelle
+  fullSizeFormat?: string       // Ex: "50ml"
 }
 
 /**

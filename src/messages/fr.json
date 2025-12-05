@@ -92,40 +92,41 @@
       "title": "Découvrez nos ateliers",
       "subtitle": "Le NeZ et le ZeN se feront une joie de partager leur métier et leur passion",
       "description": "Que vous souhaitiez découvrir le métier de parfumeur, créer votre bougie, ou vivre une expérience sensorielle unique autour du vin, nous avons l'atelier qu'il vous faut.",
+      "cta": "Voir tous les ateliers",
       "info": {
         "duration": "1h30 à 3h selon l'atelier",
-        "capacity": "Jusqu'à 16 personnes"
+        "capacity": "4 à 16 personnes"
       },
-      "cta": "Découvrir nos ateliers",
       "types": {
         "parfumeur": {
-          "title": "Découverte parfumeur",
-          "description": "Initiez-vous à la création de parfum"
+          "title": "Découverte Parfumeur",
+          "description": "Plongez dans l'univers du parfumeur"
         },
         "bougie": {
-          "title": "Création de bougie",
+          "title": "Création de Bougie",
           "description": "Créez votre bougie parfumée"
         },
         "vin": {
           "title": "Vin & Parfumerie",
-          "description": "Dégustation avec le nez d'un parfumeur"
+          "description": "Une dégustation sensorielle unique"
         },
         "prive": {
-          "title": "Événements privés",
+          "title": "Événements Privés",
           "description": "EVJF, anniversaires, team building..."
         }
       }
     },
     "temoignages": {
-      "title": "Ils nous ont fait confiance",
-      "subtitle": "Découvrez les expériences de nos clients",
-      "googleReviews": "sur Google (110+ avis)"
+      "title": "Ce que nos clients en pensent",
+      "subtitle": "Des expériences uniques partagées avec passion",
+      "googleReviews": "sur Google"
     },
     "certifications": {
-      "title": "Nos engagements & récompenses",
+      "title": "Reconnaissance & Qualité",
+      "subtitle": "Notre engagement pour l'excellence artisanale",
       "artisan": {
         "title": "Artisan Certifié",
-        "description": "Reconnu par le SPF Économie"
+        "description": "Certification SPF Économie belge"
       },
       "vegan": {
         "title": "100% Vegan",
@@ -133,16 +134,18 @@
       },
       "artOlfaction": {
         "title": "Art & Olfaction 2019",
-        "description": "Finaliste mondial avec \"La Bibliothèque\""
+        "description": "Finaliste avec \"La Bibliothèque\""
       },
       "trophee": {
-        "title": "Trophée Indépendant",
-        "description": "2e place parmi 250+ indépendants"
+        "title": "Trophée Indépendant 2023",
+        "description": "2ème place parmi 250+ candidats"
       }
     },
     "cta": {
-      "title": "Venez nous rencontrer",
-      "subtitle": "Poussez la porte de notre atelier-boutique et laissez-vous guider dans un voyage olfactif unique.",
+      "title": "Envie de nous rendre visite ?",
+      "subtitle": "Venez découvrir notre atelier-boutique et laissez-vous guider par Romain et Aurélie dans un voyage olfactif unique.",
+      "button": "Nous contacter",
+      "hours": "Mer-Sam : 10h30-18h ou sur RDV",
       "buttons": {
         "map": "Voir sur la carte",
         "contact": "Nous contacter"
@@ -162,8 +165,176 @@
       }
     }
   },
+  "creations": {
+    "meta": {
+      "title": "Nos Créations",
+      "description": "Découvrez l'ensemble de nos créations artisanales : parfums, parfums d'ambiance, cosmétiques et plus encore."
+    },
+    "hero": {
+      "title": "Nos Créations",
+      "subtitle": "Chaque création est imaginée et fabriquée dans notre atelier namurois, avec passion et savoir-faire artisanal."
+    },
+    "categories": {
+      "parfums": {
+        "title": "Parfums",
+        "description": "Une collection de parfums unisexes, inspirés par des voyages, des chansons, des moments de vie. Chaque fragrance raconte une histoire.",
+        "count": "19 créations"
+      },
+      "nezzenHome": {
+        "title": "NeZZen Home",
+        "description": "Diffuseurs à bâtonnets et bougies parfumées pour créer une atmosphère unique chez vous.",
+        "count": "8 produits"
+      },
+      "cosmetiques": {
+        "title": "Cosmétiques",
+        "description": "Gels douche et laits hydratants aux parfums de notre collection, formulés avec soin.",
+        "count": "6 produits"
+      },
+      "packDecouverte": {
+        "title": "Pack Découverte",
+        "description": "Testez nos parfums avant de vous décider. En boutique avec conseils personnalisés ou livré chez vous.",
+        "count": "2 options"
+      },
+      "bonsCadeau": {
+        "title": "Bons Cadeau",
+        "description": "Offrez une expérience olfactive unique. Valable sur tous nos produits et ateliers.",
+        "count": "Options flexibles"
+      }
+    },
+    "cta": {
+      "discover": "Découvrir"
+    },
+    "info": {
+      "title": "Notre engagement qualité",
+      "description": "Toutes nos créations sont 100% vegan, majoritairement composées d'ingrédients naturels, et fabriquées artisanalement à Namur.",
+      "badges": {
+        "vegan": "100% Vegan",
+        "refill": "Flacons rechargeables",
+        "local": "Fabriqué à Namur"
+      }
+    }
+  },
+  "parfums": {
+    "meta": {
+      "title": "Nos Parfums",
+      "description": "Découvrez notre collection de parfums artisanaux unisexes, 100% vegan, créés avec passion à Namur."
+    },
+    "hero": {
+      "badge": "{count} parfums dans la collection",
+      "title": "Nos Parfums",
+      "subtitle": "Chaque fragrance est une invitation au voyage, une histoire à découvrir, un souvenir à créer."
+    },
+    "categories": {
+      "all": "Tous",
+      "classiques": "Classiques",
+      "floraux": "Floraux",
+      "voyages": "Voyages",
+      "gourmands": "Gourmands"
+    },
+    "empty": "Aucun parfum dans cette catégorie.",
+    "resultsCount": "{count, plural, =0 {Aucun parfum} =1 {1 parfum} other {# parfums}} dans cette sélection",
+    "info": {
+      "refill": "Tous nos flacons sont rechargeables. Profitez de notre carte de fidélité refill !",
+      "vegan": "100% Vegan",
+      "artisan": "Artisan Certifié",
+      "formats": "4 formats disponibles"
+    }
+  },
+  "parfumDetail": {
+    "meta": {
+      "suffix": "Parfums NeZ ZeN"
+    },
+    "back": "Retour aux parfums",
+    "badges": {
+      "new": "Nouveau",
+      "awarded": "Primé"
+    },
+    "categories": {
+      "classiques": "Les Classiques",
+      "floraux": "Les Floraux",
+      "voyages": "Les Voyages",
+      "gourmands": "Les Gourmands",
+      "boisés": "Les Boisés"
+    },
+    "pyramid": {
+      "title": "Pyramide olfactive",
+      "tete": "Tête",
+      "coeur": "Cœur",
+      "fond": "Fond"
+    },
+    "format": {
+      "title": "Choisir un format"
+    },
+    "price": {
+      "label": "Prix"
+    },
+    "cta": {
+      "contact": "Commander ce parfum",
+      "info": "Commande par téléphone, email ou en boutique"
+    },
+    "features": {
+      "vegan": "100% Vegan",
+      "refill": "Rechargeable",
+      "local": "Fabriqué à Namur"
+    },
+    "related": {
+      "title": "Vous aimerez aussi",
+      "subtitle": "D'autres créations de la même famille olfactive",
+      "viewAll": "Voir tous les parfums"
+    }
+  },
+  "packDecouverte": {
+    "meta": {
+      "title": "Pack Découverte",
+      "description": "Testez nos parfums avant de choisir votre flacon. Deux formules exclusives en ligne pour trouver votre signature olfactive."
+    },
+    "hero": {
+      "badge": "Exclusivité web",
+      "title": "Trouvez votre parfum",
+      "subtitle": "Parce que choisir un parfum demande du temps, testez nos créations chez vous avant de vous décider."
+    },
+    "packs": {
+      "decouverte": {
+        "title": "Pack Découverte",
+        "description": "Recevez 4 échantillons pour les tester chez vous. Une fois votre choix fait, nous vous envoyons le flacon de 50ml de votre parfum préféré.",
+        "samples": "4 échantillons + 1 flacon 50ml",
+        "price": "100,00 €",
+        "shipping": "Frais de port offerts en Belgique",
+        "delivery": "Livraison en 3-5 jours",
+        "cta": "Commander ce pack",
+        "features": {
+          "samples": "4 échantillons au choix",
+          "bottle": "1 flacon 50ml inclus",
+          "shipping": "Port offert (Belgique)",
+          "test": "Testez avant de choisir"
+        }
+      },
+      "echantillons": {
+        "title": "Pack Échantillons",
+        "description": "Choisissez 5 échantillons de parfums et recevez-les directement chez vous. Idéal pour découvrir notre collection à petit prix.",
+        "samples": "5 échantillons",
+        "price": "28,00 €",
+        "shipping": "Frais de port non compris",
+        "delivery": "Livraison en 3-5 jours",
+        "cta": "Commander ce pack",
+        "features": {
+          "samples": "5 échantillons au choix",
+          "price": "Prix accessible",
+          "home": "Livraison à domicile",
+          "rhythm": "Testez à votre rythme"
+        }
+      }
+    },
+    "orderNote": "Précisez vos parfums dans la section remarque lors de la commande",
+    "info": {
+      "title": "Pourquoi tester avant d'acheter ?",
+      "description": "Un parfum évolue sur votre peau tout au long de la journée. Les notes de tête laissent place aux notes de cœur, puis de fond. Tester un échantillon pendant plusieurs jours vous permet de vraiment découvrir un parfum et de faire le bon choix.",
+      "quote": "\"Le parfum est une rencontre entre une fragrance et votre peau. Prenez le temps de cette découverte.\"",
+      "author": "Romain, parfumeur NeZ ZeN"
+    }
+  },
   "footer": {
-    "description": "Parfumerie artisanale belge. Chaque fragrance est une invitation au voyage, créée avec passion dans notre atelier namurois.",
+    "description": "Chaque fragrance est une invitation au voyage, créée avec passion dans notre atelier namurois.",
     "creations": "Créations",
     "company": "L'Atelier",
     "contact": "Contact",

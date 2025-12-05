@@ -89,7 +89,7 @@ export function HeroSection({ className }: HeroSectionProps) {
           {/* CTA Buttons */}
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:mt-12">
             <Button asChild size="lg">
-              <Link href="/creations/parfums">
+              <Link href="/creations">
                 {t('cta.primary')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

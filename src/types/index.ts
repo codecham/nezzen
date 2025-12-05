@@ -1,3 +1,4 @@
+// src/types/index.ts
 // =============================================================================
 // EXPORTS CENTRALISÉS - TYPES NeZ ZeN
 // =============================================================================
@@ -13,6 +14,7 @@ export type {
   Bougie,
   CosmetiqueType,
   Cosmetique,
+  PackDecouverteType,
   PackDecouverte,
   BonCadeauType,
   BonCadeau,

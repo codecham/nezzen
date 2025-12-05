@@ -44,6 +44,13 @@ export {
   getLaitsHydratants,
 } from './cosmetiques'
 
+// ============ PACK DÉCOUVERTE ============
+export {
+  packsDecouverte,
+  getPackByType,
+  discoverySteps,
+} from './pack-decouverte'
+
 // ============ TÉMOIGNAGES ============
 export {
   temoignages,

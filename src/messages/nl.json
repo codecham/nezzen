@@ -21,7 +21,7 @@
     "hero": {
       "badge": "Belgische Ambachtelijke Parfumerie",
       "title": "Reis door onze geuren",
-      "subtitle": "Unieke creaties, 100% vegan, met passie bedacht en handgemaakt in ons atelier-winkel in Namen.",
+      "subtitle": "Unieke creaties, 100% vegan, met passie bedacht en gemaakt in ons atelier-boetiek in Namen.",
       "cta": {
         "primary": "Ontdek onze creaties",
         "secondary": "Onze workshops"
@@ -36,7 +36,7 @@
     "intro": {
       "title": "Het verhaal van een droom die werkelijkheid werd",
       "paragraph1": "NeZ ZeN is de ontmoeting tussen Romains NeZ (Neus), een gepassioneerde parfumeur, en Aurélies ZeN, die u verwelkomt in een ontspannen en warme sfeer.",
-      "paragraph2": "Samen creëren ze unieke parfums geïnspireerd door reizen, liedjes, momenten van het leven. Elke fles vertelt een verhaal, misschien het uwe.",
+      "paragraph2": "Samen creëren ze unieke parfums geïnspireerd door reizen, liedjes, levensmomenten. Elke fles vertelt een verhaal, misschien het uwe.",
       "cta": "Ontdek ons verhaal",
       "photoPlaceholder": "Romain & Aurélie",
       "founders": {
@@ -49,7 +49,7 @@
       "subtitle": "Vier principes leiden elk van onze creaties",
       "jus": {
         "title": "Het \"Sap\" centraal",
-        "description": "Karaktervolle creaties met minimaal 20% aromatische stoffen. De kwaliteit van het parfum komt eerst."
+        "description": "Onderscheidende creaties met minimaal 20% aromatische materialen. De kwaliteit van het parfum komt eerst."
       },
       "experience": {
         "title": "Een unieke ervaring",
@@ -57,7 +57,7 @@
       },
       "transparence": {
         "title": "Transparantie",
-        "description": "Ons productieproces staat open. Kom kijken hoe onze elixers worden bereid en wat ze uniek maakt."
+        "description": "Ons productieproces is open. Kom kijken hoe onze elixers worden bereid en wat ze uniek maakt."
       },
       "innovation": {
         "title": "Innovatie",
@@ -92,57 +92,60 @@
       "title": "Ontdek onze workshops",
       "subtitle": "De Neus en de Zen delen graag hun vak en passie met u",
       "description": "Of u nu het parfumeursvak wilt ontdekken, uw kaars wilt maken, of een unieke zintuiglijke ervaring rond wijn wilt beleven, wij hebben de workshop voor u.",
+      "cta": "Bekijk alle workshops",
       "info": {
         "duration": "1u30 tot 3u afhankelijk van workshop",
-        "capacity": "Tot 16 personen"
+        "capacity": "4 tot 16 personen"
       },
-      "cta": "Ontdek onze workshops",
       "types": {
         "parfumeur": {
-          "title": "Parfumeur ontdekking",
-          "description": "Leer de kunst van parfumcreatie"
+          "title": "Parfumeur Ontdekking",
+          "description": "Duik in de wereld van de parfumeur"
         },
         "bougie": {
-          "title": "Kaars creatie",
+          "title": "Kaars Creatie",
           "description": "Maak uw eigen geurkaars"
         },
         "vin": {
           "title": "Wijn & Parfumerie",
-          "description": "Proeverij met de neus van een parfumeur"
+          "description": "Een unieke zintuiglijke proeverij"
         },
         "prive": {
-          "title": "Privé evenementen",
+          "title": "Privé Evenementen",
           "description": "Vrijgezellenfeest, verjaardagen, teambuilding..."
         }
       }
     },
     "temoignages": {
-      "title": "Zij vertrouwden ons",
-      "subtitle": "Ontdek de ervaringen van onze klanten",
-      "googleReviews": "op Google (110+ beoordelingen)"
+      "title": "Wat onze klanten zeggen",
+      "subtitle": "Unieke ervaringen gedeeld met passie",
+      "googleReviews": "op Google"
     },
     "certifications": {
-      "title": "Onze engagementen & prijzen",
+      "title": "Erkenning & Kwaliteit",
+      "subtitle": "Onze toewijding aan ambachtelijke excellentie",
       "artisan": {
         "title": "Gecertificeerd Ambachtsman",
-        "description": "Erkend door FOD Economie"
+        "description": "Belgische FOD Economie certificering"
       },
       "vegan": {
         "title": "100% Vegan",
-        "description": "Geen ingrediënten van dierlijke oorsprong"
+        "description": "Geen dierlijke ingrediënten"
       },
       "artOlfaction": {
         "title": "Art & Olfaction 2019",
-        "description": "Wereldfinalist met \"La Bibliothèque\""
+        "description": "Finalist met \"La Bibliothèque\""
       },
       "trophee": {
-        "title": "Zelfstandigen Trofee",
-        "description": "2e plaats onder 250+ zelfstandigen"
+        "title": "Trofee Zelfstandige 2023",
+        "description": "2de plaats onder 250+ kandidaten"
       }
     },
     "cta": {
-      "title": "Kom ons ontmoeten",
-      "subtitle": "Duw de deur van ons atelier-winkel open en laat u meenemen op een unieke olfactorische reis.",
+      "title": "Wilt u ons bezoeken?",
+      "subtitle": "Kom ons atelier-boetiek ontdekken en laat Romain en Aurélie u begeleiden op een unieke olfactorische reis.",
+      "button": "Contacteer ons",
+      "hours": "Woe-Zat: 10:30-18:00 of op afspraak",
       "buttons": {
         "map": "Bekijk op kaart",
         "contact": "Contacteer ons"
@@ -162,8 +165,176 @@
       }
     }
   },
+  "creations": {
+    "meta": {
+      "title": "Onze Creaties",
+      "description": "Ontdek al onze ambachtelijke creaties: parfums, huisgeuren, cosmetica en meer."
+    },
+    "hero": {
+      "title": "Onze Creaties",
+      "subtitle": "Elke creatie wordt bedacht en vervaardigd in ons Naams atelier, met passie en ambachtelijke expertise."
+    },
+    "categories": {
+      "parfums": {
+        "title": "Parfums",
+        "description": "Een collectie unisex parfums, geïnspireerd door reizen, liedjes, levensmomenten. Elke geur vertelt een verhaal.",
+        "count": "19 creaties"
+      },
+      "nezzenHome": {
+        "title": "NeZZen Home",
+        "description": "Geurstokjes en geurkaarsen om een unieke sfeer in uw huis te creëren.",
+        "count": "8 producten"
+      },
+      "cosmetiques": {
+        "title": "Cosmetica",
+        "description": "Douchegels en bodylotions met geuren uit onze collectie, zorgvuldig geformuleerd.",
+        "count": "6 producten"
+      },
+      "packDecouverte": {
+        "title": "Ontdekkingspakket",
+        "description": "Test onze parfums voordat u beslist. In de winkel met persoonlijk advies of thuisbezorgd.",
+        "count": "2 opties"
+      },
+      "bonsCadeau": {
+        "title": "Cadeaubonnen",
+        "description": "Geef een unieke olfactorische ervaring. Geldig op al onze producten en workshops.",
+        "count": "Flexibele opties"
+      }
+    },
+    "cta": {
+      "discover": "Ontdekken"
+    },
+    "info": {
+      "title": "Onze kwaliteitsgarantie",
+      "description": "Al onze creaties zijn 100% vegan, voornamelijk gemaakt van natuurlijke ingrediënten, en ambachtelijk vervaardigd in Namen.",
+      "badges": {
+        "vegan": "100% Vegan",
+        "refill": "Hervulbare flacons",
+        "local": "Gemaakt in Namen"
+      }
+    }
+  },
+  "parfums": {
+    "meta": {
+      "title": "Onze Parfums",
+      "description": "Ontdek onze collectie ambachtelijke unisex parfums, 100% vegan, met passie gecreëerd in Namen."
+    },
+    "hero": {
+      "badge": "{count} parfums in de collectie",
+      "title": "Onze Parfums",
+      "subtitle": "Elke geur is een uitnodiging om te reizen, een verhaal om te ontdekken, een herinnering om te creëren."
+    },
+    "categories": {
+      "all": "Alles",
+      "classiques": "Klassiekers",
+      "floraux": "Bloemen",
+      "voyages": "Reizen",
+      "gourmands": "Gourmands"
+    },
+    "empty": "Geen parfums in deze categorie.",
+    "resultsCount": "{count, plural, =0 {Geen parfums} =1 {1 parfum} other {# parfums}} in deze selectie",
+    "info": {
+      "refill": "Al onze flacons zijn hervulbaar. Profiteer van onze navul-klantenkaart!",
+      "vegan": "100% Vegan",
+      "artisan": "Gecertificeerd Ambachtsman",
+      "formats": "4 formaten beschikbaar"
+    }
+  },
+  "parfumDetail": {
+    "meta": {
+      "suffix": "NeZ ZeN Parfums"
+    },
+    "back": "Terug naar parfums",
+    "badges": {
+      "new": "Nieuw",
+      "awarded": "Bekroond"
+    },
+    "categories": {
+      "classiques": "De Klassiekers",
+      "floraux": "De Bloemen",
+      "voyages": "De Reizen",
+      "gourmands": "De Gourmands",
+      "boisés": "De Houtigen"
+    },
+    "pyramid": {
+      "title": "Olfactorische piramide",
+      "tete": "Top",
+      "coeur": "Hart",
+      "fond": "Basis"
+    },
+    "format": {
+      "title": "Kies een formaat"
+    },
+    "price": {
+      "label": "Prijs"
+    },
+    "cta": {
+      "contact": "Bestel dit parfum",
+      "info": "Bestel per telefoon, e-mail of in de winkel"
+    },
+    "features": {
+      "vegan": "100% Vegan",
+      "refill": "Hervulbaar",
+      "local": "Gemaakt in Namen"
+    },
+    "related": {
+      "title": "Misschien vindt u dit ook leuk",
+      "subtitle": "Andere creaties uit dezelfde olfactorische familie",
+      "viewAll": "Bekijk alle parfums"
+    }
+  },
+  "packDecouverte": {
+    "meta": {
+      "title": "Ontdekkingspakket",
+      "description": "Test onze parfums voordat u uw fles kiest. Twee exclusieve online formules om uw olfactorische handtekening te vinden."
+    },
+    "hero": {
+      "badge": "Web exclusief",
+      "title": "Vind uw parfum",
+      "subtitle": "Omdat het kiezen van een parfum tijd vraagt, test onze creaties thuis voordat u beslist."
+    },
+    "packs": {
+      "decouverte": {
+        "title": "Ontdekkingspakket",
+        "description": "Ontvang 4 samples om thuis te testen. Zodra u uw keuze hebt gemaakt, sturen wij u de 50ml fles van uw favoriete parfum.",
+        "samples": "4 samples + 1 fles 50ml",
+        "price": "€100,00",
+        "shipping": "Gratis verzending naar België",
+        "delivery": "Levering in 3-5 dagen",
+        "cta": "Bestel dit pakket",
+        "features": {
+          "samples": "4 samples naar keuze",
+          "bottle": "1 x 50ml fles inbegrepen",
+          "shipping": "Gratis verzending (België)",
+          "test": "Test voordat u kiest"
+        }
+      },
+      "echantillons": {
+        "title": "Samples Pakket",
+        "description": "Kies 5 parfumsamples en ontvang ze direct thuis. Ideaal om onze collectie te ontdekken voor een lage prijs.",
+        "samples": "5 samples",
+        "price": "€28,00",
+        "shipping": "Verzendkosten niet inbegrepen",
+        "delivery": "Levering in 3-5 dagen",
+        "cta": "Bestel dit pakket",
+        "features": {
+          "samples": "5 samples naar keuze",
+          "price": "Betaalbare prijs",
+          "home": "Thuislevering",
+          "rhythm": "Test op uw eigen tempo"
+        }
+      }
+    },
+    "orderNote": "Vermeld uw parfums in de opmerkingen bij het bestellen",
+    "info": {
+      "title": "Waarom testen voor aankoop?",
+      "description": "Een parfum evolueert op uw huid gedurende de dag. Topnoten maken plaats voor hartnoten, dan basisnoten. Een sample meerdere dagen testen stelt u in staat om een parfum echt te ontdekken en de juiste keuze te maken.",
+      "quote": "\"Parfum is een ontmoeting tussen een geur en uw huid. Neem de tijd voor deze ontdekking.\"",
+      "author": "Romain, NeZ ZeN parfumeur"
+    }
+  },
   "footer": {
-    "description": "Belgische ambachtelijke parfumerie. Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons Naams atelier.",
+    "description": "Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons Naams atelier.",
     "creations": "Creaties",
     "company": "Het Atelier",
     "contact": "Contact",
