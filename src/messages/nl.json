@@ -283,55 +283,166 @@
       "viewAll": "Bekijk alle parfums"
     }
   },
+  "nezzenHome": {
+    "meta": { "title": "NeZZen Home - Huisgeuren & Kaarsen", "description": "Geurstokjes, kamersprays en ambachtelijke geurkaarsen." },
+    "hero": { "badge": "Parfumeer uw interieur", "title": "NeZZen Home", "subtitle": "Creëer een unieke sfeer thuis met onze diffusers, sprays en ambachtelijke kaarsen." },
+    "diffuseurs": {
+      "title": "Geurstokjes",
+      "subtitle": "Parfumeer uw interieur continu gedurende meerdere maanden",
+      "info": { "duration": "~3 maanden verspreiding", "coverage": "Bereik ~30m²" }
+    },
+    "bougies": { "title": "Onze Kaarsen", "subtitle": "Natuurlijke GMO-vrije sojawas - 40u brandtijd" },
+    "product": { "cta": "Bestellen" },
+    "info": {
+      "title": "Waarom NeZZen Home kiezen?",
+      "description": "Al onze huisgeuren worden gemaakt met dezelfde kwaliteitsgrondstoffen als onze parfums.",
+      "features": {
+        "natural": { "title": "Natuurlijke ingrediënten", "description": "GMO-vrije sojawas, katoenen lonten" },
+        "artisan": { "title": "Handgemaakt", "description": "Elke kaars wordt met de hand gegoten in Namen" },
+        "lasting": { "title": "Langdurig", "description": "40u voor kaarsen, 3 maanden voor diffusers" }
+      }
+    }
+  },
+  "cosmetiques": {
+    "meta": { "title": "Cosmetica - Douchegels & Bodylotions", "description": "Geparfumeerde douchegels en bodylotions met natuurlijke kokosnootbasis." },
+    "hero": { "badge": "Geparfumeerde verzorging", "title": "Cosmetica", "subtitle": "Verleng de geurervaring onder de douche en op uw huid met onze geparfumeerde verzorgingsproducten." },
+    "gelsDouche": { "title": "Douchegels", "subtitle": "Met reinigingsmiddelen uit 100% natuurlijke kokosnoot" },
+    "laitsHydratants": { "title": "Bodylotions", "subtitle": "Met 100% natuurlijke en hernieuwbare grondstoffen" },
+    "product": { "cta": "Bestellen" },
+    "info": {
+      "title": "Ons engagement",
+      "description": "Cosmetica die zacht zijn voor uw huid en voor de planeet.",
+      "features": {
+        "coconut": { "title": "Kokosnoot basis", "description": "100% natuurlijke en hernieuwbare reinigingsmiddelen" },
+        "hypoallergenic": { "title": "Hypoallergeen", "description": "Geformuleerd voor gevoelige huid" },
+        "clean": { "title": "Clean formule", "description": "Parabeenvrij, zonder agressieve sulfaten" },
+        "vegan": { "title": "100% Vegan", "description": "Geen dierlijke ingrediënten" }
+      }
+    }
+  },
   "packDecouverte": {
-    "meta": {
-      "title": "Ontdekkingspakket",
-      "description": "Test onze parfums voordat u uw fles kiest. Twee exclusieve online formules om uw olfactorische handtekening te vinden."
-    },
-    "hero": {
-      "badge": "Web exclusief",
-      "title": "Vind uw parfum",
-      "subtitle": "Omdat het kiezen van een parfum tijd vraagt, test onze creaties thuis voordat u beslist."
-    },
+    "meta": { "title": "Ontdekkingspakket - Test onze Parfums", "description": "Test onze parfums voordat u beslist met ons ontdekkingspakket." },
+    "hero": { "badge": "Vind uw signatuur", "title": "Ontdekkingspakket", "subtitle": "Omdat een parfum kiezen een persoonlijk avontuur is, neem de tijd om onze collectie te ontdekken." },
     "packs": {
       "decouverte": {
         "title": "Ontdekkingspakket",
-        "description": "Ontvang 4 samples om thuis te testen. Zodra u uw keuze hebt gemaakt, sturen wij u de 50ml fles van uw favoriete parfum.",
-        "samples": "4 samples + 1 fles 50ml",
+        "description": "Ontvang 4 samples om thuis te testen. Zodra u uw keuze heeft gemaakt, sturen wij u de 50ml fles van uw favoriete parfum.",
+        "samples": "4 samples + 1 x 50ml fles",
         "price": "€100,00",
-        "shipping": "Gratis verzending naar België",
+        "shipping": "Gratis verzending (België)",
         "delivery": "Levering in 3-5 dagen",
         "cta": "Bestel dit pakket",
-        "features": {
-          "samples": "4 samples naar keuze",
-          "bottle": "1 x 50ml fles inbegrepen",
-          "shipping": "Gratis verzending (België)",
-          "test": "Test voordat u kiest"
-        }
+        "features": { "samples": "4 samples naar keuze", "bottle": "1 x 50ml fles inbegrepen", "shipping": "Gratis verzending (België)", "test": "Test voor u kiest" }
       },
       "echantillons": {
-        "title": "Samples Pakket",
-        "description": "Kies 5 parfumsamples en ontvang ze direct thuis. Ideaal om onze collectie te ontdekken voor een lage prijs.",
+        "title": "Sample Pakket",
+        "description": "Kies 5 parfumsamples die bij u thuis worden geleverd. Ideaal om onze collectie te ontdekken voor een kleine prijs.",
         "samples": "5 samples",
         "price": "€28,00",
         "shipping": "Verzendkosten niet inbegrepen",
         "delivery": "Levering in 3-5 dagen",
         "cta": "Bestel dit pakket",
-        "features": {
-          "samples": "5 samples naar keuze",
-          "price": "Betaalbare prijs",
-          "home": "Thuislevering",
-          "rhythm": "Test op uw eigen tempo"
-        }
+        "features": { "samples": "5 samples naar keuze", "price": "Betaalbare prijs", "home": "Thuislevering", "rhythm": "Test op uw eigen tempo" }
       }
     },
     "orderNote": "Vermeld uw parfums in de opmerkingen bij het bestellen",
     "info": {
-      "title": "Waarom testen voor aankoop?",
-      "description": "Een parfum evolueert op uw huid gedurende de dag. Topnoten maken plaats voor hartnoten, dan basisnoten. Een sample meerdere dagen testen stelt u in staat om een parfum echt te ontdekken en de juiste keuze te maken.",
+      "title": "Waarom testen voor de aankoop?",
+      "description": "Een parfum evolueert op uw huid gedurende de dag. Een sample testen gedurende meerdere dagen stelt u in staat om echt een parfum te ontdekken.",
       "quote": "\"Parfum is een ontmoeting tussen een geur en uw huid. Neem de tijd voor deze ontdekking.\"",
       "author": "Romain, NeZ ZeN parfumeur"
     }
+  },
+  "bonsCadeau": {
+    "meta": {
+      "title": "Cadeaubonnen - Geef een geurervaring",
+      "description": "Geef een NeZ ZeN cadeaubon: voor een parfum of een bedrag naar keuze. Geldig op al onze producten."
+    },
+    "hero": {
+      "badge": "Geef geluk",
+      "title": "Cadeaubonnen",
+      "subtitle": "Geef een unieke geurervaring. De ontvanger kan zijn product of formaat in de winkel kiezen."
+    },
+    "options": {
+      "parfum": {
+        "title": "Parfum Cadeaubon",
+        "description": "Kies het formaat dat u wilt geven (15ml, 50ml of 100ml). De ontvanger kan elk parfum kiezen in de winkel.",
+        "includes": "Persoonlijk advies in de winkel inbegrepen",
+        "formats": "15ml: €29 • 50ml: €78 • 100ml: €128",
+        "shipping": "Verzendkosten niet inbegrepen",
+        "delivery": "3 tot 5 dagen levertijd",
+        "cta": "Bestel deze cadeaubon"
+      },
+      "montant": {
+        "title": "Cadeaubon Vrij Bedrag",
+        "description": "Kies het bedrag en het verschijnt op de bon. De ontvanger is vrij om alles te kiezen in onze winkel. Wij kunnen de bon personaliseren indien gewenst.",
+        "includes": "Geldig op alle producten en workshops",
+        "amounts": "Beschikbare bedragen",
+        "custom": "U kunt meerdere bonnen bestellen en wij tellen de bedragen op. Vermeld dit in de opmerkingen van uw bestelling.",
+        "shipping": "Verzendkosten niet inbegrepen",
+        "delivery": "3 tot 5 dagen levertijd",
+        "cta": "Bestel deze cadeaubon"
+      }
+    },
+    "info": {
+      "title": "Hoe werkt het?",
+      "steps": {
+        "order": {
+          "title": "1. Bestel",
+          "description": "Online, telefonisch of in de winkel"
+        },
+        "receive": {
+          "title": "2. Ontvang",
+          "description": "Uw bon in een mooie cadeaupochette"
+        },
+        "enjoy": {
+          "title": "3. Geef",
+          "description": "Een unieke geurervaring"
+        }
+      },
+      "validity": "Geldigheid: 1 jaar vanaf aankoopdatum",
+      "contact": "Vragen? Neem contact met ons op!"
+    }
+  },
+  "ateliers": {
+    "meta": { "title": "Onze Workshops", "description": "Ontdek onze parfumerie workshops in Namen: parfumeur initiatie, kaars maken, wijnproeverij." },
+    "hero": { "badge": "Beleef een unieke ervaring", "title": "Onze Workshops", "subtitle": "De Neus en de Zen delen met plezier hun vak en passie met u." },
+    "intro": { "text": "Of u nu het vak van parfumeur wilt ontdekken, uw eigen kaars wilt maken, of een unieke zintuiglijke ervaring rond wijn wilt beleven, wij hebben de workshop voor u. Al onze workshops vinden plaats in onze speciale ruimte op de eerste verdieping van de boetiek." },
+    "list": { "title": "Kies uw workshop", "subtitle": "6 unieke ervaringen voor elke smaak" },
+    "card": {
+      "duration": "Duur",
+      "price": "Prijs",
+      "capacity": "Capaciteit",
+      "participants": "{min}-{max} personen",
+      "includes": "Wat is inbegrepen",
+      "takeAway": "U vertrekt met",
+      "location": "Locatie",
+      "partner": "In samenwerking met",
+      "onQuote": "Op aanvraag",
+      "cta": "Boek deze workshop"
+    },
+    "types": {
+      "decouverte-parfumeur": { "highlight": "Meest compleet" },
+      "creation-bougie": { "highlight": "Creatief" },
+      "degustation-vin": { "highlight": "Zintuiglijke ervaring" },
+      "evenement-prive": { "highlight": "Op maat" }
+    },
+    "eventTypes": {
+      "title": "Soorten evenementen",
+      "evjf": "Vrijgezellenfeest (dames)",
+      "evg": "Vrijgezellenfeest (heren)",
+      "anniversaire": "Verjaardagen",
+      "teamBuilding": "Team building",
+      "entreAmis": "Met vrienden",
+      "entreCollegues": "Met collega's"
+    },
+    "info": {
+      "title": "Praktische informatie",
+      "location": { "title": "Locatie", "address": "22 rue Haute Marcelle, 5000 Namen", "detail": "1e verdieping van de winkel", "partner": "Diner workshops bij Mel'a Table (aan de overkant)" },
+      "booking": { "title": "Reservering", "text": "Workshops zijn op reservering. Neem contact met ons op per telefoon, e-mail of via het formulier om uw plaats te reserveren." },
+      "group": { "title": "Groepen & Privé verhuur", "text": "Al onze workshops kunnen worden geprivatiseerd voor uw evenementen: verjaardagen, vrijgezellenfeesten, team building..." }
+    },
+    "cta": { "title": "Klaar om de ervaring te beleven?", "subtitle": "Boek uw workshop of neem contact met ons op om uw evenement op maat te organiseren.", "button": "Contacteer ons", "phone": "Of bel ons" }
   },
   "footer": {
     "description": "Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons Naams atelier.",

@@ -165,13 +165,13 @@
 - [ ] `NavItem` — items de navigation
 
 ### Données Mockées (`src/data/`)
-- [ ] `parfums.ts` — les 20 parfums avec vraies infos
-- [ ] `parfums-ambiance.ts` — les 5 parfums d'ambiance
-- [ ] `cosmetiques.ts` — gels douche et laits
-- [ ] `bougies.ts` — les 2 bougies
-- [ ] `ateliers.ts` — types d'ateliers + dates exemple
-- [ ] `temoignages.ts` — basés sur vrais avis
-- [ ] `navigation.ts` — structure de navigation
+- [x] `parfums.ts` — les 20 parfums avec vraies infos
+- [x] `parfums-ambiance.ts` — les 5 parfums d'ambiance
+- [x] `cosmetiques.ts` — gels douche et laits
+- [x] `bougies.ts` — les 2 bougies
+- [x] `ateliers.ts` — types d'ateliers + dates exemple
+- [x] `temoignages.ts` — basés sur vrais avis
+- [x] `navigation.ts` — structure de navigation
 
 ---
 
@@ -188,65 +188,65 @@
 - [x] `NewsletterSection` — inscription newsletter (optionnel)
 
 ### Composants partagés
-- [ ] `ProductCard` — carte produit réutilisable
-- [ ] `TestimonialCard` — carte témoignage
-- [ ] `SectionHeading` — titre de section avec ornement
+- [x] `ProductCard` — carte produit réutilisable
+- [x] `TestimonialCard` — carte témoignage
+- [x] `SectionHeading` — titre de section avec ornement
 
 ### Assemblage
-- [ ] Assembler la page `app/[locale]/page.tsx`
+- [x] Assembler la page `app/[locale]/page.tsx`
 
 ---
 
 ## ✅ Phase 6 : Pages Créations (Produits)
 
 ### Hub Créations
-- [ ] Page `/creations` — vue d'ensemble avec liens vers catégories
+- [x] Page `/creations` — vue d'ensemble avec liens vers catégories
 
 ### Page Parfums
-- [ ] Liste des 20 parfums avec `ProductCard`
-- [ ] Layout grid responsive
-- [ ] Animation au hover
+- [x] Liste des 20 parfums avec `ProductCard`
+- [x] Layout grid responsive
+- [x] Animation au hover
 
 ### Page Détail Parfum
-- [ ] `ProductGallery` — image(s) du parfum
-- [ ] `ProductInfo` — nom, description, histoire
-- [ ] `ProductNotes` — notes de tête/cœur/fond (visuel)
-- [ ] `ProductFormats` — sélection format + prix
-- [ ] `AddToCartCTA` — bouton commander (lien vers contact pour Phase 1)
-- [ ] `RelatedProducts` — parfums similaires
+- [x] `ProductGallery` — image(s) du parfum
+- [x] `ProductInfo` — nom, description, histoire
+- [x] `ProductNotes` — notes de tête/cœur/fond (visuel)
+- [x] `ProductFormats` — sélection format + prix
+- [x] `AddToCartCTA` — bouton commander (lien vers contact pour Phase 1)
+- [x] `RelatedProducts` — parfums similaires
 
 ### Page NeZZen Home
-- [ ] Liste parfums d'ambiance
-- [ ] Liste bougies
-- [ ] Infos (durée, surface couverte)
+- [x] Liste parfums d'ambiance
+- [x] Liste bougies
+- [x] Infos (durée, surface couverte)
 
 ### Page Cosmétiques
-- [ ] Liste gels douche
-- [ ] Liste laits hydratants
-- [ ] Infos (ingrédients naturels, hypoallergénique)
+- [x] Liste gels douche
+- [x] Liste laits hydratants
+- [x] Infos (ingrédients naturels, hypoallergénique)
 
 ### Page Pack Découverte
-- [ ] Présentation du concept
-- [ ] Comment ça marche (4 étapes)
-- [ ] CTA commander
+- [x] Présentation du concept
+- [x] Comment ça marche (4 étapes)
+- [x] CTA commander
 
 ### Page Bons Cadeau
-- [ ] Options disponibles (montant libre, bon parfum)
-- [ ] CTA commander
+- [x] Options disponibles (montant libre, bon parfum)
+- [x] CTA commander
 
 ---
 
 ## ✅ Phase 7 : Page Ateliers
 
 ### Contenu
-- [ ] Introduction aux ateliers
-- [ ] `AtelierCard` — carte pour chaque type d'atelier
-- [ ] Types d'ateliers :
-  - [ ] Découverte du métier de parfumeur
-  - [ ] Création de bougie
-  - [ ] Dégustation vin + parfumerie
-  - [ ] Ateliers dînatoires
-  - [ ] Événements privés (EVJF, team building)
+- [x] Introduction aux ateliers
+- [x] `AtelierCard` — carte pour chaque type d'atelier
+- [x] Types d'ateliers :
+  - [x] Découverte du métier de parfumeur
+  - [x] Création de bougie
+  - [x] Dégustation vin + parfumerie
+  - [x] Ateliers dînatoires
+  - [x] Événements privés (EVJF, team building)
 - [ ] `AtelierCalendar` — prochaines dates (simple liste pour Phase 1)
 - [ ] `AtelierInscription` — formulaire de contact/inscription
 - [ ] Infos pratiques (lieu, durée, tarifs, capacité)

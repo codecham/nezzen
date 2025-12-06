@@ -1,127 +1,106 @@
 // src/data/cosmetiques.ts
-// Données réelles collectées depuis nezzen.be
+// =============================================================================
+// DONNÉES COSMÉTIQUES - NeZ ZeN
+// Données réelles depuis nezzen.be
+// =============================================================================
 
 import type { Cosmetique } from '@/types'
 
 /**
  * Collection des cosmétiques NeZ ZeN
- * Gels douche et laits hydratants parfumés
- * Base noix de coco, hypoallergéniques, sans parabène
+ * Gels douche (9,80€) et laits hydratants (16,50€)
+ * Base noix de coco 100% naturelle, hypoallergéniques
  */
 export const cosmetiques: Cosmetique[] = [
-  // ============ GELS DOUCHE ============
+  // ============ GELS DOUCHE (9,80€) ============
   {
-    id: 'gel-douche-bibliotheque',
-    slug: 'gel-douche-bibliotheque',
-    name: 'Gel Douche La Bibliothèque',
+    id: 'gel-douche-tiare-ylang',
+    slug: 'gel-douche-tiare-ylang',
+    name: 'Gel Douche Fleur de Tiaré & Ylang Ylang',
     type: 'gel-douche',
-    shortDescription: 'Le parfum iconique de La Bibliothèque en gel douche.',
-    fullDescription: 'Retrouvez les notes envoûtantes de notre parfum La Bibliothèque dans un gel douche doux et hydratant. Base noix de coco, hypoallergénique et sans parabène.',
+    shortDescription: 'Profitez de la douceur du Tiaré mêlée à la sérénité de l\'Ylang Ylang.',
+    fullDescription: 'À base d\'agents lavants issus de la noix de coco 100% naturelle et renouvelable. Profitez de la douceur du Tiaré mêlée à la sérénité de l\'Ylang Ylang.',
     volume: '200ml',
-    price: 18,
-    image: '/images/cosmetiques/gel_bibliotheque.jpg',
+    price: 9.80,
+    image: '/images/cosmetiques/gel-douche.png',
     isVegan: true,
     isFeatured: true,
     ingredients: [
-      'Base noix de coco',
-      'Parfum La Bibliothèque',
+      'Agents lavants noix de coco',
+      '100% naturel',
       'Sans parabène',
-      'Hypoallergénique',
     ],
   },
   {
-    id: 'gel-douche-niwa',
-    slug: 'gel-douche-niwa',
-    name: 'Gel Douche Niwa',
+    id: 'gel-douche-orange-mangue',
+    slug: 'gel-douche-orange-mangue',
+    name: 'Gel Douche Orange & Mangue',
     type: 'gel-douche',
-    shortDescription: 'La fraîcheur des jardins japonais sous la douche.',
-    fullDescription: 'Découvrez la fraîcheur unique de Niwa dans un gel douche revigorant. Base noix de coco, hypoallergénique et sans parabène.',
+    shortDescription: 'Profitez de la fraîcheur des agrumes mêlée à l\'exotisme fruité de la mangue.',
+    fullDescription: 'À base d\'agents lavants issus de la noix de coco 100% naturelle et renouvelable. Profitez de la fraîcheur des agrumes mêlée à l\'exotisme fruité de la mangue.',
     volume: '200ml',
-    price: 18,
-    image: '/images/cosmetiques/gel_niwa.jpg',
+    price: 9.80,
+    image: '/images/cosmetiques/gel-douche.png',
     isVegan: true,
     isFeatured: true,
     ingredients: [
-      'Base noix de coco',
-      'Parfum Niwa',
+      'Agents lavants noix de coco',
+      '100% naturel',
       'Sans parabène',
-      'Hypoallergénique',
     ],
   },
   {
-    id: 'gel-douche-terre-de-feu',
-    slug: 'gel-douche-terre-de-feu',
-    name: 'Gel Douche Terre de Feu',
+    id: 'gel-douche-citron-gingembre',
+    slug: 'gel-douche-citron-gingembre',
+    name: 'Gel Douche Citron & Gingembre',
     type: 'gel-douche',
-    shortDescription: 'L\'aventure commence sous la douche.',
-    fullDescription: 'Les notes boisées et épicées de Terre de Feu dans un gel douche énergisant. Base noix de coco, hypoallergénique et sans parabène.',
+    shortDescription: 'Profitez de la vivacité du citron mêlée à la tonicité du gingembre.',
+    fullDescription: 'À base d\'agents lavants issus de la noix de coco 100% naturelle et renouvelable. Profitez de la vivacité du citron mêlée à la tonicité du gingembre.',
     volume: '200ml',
-    price: 18,
-    image: '/images/cosmetiques/gel_terre_de_feu.jpg',
+    price: 9.80,
+    image: '/images/cosmetiques/gel-douche.png',
     isVegan: true,
     ingredients: [
-      'Base noix de coco',
-      'Parfum Terre de Feu',
+      'Agents lavants noix de coco',
+      '100% naturel',
       'Sans parabène',
-      'Hypoallergénique',
     ],
   },
 
-  // ============ LAITS HYDRATANTS ============
+  // ============ LAITS HYDRATANTS (16,50€) ============
   {
-    id: 'lait-bibliotheque',
-    slug: 'lait-bibliotheque',
-    name: 'Lait Hydratant La Bibliothèque',
+    id: 'lait-tiare-ylang',
+    slug: 'lait-tiare-ylang',
+    name: 'Lait Hydratant Fleur de Tiaré & Ylang Ylang',
     type: 'lait-hydratant',
-    shortDescription: 'Hydratez-vous avec les notes de La Bibliothèque.',
-    fullDescription: 'Un lait hydratant onctueux aux notes envoûtantes de La Bibliothèque. Nourrissant et non gras, il laisse la peau douce et délicatement parfumée.',
+    shortDescription: 'Profitez de la douceur du Tiaré mêlée à la sérénité de l\'Ylang Ylang.',
+    fullDescription: 'À base de matières premières 100% naturelles et renouvelables. Profitez de la douceur du Tiaré mêlée à la sérénité de l\'Ylang Ylang.',
     volume: '200ml',
-    price: 20,
-    image: '/images/cosmetiques/lait_bibliotheque.jpg',
+    price: 16.50,
+    image: '/images/cosmetiques/lait-hydratant.png',
     isVegan: true,
     isFeatured: true,
     ingredients: [
-      'Base noix de coco',
-      'Parfum La Bibliothèque',
+      'Matières premières naturelles',
+      '100% naturel',
       'Sans parabène',
-      'Hypoallergénique',
     ],
   },
   {
-    id: 'lait-niwa',
-    slug: 'lait-niwa',
-    name: 'Lait Hydratant Niwa',
+    id: 'lait-citron-gingembre',
+    slug: 'lait-citron-gingembre',
+    name: 'Lait Hydratant Citron & Gingembre',
     type: 'lait-hydratant',
-    shortDescription: 'La fraîcheur de Niwa pour votre peau.',
-    fullDescription: 'Un lait hydratant léger et frais aux notes de Niwa. Pénètre rapidement et laisse la peau douce et parfumée.',
+    shortDescription: 'Profitez de la vivacité du citron mêlée à la tonicité du gingembre.',
+    fullDescription: 'À base de matières premières 100% naturelles et renouvelables. Profitez de la vivacité du citron mêlée à la tonicité du gingembre.',
     volume: '200ml',
-    price: 20,
-    image: '/images/cosmetiques/lait_niwa.jpg',
-    isVegan: true,
-    isFeatured: true,
-    ingredients: [
-      'Base noix de coco',
-      'Parfum Niwa',
-      'Sans parabène',
-      'Hypoallergénique',
-    ],
-  },
-  {
-    id: 'lait-terre-de-feu',
-    slug: 'lait-terre-de-feu',
-    name: 'Lait Hydratant Terre de Feu',
-    type: 'lait-hydratant',
-    shortDescription: 'L\'aventure continue sur votre peau.',
-    fullDescription: 'Un lait hydratant aux notes boisées et épicées de Terre de Feu. Nourrit intensément et laisse un sillage subtil.',
-    volume: '200ml',
-    price: 20,
-    image: '/images/cosmetiques/lait_terre_de_feu.jpg',
+    price: 16.50,
+    image: '/images/cosmetiques/lait-hydratant.png',
     isVegan: true,
     ingredients: [
-      'Base noix de coco',
-      'Parfum Terre de Feu',
+      'Matières premières naturelles',
+      '100% naturel',
       'Sans parabène',
-      'Hypoallergénique',
     ],
   },
 ]

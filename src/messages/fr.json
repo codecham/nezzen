@@ -283,31 +283,56 @@
       "viewAll": "Voir tous les parfums"
     }
   },
+  "nezzenHome": {
+    "meta": { "title": "NeZZen Home - Parfums d'ambiance & Bougies", "description": "Diffuseurs à bâtonnets, sprays d'ambiance et bougies parfumées artisanales." },
+    "hero": { "badge": "Parfumez votre intérieur", "title": "NeZZen Home", "subtitle": "Créez une atmosphère unique chez vous avec nos diffuseurs, sprays et bougies artisanales." },
+    "diffuseurs": {
+      "title": "Diffuseurs à Bâtonnets",
+      "subtitle": "Parfumez votre intérieur en continu pendant plusieurs mois",
+      "info": { "duration": "~3 mois de diffusion", "coverage": "Couvre ~30m²" }
+    },
+    "bougies": { "title": "Nos Bougies", "subtitle": "Cire de soja naturelle sans OGM - 40h de brûlage" },
+    "product": { "cta": "Commander" },
+    "info": {
+      "title": "Pourquoi choisir NeZZen Home ?",
+      "description": "Tous nos parfums d'ambiance sont créés avec les mêmes matières premières de qualité que nos parfums corporels.",
+      "features": {
+        "natural": { "title": "Ingrédients naturels", "description": "Cire de soja sans OGM, mèches en coton" },
+        "artisan": { "title": "Fait main", "description": "Chaque bougie est coulée à la main à Namur" },
+        "lasting": { "title": "Longue durée", "description": "40h pour les bougies, 3 mois pour les diffuseurs" }
+      }
+    }
+  },
+  "cosmetiques": {
+    "meta": { "title": "Cosmétiques - Gels Douche & Laits Hydratants", "description": "Gels douche et laits hydratants parfumés, à base de noix de coco naturelle." },
+    "hero": { "badge": "Soins parfumés", "title": "Cosmétiques", "subtitle": "Prolongez l'expérience olfactive sous la douche et sur votre peau avec nos soins parfumés." },
+    "gelsDouche": { "title": "Gels Douche", "subtitle": "À base d'agents lavants issus de la noix de coco 100% naturelle" },
+    "laitsHydratants": { "title": "Laits Hydratants", "subtitle": "À base de matières premières 100% naturelles et renouvelables" },
+    "product": { "cta": "Commander" },
+    "info": {
+      "title": "Notre engagement",
+      "description": "Des cosmétiques doux pour votre peau et pour la planète.",
+      "features": {
+        "coconut": { "title": "Base noix de coco", "description": "Agents lavants 100% naturels et renouvelables" },
+        "hypoallergenic": { "title": "Hypoallergénique", "description": "Formulés pour les peaux sensibles" },
+        "clean": { "title": "Formule clean", "description": "Sans parabène, sans sulfate agressif" },
+        "vegan": { "title": "100% Vegan", "description": "Aucun ingrédient d'origine animale" }
+      }
+    }
+  },
   "packDecouverte": {
-    "meta": {
-      "title": "Pack Découverte",
-      "description": "Testez nos parfums avant de choisir votre flacon. Deux formules exclusives en ligne pour trouver votre signature olfactive."
-    },
-    "hero": {
-      "badge": "Exclusivité web",
-      "title": "Trouvez votre parfum",
-      "subtitle": "Parce que choisir un parfum demande du temps, testez nos créations chez vous avant de vous décider."
-    },
+    "meta": { "title": "Pack Découverte - Testez nos Parfums", "description": "Testez nos parfums avant de vous décider avec notre pack découverte." },
+    "hero": { "badge": "Trouvez votre signature", "title": "Pack Découverte", "subtitle": "Parce que choisir un parfum est une aventure personnelle, prenez le temps de découvrir notre collection." },
     "packs": {
       "decouverte": {
         "title": "Pack Découverte",
         "description": "Recevez 4 échantillons pour les tester chez vous. Une fois votre choix fait, nous vous envoyons le flacon de 50ml de votre parfum préféré.",
         "samples": "4 échantillons + 1 flacon 50ml",
         "price": "100,00 €",
-        "shipping": "Frais de port offerts en Belgique",
+        "shipping": "Frais de port offerts (Belgique)",
         "delivery": "Livraison en 3-5 jours",
         "cta": "Commander ce pack",
-        "features": {
-          "samples": "4 échantillons au choix",
-          "bottle": "1 flacon 50ml inclus",
-          "shipping": "Port offert (Belgique)",
-          "test": "Testez avant de choisir"
-        }
+        "features": { "samples": "4 échantillons au choix", "bottle": "1 flacon 50ml inclus", "shipping": "Frais de port offerts (Belgique)", "test": "Testez avant de choisir" }
       },
       "echantillons": {
         "title": "Pack Échantillons",
@@ -317,21 +342,107 @@
         "shipping": "Frais de port non compris",
         "delivery": "Livraison en 3-5 jours",
         "cta": "Commander ce pack",
-        "features": {
-          "samples": "5 échantillons au choix",
-          "price": "Prix accessible",
-          "home": "Livraison à domicile",
-          "rhythm": "Testez à votre rythme"
-        }
+        "features": { "samples": "5 échantillons au choix", "price": "Prix accessible", "home": "Livraison à domicile", "rhythm": "Testez à votre rythme" }
       }
     },
     "orderNote": "Précisez vos parfums dans la section remarque lors de la commande",
     "info": {
       "title": "Pourquoi tester avant d'acheter ?",
-      "description": "Un parfum évolue sur votre peau tout au long de la journée. Les notes de tête laissent place aux notes de cœur, puis de fond. Tester un échantillon pendant plusieurs jours vous permet de vraiment découvrir un parfum et de faire le bon choix.",
+      "description": "Un parfum évolue sur votre peau tout au long de la journée. Tester un échantillon pendant plusieurs jours vous permet de vraiment découvrir un parfum.",
       "quote": "\"Le parfum est une rencontre entre une fragrance et votre peau. Prenez le temps de cette découverte.\"",
       "author": "Romain, parfumeur NeZ ZeN"
     }
+  },
+  "bonsCadeau": {
+    "meta": {
+      "title": "Bons Cadeau - Offrez une expérience olfactive",
+      "description": "Offrez un bon cadeau NeZ ZeN : pour un parfum ou un montant au choix. Valable sur tous nos produits."
+    },
+    "hero": {
+      "badge": "Offrez du bonheur",
+      "title": "Bons Cadeau",
+      "subtitle": "Offrez une expérience olfactive unique. La personne pourra choisir son produit ou ses conditionnements en boutique."
+    },
+    "options": {
+      "parfum": {
+        "title": "Bon pour un Parfum",
+        "description": "Choisissez le conditionnement que vous souhaitez offrir (15ml, 50ml ou 100ml). La personne pourra choisir le parfum de son choix en boutique.",
+        "includes": "Conseil personnalisé en boutique inclus",
+        "formats": "15ml : 29€ • 50ml : 78€ • 100ml : 128€",
+        "shipping": "Frais de port non compris",
+        "delivery": "3 à 5 jours de délai de livraison",
+        "cta": "Commander ce bon"
+      },
+      "montant": {
+        "title": "Bon Montant Libre",
+        "description": "Choisissez le montant et il apparaîtra sur le bon. La personne sera libre de choisir ce qu'elle veut dans notre boutique. Nous pouvons personnaliser le bon si vous le souhaitez.",
+        "includes": "Valable sur tous les produits et ateliers",
+        "amounts": "Montants disponibles",
+        "custom": "Vous pouvez commander plusieurs bons et nous ferons leur somme. Indiquez-le dans les commentaires de votre commande.",
+        "shipping": "Frais de port non compris",
+        "delivery": "3 à 5 jours de délai de livraison",
+        "cta": "Commander ce bon"
+      }
+    },
+    "info": {
+      "title": "Comment ça marche ?",
+      "steps": {
+        "order": {
+          "title": "1. Commandez",
+          "description": "En ligne, par téléphone ou en boutique"
+        },
+        "receive": {
+          "title": "2. Recevez",
+          "description": "Votre bon dans une jolie pochette cadeau"
+        },
+        "enjoy": {
+          "title": "3. Offrez",
+          "description": "Une expérience olfactive unique"
+        }
+      },
+      "validity": "Validité : 1 an à partir de la date d'achat",
+      "contact": "Des questions ? Contactez-nous !"
+    }
+  },
+  "ateliers": {
+    "meta": { "title": "Nos Ateliers", "description": "Découvrez nos ateliers parfumerie à Namur : initiation au métier de parfumeur, création de bougie, dégustation vin." },
+    "hero": { "badge": "Vivez une expérience unique", "title": "Nos Ateliers", "subtitle": "Le NeZ et le ZeN se feront une joie de partager leur métier et leur passion avec vous." },
+    "intro": { "text": "Que vous souhaitiez découvrir le métier de parfumeur, créer votre propre bougie, ou vivre une expérience sensorielle unique autour du vin, nous avons l'atelier qu'il vous faut. Tous nos ateliers se déroulent dans notre espace dédié au premier étage de la boutique." },
+    "list": { "title": "Choisissez votre atelier", "subtitle": "6 expériences uniques pour tous les goûts" },
+    "card": {
+      "duration": "Durée",
+      "price": "Prix",
+      "capacity": "Capacité",
+      "participants": "{min}-{max} personnes",
+      "includes": "Ce qui est inclus",
+      "takeAway": "Vous repartez avec",
+      "location": "Lieu",
+      "partner": "En partenariat avec",
+      "onQuote": "Sur devis",
+      "cta": "Réserver cet atelier"
+    },
+    "types": {
+      "decouverte-parfumeur": { "highlight": "Le plus complet" },
+      "creation-bougie": { "highlight": "Créatif" },
+      "degustation-vin": { "highlight": "Expérience sensorielle" },
+      "evenement-prive": { "highlight": "Sur mesure" }
+    },
+    "eventTypes": {
+      "title": "Types d'événements",
+      "evjf": "EVJF / Enterrement de vie de jeune fille",
+      "evg": "EVG / Enterrement de vie de garçon",
+      "anniversaire": "Anniversaires",
+      "teamBuilding": "Team building",
+      "entreAmis": "Entre amis",
+      "entreCollegues": "Entre collègues"
+    },
+    "info": {
+      "title": "Informations pratiques",
+      "location": { "title": "Lieu", "address": "22 rue Haute Marcelle, 5000 Namur", "detail": "1er étage de la boutique", "partner": "Ateliers dînatoires chez Mel'a Table (en face)" },
+      "booking": { "title": "Réservation", "text": "Les ateliers sont sur réservation. Contactez-nous par téléphone, email ou via le formulaire pour réserver votre place." },
+      "group": { "title": "Groupes & Privatisation", "text": "Tous nos ateliers peuvent être privatisés pour vos événements : anniversaires, EVJF, team building..." }
+    },
+    "cta": { "title": "Prêt à vivre l'expérience ?", "subtitle": "Réservez votre atelier ou contactez-nous pour organiser votre événement sur mesure.", "button": "Nous contacter", "phone": "Ou appelez-nous" }
   },
   "footer": {
     "description": "Chaque fragrance est une invitation au voyage, créée avec passion dans notre atelier namurois.",

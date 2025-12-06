@@ -283,55 +283,166 @@
       "viewAll": "View all perfumes"
     }
   },
+  "nezzenHome": {
+    "meta": { "title": "NeZZen Home - Home Fragrances & Candles", "description": "Reed diffusers, room sprays and artisan scented candles." },
+    "hero": { "badge": "Fragrance your home", "title": "NeZZen Home", "subtitle": "Create a unique atmosphere at home with our diffusers, sprays and artisan candles." },
+    "diffuseurs": {
+      "title": "Reed Diffusers",
+      "subtitle": "Fragrance your home continuously for several months",
+      "info": { "duration": "~3 months diffusion", "coverage": "Covers ~30m²" }
+    },
+    "bougies": { "title": "Our Candles", "subtitle": "Natural GMO-free soy wax - 40h burn time" },
+    "product": { "cta": "Order" },
+    "info": {
+      "title": "Why choose NeZZen Home?",
+      "description": "All our home fragrances are created with the same quality raw materials as our perfumes.",
+      "features": {
+        "natural": { "title": "Natural ingredients", "description": "GMO-free soy wax, cotton wicks" },
+        "artisan": { "title": "Handmade", "description": "Each candle is hand-poured in Namur" },
+        "lasting": { "title": "Long-lasting", "description": "40h for candles, 3 months for diffusers" }
+      }
+    }
+  },
+  "cosmetiques": {
+    "meta": { "title": "Cosmetics - Shower Gels & Body Lotions", "description": "Scented shower gels and body lotions with natural coconut base." },
+    "hero": { "badge": "Scented care", "title": "Cosmetics", "subtitle": "Extend the olfactory experience in the shower and on your skin with our scented care products." },
+    "gelsDouche": { "title": "Shower Gels", "subtitle": "With cleansing agents from 100% natural coconut" },
+    "laitsHydratants": { "title": "Body Lotions", "subtitle": "With 100% natural and renewable raw materials" },
+    "product": { "cta": "Order" },
+    "info": {
+      "title": "Our commitment",
+      "description": "Cosmetics that are gentle on your skin and the planet.",
+      "features": {
+        "coconut": { "title": "Coconut base", "description": "100% natural and renewable cleansing agents" },
+        "hypoallergenic": { "title": "Hypoallergenic", "description": "Formulated for sensitive skin" },
+        "clean": { "title": "Clean formula", "description": "Paraben-free, no harsh sulfates" },
+        "vegan": { "title": "100% Vegan", "description": "No animal-derived ingredients" }
+      }
+    }
+  },
   "packDecouverte": {
-    "meta": {
-      "title": "Discovery Pack",
-      "description": "Test our perfumes before choosing your bottle. Two exclusive online formulas to find your olfactory signature."
-    },
-    "hero": {
-      "badge": "Web exclusive",
-      "title": "Find your perfume",
-      "subtitle": "Because choosing a perfume takes time, test our creations at home before making your decision."
-    },
+    "meta": { "title": "Discovery Pack - Test our Perfumes", "description": "Test our perfumes before deciding with our discovery pack." },
+    "hero": { "badge": "Find your signature", "title": "Discovery Pack", "subtitle": "Because choosing a perfume is a personal adventure, take time to discover our collection." },
     "packs": {
       "decouverte": {
         "title": "Discovery Pack",
         "description": "Receive 4 samples to test at home. Once you've made your choice, we'll send you the 50ml bottle of your favorite perfume.",
         "samples": "4 samples + 1 x 50ml bottle",
         "price": "€100.00",
-        "shipping": "Free shipping to Belgium",
+        "shipping": "Free shipping (Belgium)",
         "delivery": "Delivery in 3-5 days",
         "cta": "Order this pack",
-        "features": {
-          "samples": "4 samples of your choice",
-          "bottle": "1 x 50ml bottle included",
-          "shipping": "Free shipping (Belgium)",
-          "test": "Test before you choose"
-        }
+        "features": { "samples": "4 samples of your choice", "bottle": "1 x 50ml bottle included", "shipping": "Free shipping (Belgium)", "test": "Test before choosing" }
       },
       "echantillons": {
         "title": "Sample Pack",
-        "description": "Choose 5 perfume samples and receive them directly at home. Ideal for discovering our collection at a low price.",
+        "description": "Choose 5 perfume samples delivered to your home. Ideal for discovering our collection at a small price.",
         "samples": "5 samples",
         "price": "€28.00",
         "shipping": "Shipping not included",
         "delivery": "Delivery in 3-5 days",
         "cta": "Order this pack",
-        "features": {
-          "samples": "5 samples of your choice",
-          "price": "Affordable price",
-          "home": "Home delivery",
-          "rhythm": "Test at your own pace"
-        }
+        "features": { "samples": "5 samples of your choice", "price": "Affordable price", "home": "Home delivery", "rhythm": "Test at your own pace" }
       }
     },
-    "orderNote": "Specify your perfumes in the notes section when ordering",
+    "orderNote": "Specify your perfumes in the comments when ordering",
     "info": {
       "title": "Why test before buying?",
-      "description": "A perfume evolves on your skin throughout the day. Top notes give way to heart notes, then base notes. Testing a sample for several days allows you to truly discover a perfume and make the right choice.",
-      "quote": "\"Perfume is an encounter between a fragrance and your skin. Take time for this discovery.\"",
+      "description": "A perfume evolves on your skin throughout the day. Testing a sample for several days allows you to truly discover a perfume.",
+      "quote": "\"Perfume is a meeting between a fragrance and your skin. Take time for this discovery.\"",
       "author": "Romain, NeZ ZeN perfumer"
     }
+  },
+  "bonsCadeau": {
+    "meta": {
+      "title": "Gift Cards - Give an olfactory experience",
+      "description": "Give a NeZ ZeN gift card: for a perfume or a custom amount. Valid on all our products."
+    },
+    "hero": {
+      "badge": "Give happiness",
+      "title": "Gift Cards",
+      "subtitle": "Give a unique olfactory experience. The recipient can choose their product or format in store."
+    },
+    "options": {
+      "parfum": {
+        "title": "Perfume Gift Card",
+        "description": "Choose the format you want to give (15ml, 50ml or 100ml). The recipient can choose any perfume in store.",
+        "includes": "Personalized advice in store included",
+        "formats": "15ml: €29 • 50ml: €78 • 100ml: €128",
+        "shipping": "Shipping not included",
+        "delivery": "3 to 5 days delivery",
+        "cta": "Order this gift card"
+      },
+      "montant": {
+        "title": "Custom Amount Gift Card",
+        "description": "Choose the amount and it will appear on the voucher. The recipient is free to choose anything in our store. We can personalize the voucher if you wish.",
+        "includes": "Valid on all products and workshops",
+        "amounts": "Available amounts",
+        "custom": "You can order multiple vouchers and we'll combine the amounts. Just indicate it in your order comments.",
+        "shipping": "Shipping not included",
+        "delivery": "3 to 5 days delivery",
+        "cta": "Order this gift card"
+      }
+    },
+    "info": {
+      "title": "How does it work?",
+      "steps": {
+        "order": {
+          "title": "1. Order",
+          "description": "Online, by phone or in store"
+        },
+        "receive": {
+          "title": "2. Receive",
+          "description": "Your voucher in a beautiful gift pouch"
+        },
+        "enjoy": {
+          "title": "3. Give",
+          "description": "A unique olfactory experience"
+        }
+      },
+      "validity": "Validity: 1 year from purchase date",
+      "contact": "Questions? Contact us!"
+    }
+  },
+  "ateliers": {
+    "meta": { "title": "Our Workshops", "description": "Discover our perfumery workshops in Namur: perfumer initiation, candle making, wine tasting." },
+    "hero": { "badge": "Live a unique experience", "title": "Our Workshops", "subtitle": "The Nose and the Zen will be delighted to share their craft and passion with you." },
+    "intro": { "text": "Whether you want to discover the perfumer's craft, create your own candle, or live a unique sensory experience around wine, we have the workshop for you. All our workshops take place in our dedicated space on the first floor of the boutique." },
+    "list": { "title": "Choose your workshop", "subtitle": "6 unique experiences for all tastes" },
+    "card": {
+      "duration": "Duration",
+      "price": "Price",
+      "capacity": "Capacity",
+      "participants": "{min}-{max} people",
+      "includes": "What's included",
+      "takeAway": "You leave with",
+      "location": "Location",
+      "partner": "In partnership with",
+      "onQuote": "On request",
+      "cta": "Book this workshop"
+    },
+    "types": {
+      "decouverte-parfumeur": { "highlight": "Most complete" },
+      "creation-bougie": { "highlight": "Creative" },
+      "degustation-vin": { "highlight": "Sensory experience" },
+      "evenement-prive": { "highlight": "Bespoke" }
+    },
+    "eventTypes": {
+      "title": "Event types",
+      "evjf": "Hen party",
+      "evg": "Stag party",
+      "anniversaire": "Birthdays",
+      "teamBuilding": "Team building",
+      "entreAmis": "With friends",
+      "entreCollegues": "With colleagues"
+    },
+    "info": {
+      "title": "Practical information",
+      "location": { "title": "Location", "address": "22 rue Haute Marcelle, 5000 Namur", "detail": "1st floor of the shop", "partner": "Dinner workshops at Mel'a Table (across the street)" },
+      "booking": { "title": "Booking", "text": "Workshops are by reservation. Contact us by phone, email or via the form to book your spot." },
+      "group": { "title": "Groups & Private hire", "text": "All our workshops can be privatized for your events: birthdays, hen parties, team building..." }
+    },
+    "cta": { "title": "Ready to live the experience?", "subtitle": "Book your workshop or contact us to organize your bespoke event.", "button": "Contact us", "phone": "Or call us" }
   },
   "footer": {
     "description": "Each fragrance is an invitation to travel, created with passion in our Namur workshop.",

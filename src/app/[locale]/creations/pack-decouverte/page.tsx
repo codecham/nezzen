@@ -186,7 +186,7 @@ function PackCard({ packKey, image, t }: PackCardProps) {
         <ul className="mt-6 space-y-2.5">
           {featureKeys.map((featureKey) => (
             <li key={featureKey} className="flex items-start gap-3">
-              <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
+              <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
               <span className="text-sm text-foreground">
                 {t(`packs.${packKey}.features.${featureKey}`)}
               </span>
