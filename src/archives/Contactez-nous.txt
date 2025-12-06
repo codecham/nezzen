@@ -1,0 +1,8 @@
+*Forumlaire*
+
+Contactez-nous
+Nom
+E-mail
+Message
+
+Notre Politique de confidentialité s'applique.
