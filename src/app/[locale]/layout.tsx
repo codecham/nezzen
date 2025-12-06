@@ -60,11 +60,11 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} className={`${cormorant.variable} ${inter.variable}`}>
       <body className="min-h-screen bg-background font-body text-foreground antialiased">
         <NextIntlClientProvider messages={messages}>
-          {/* Header fixe */}
+          {/* Header sticky */}
           <Header />
 
-          {/* Contenu principal avec padding pour le header fixe */}
-          <main className="min-h-screen pt-20">{children}</main>
+          {/* Contenu principal */}
+          <main className="min-h-screen">{children}</main>
 
           {/* Footer */}
           <Footer />
