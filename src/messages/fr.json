@@ -444,6 +444,143 @@
     },
     "cta": { "title": "Prêt à vivre l'expérience ?", "subtitle": "Réservez votre atelier ou contactez-nous pour organiser votre événement sur mesure.", "button": "Nous contacter", "phone": "Ou appelez-nous" }
   },
+  "surMesure": {
+    "particuliers": {
+      "hero": {
+        "badge": "Création sur mesure",
+        "title": "Créez votre propre parfum",
+        "subtitle": "Envie de vous faire plaisir de créer un parfum unique qui vous ressemble, votre rêve deviendra réalité en passant nos portes."
+      },
+      "product": {
+        "title": "Le produit",
+        "description": "Nous vous offrons la possibilité de créer votre parfum ou votre parfum d'ambiance personnel. Vous aurez l'exclusivité sur la formule, elle ne sera produite qu'à votre demande."
+      },
+      "process": {
+        "title": "Comment faire ?",
+        "step1": {
+          "title": "Prise de rendez-vous",
+          "description": "Remplissez le formulaire de contact pour prendre rendez-vous avec le parfumeur et planifier la première session de création."
+        },
+        "step2": {
+          "title": "Premier rendez-vous",
+          "description": "Vous discuterez de ce que vous aimez, les odeurs qui vous interpellent, et établirez les critères que le parfumeur utilisera pour créer quelques parfums."
+        },
+        "step3": {
+          "title": "Évaluation et ajustements",
+          "description": "Lors de votre deuxième rendez-vous, vous évaluerez ensemble les différentes créations pour définir celles qui vous plaisent et continuer le travail. Ces étapes se répéteront jusqu'à votre entière satisfaction."
+        }
+      },
+      "included": {
+        "title": "Nos tarifs comprennent",
+        "registration": {
+          "title": "Droits d'enregistrement",
+          "description": "Chaque parfum doit remplir les conditions de la communauté européenne et être enregistré (~1200€ pour un parfum d'intérieur, ~1500€ pour un parfum - sans marge de notre part)"
+        },
+        "samples": {
+          "title": "Création des échantillons",
+          "description": "Plusieurs prototypes créés selon vos critères"
+        },
+        "stability": {
+          "title": "Tests de stabilité",
+          "description": "Vérification de la tenue et de la qualité dans le temps"
+        },
+        "sessions": {
+          "title": "Sessions avec le parfumeur",
+          "description": "Différents modules disponibles selon le forfait choisi"
+        },
+        "bottles": {
+          "title": "Flacons de votre création",
+          "description": "1 ou 2 flacons inclus selon le forfait"
+        }
+      },
+      "forfaits": {
+        "title": "Nos forfaits",
+        "subtitle": "Choisissez la formule adaptée à votre projet",
+        "ambiance": {
+          "title": "Parfums d'ambiance",
+          "description": "Créez votre parfum d'intérieur personnalisé"
+        },
+        "parfum": {
+          "title": "Parfums",
+          "description": "Créez votre eau de parfum unique"
+        },
+        "card": {
+          "from": "À partir de",
+          "includes": "Inclus",
+          "flacons": "{count} flacon(s)",
+          "consultation": "{hours}h de consultation",
+          "prototypes": "{count} prototypes",
+          "supplement": "Flacon supplémentaire",
+          "per": "par"
+        }
+      },
+      "note": {
+        "title": "Bon à savoir",
+        "text": "Les prix sont indicatifs et peuvent être adaptés en fonction des heures de consultation, de la quantité de produit fini commandée, de possibles tests techniques à réaliser ou du type de matières premières utilisées et frais d'enregistrement. N'hésitez pas à nous demander un devis personnalisé si vous ne trouvez pas votre bonheur dans les formules proposées."
+      },
+      "cta": {
+        "title": "Prêt(e) à créer votre parfum ?",
+        "subtitle": "Contactez-nous pour prendre rendez-vous avec notre parfumeur.",
+        "button": "Nous contacter",
+        "phone": "Ou appelez-nous"
+      }
+    },
+    "entreprises": {
+      "hero": {
+        "badge": "Offre B2B",
+        "title": "Services aux entreprises",
+        "subtitle": "Notre service et notre créativité au service de votre entreprise. Un conseil adapté dans les domaines du marketing olfactif, de la création de votre gamme de parfums, dans la création d'ateliers personnalisés..."
+      },
+      "services": {
+        "title": "Nos services",
+        "subtitle": "Des solutions adaptées à chaque besoin",
+        "fragrance": {
+          "title": "Créer et commercialiser votre fragrance",
+          "description": "Vous souhaitez créer votre propre parfum, parfum d'ambiance pour le commercialiser. Nous vous aidons dans la création de votre produit du début jusqu'au lancement en fonction de vos besoins. N'hésitez pas à nous contacter pour un devis détaillé. Il faut compter quelques mois pour que le projet aboutisse.",
+          "parfum": {
+            "title": "Pour un parfum",
+            "prototypes": "1 200€ pour les premiers prototypes",
+            "tests": "50€ pour les tests de stabilité",
+            "registration": "1 200€ pour les droits d'enregistrement (obligation légale)",
+            "total": "2 450€ HTVA"
+          },
+          "ambiance": {
+            "title": "Pour un parfum d'ambiance",
+            "prototypes": "1 000€ pour les premiers prototypes",
+            "tests": "50€ pour les tests de stabilité",
+            "registration": "1 000€ pour les droits d'enregistrement (obligation légale)",
+            "total": "2 050€ HTVA"
+          }
+        },
+        "marketing": {
+          "title": "Parfumer votre espace de travail / commerce",
+          "description": "Pour les petites surfaces commerciales, bureau, chambre d'hôtes... nous parfumons vos pièces en diffusion passive.",
+          "description2": "Pour les plus grandes surfaces, en collaboration avec notre partenaire français, nous vous proposons différents systèmes de nébulisation qui parfument des pièces jusqu'à 300m²."
+        },
+        "ateliers": {
+          "title": "Une activité de groupe",
+          "description": "Envie de créer une activité ludique autour du parfum, n'hésitez pas à nous consulter. Petit ou large groupe, nous pouvons vous proposer différents types d'activités adaptées à vos besoins :",
+          "list": {
+            "history": "Ateliers sur l'histoire de la parfumerie, les différentes familles olfactives...",
+            "accords": "Ateliers accord parfums-vins / parfums-thés...",
+            "creative": "Ateliers créatifs",
+            "meals": "Repas parfumé, cocktails parfumés",
+            "more": "Et bien plus encore..."
+          }
+        },
+        "cadeaux": {
+          "title": "Cadeau d'entreprise",
+          "description": "Un cadeau made in Belgium pour vos employés, vos clients, vos fournisseurs... Nous vous proposons différentes formules adaptées en fonction de vos besoins et de votre budget."
+        }
+      },
+      "cta": {
+        "title": "Un projet en tête ?",
+        "subtitle": "Contactez-nous pour discuter de vos besoins. Nous vous répondrons avec une proposition adaptée.",
+        "button": "Demander un devis",
+        "phone": "Ou appelez-nous"
+      }
+    }
+  },
   "footer": {
     "description": "Chaque fragrance est une invitation au voyage, créée avec passion dans notre atelier namurois.",
     "creations": "Créations",

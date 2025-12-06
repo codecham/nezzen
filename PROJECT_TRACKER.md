@@ -256,14 +256,14 @@
 ## ✅ Phase 8 : Pages Sur Mesure
 
 ### Particuliers
-- [ ] Présentation du service
-- [ ] Processus de création
-- [ ] CTA contact
+- [x] Présentation du service
+- [x] Processus de création
+- [x] CTA contact
 
 ### Entreprises (B2B)
-- [ ] Offres pour entreprises
-- [ ] Cas d'usage (cadeaux clients, événements, parfum signature)
-- [ ] CTA contact
+- [x] Offres pour entreprises
+- [x] Cas d'usage (cadeaux clients, événements, parfum signature)
+- [x] CTA contact
 
 ---
 

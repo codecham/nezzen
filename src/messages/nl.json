@@ -444,6 +444,143 @@
     },
     "cta": { "title": "Klaar om de ervaring te beleven?", "subtitle": "Boek uw workshop of neem contact met ons op om uw evenement op maat te organiseren.", "button": "Contacteer ons", "phone": "Of bel ons" }
   },
+   "surMesure": {
+    "particuliers": {
+      "hero": {
+        "badge": "Op maat gemaakt",
+        "title": "Creëer uw eigen parfum",
+        "subtitle": "Wilt u uzelf verwennen en een uniek parfum creëren dat bij u past? Uw droom wordt werkelijkheid wanneer u door onze deuren loopt."
+      },
+      "product": {
+        "title": "Het product",
+        "description": "Wij bieden u de mogelijkheid om uw eigen parfum of huisparfum te creëren. U krijgt exclusiviteit op de formule, deze wordt alleen op uw verzoek geproduceerd."
+      },
+      "process": {
+        "title": "Hoe werkt het?",
+        "step1": {
+          "title": "Maak een afspraak",
+          "description": "Vul het contactformulier in om een afspraak te maken met de parfumeur en de eerste creatiesessie te plannen."
+        },
+        "step2": {
+          "title": "Eerste afspraak",
+          "description": "U bespreekt wat u leuk vindt, de geuren die u aanspreken, en stelt de criteria vast die de parfumeur zal gebruiken om enkele parfums te creëren."
+        },
+        "step3": {
+          "title": "Evaluatie en aanpassingen",
+          "description": "Tijdens uw tweede afspraak evalueert u samen de verschillende creaties om te bepalen welke u bevallen en het werk voort te zetten. Deze stappen worden herhaald tot uw volledige tevredenheid."
+        }
+      },
+      "included": {
+        "title": "Onze prijzen omvatten",
+        "registration": {
+          "title": "Registratiekosten",
+          "description": "Elk parfum moet voldoen aan de voorwaarden van de Europese Gemeenschap en worden geregistreerd (~€1.200 voor een huisparfum, ~€1.500 voor een parfum - geen marge van onze kant)"
+        },
+        "samples": {
+          "title": "Creatie van samples",
+          "description": "Meerdere prototypes gemaakt volgens uw criteria"
+        },
+        "stability": {
+          "title": "Stabiliteitstests",
+          "description": "Verificatie van duurzaamheid en kwaliteit in de tijd"
+        },
+        "sessions": {
+          "title": "Sessies met de parfumeur",
+          "description": "Verschillende modules beschikbaar afhankelijk van het gekozen pakket"
+        },
+        "bottles": {
+          "title": "Flacons van uw creatie",
+          "description": "1 of 2 flacons inbegrepen afhankelijk van het pakket"
+        }
+      },
+      "forfaits": {
+        "title": "Onze pakketten",
+        "subtitle": "Kies de formule die past bij uw project",
+        "ambiance": {
+          "title": "Huisparfums",
+          "description": "Creëer uw gepersonaliseerde huisparfum"
+        },
+        "parfum": {
+          "title": "Parfums",
+          "description": "Creëer uw unieke eau de parfum"
+        },
+        "card": {
+          "from": "Vanaf",
+          "includes": "Inbegrepen",
+          "flacons": "{count} flacon(s)",
+          "consultation": "{hours}u consultatie",
+          "prototypes": "{count} prototypes",
+          "supplement": "Extra flacon",
+          "per": "per"
+        }
+      },
+      "note": {
+        "title": "Goed om te weten",
+        "text": "Prijzen zijn indicatief en kunnen worden aangepast naargelang de consultatieuren, de hoeveelheid besteld eindproduct, eventuele technische tests of het type gebruikte grondstoffen en registratiekosten. Aarzel niet om ons een gepersonaliseerde offerte te vragen als u niet vindt wat u zoekt in de voorgestelde formules."
+      },
+      "cta": {
+        "title": "Klaar om uw parfum te creëren?",
+        "subtitle": "Neem contact met ons op om een afspraak te maken met onze parfumeur.",
+        "button": "Contact opnemen",
+        "phone": "Of bel ons"
+      }
+    },
+    "entreprises": {
+      "hero": {
+        "badge": "B2B Diensten",
+        "title": "Diensten voor bedrijven",
+        "subtitle": "Onze service en creativiteit ten dienste van uw bedrijf. Advies op maat op het gebied van geurmarketing, het creëren van uw parfumlijn, het creëren van gepersonaliseerde workshops..."
+      },
+      "services": {
+        "title": "Onze diensten",
+        "subtitle": "Oplossingen aangepast aan elke behoefte",
+        "fragrance": {
+          "title": "Creëer en commercialiseer uw geur",
+          "description": "U wilt uw eigen parfum of huisparfum creëren om te verkopen. Wij helpen u bij het creëren van uw product van begin tot lancering volgens uw behoeften. Aarzel niet om contact met ons op te nemen voor een gedetailleerde offerte. Het duurt enkele maanden voordat het project vruchten afwerpt.",
+          "parfum": {
+            "title": "Voor een parfum",
+            "prototypes": "€1.200 voor de eerste prototypes",
+            "tests": "€50 voor stabiliteitstests",
+            "registration": "€1.200 voor registratiekosten (wettelijke verplichting)",
+            "total": "€2.450 excl. BTW"
+          },
+          "ambiance": {
+            "title": "Voor een huisparfum",
+            "prototypes": "€1.000 voor de eerste prototypes",
+            "tests": "€50 voor stabiliteitstests",
+            "registration": "€1.000 voor registratiekosten (wettelijke verplichting)",
+            "total": "€2.050 excl. BTW"
+          }
+        },
+        "marketing": {
+          "title": "Parfumeer uw werkruimte / winkel",
+          "description": "Voor kleine commerciële ruimtes, kantoren, B&B's... parfumeren wij uw ruimtes met passieve diffusie.",
+          "description2": "Voor grotere ruimtes bieden wij, in samenwerking met onze Franse partner, verschillende vernevelingssystemen die ruimtes tot 300m² parfumeren."
+        },
+        "ateliers": {
+          "title": "Groepsactiviteit",
+          "description": "Wilt u een leuke activiteit rond parfum creëren? Aarzel niet om ons te raadplegen. Kleine of grote groep, wij kunnen u verschillende soorten activiteiten aanbieden aangepast aan uw behoeften:",
+          "list": {
+            "history": "Workshops over de geschiedenis van parfumerie, verschillende geurfamilies...",
+            "accords": "Parfum-wijn / parfum-thee combinatie workshops...",
+            "creative": "Creatieve workshops",
+            "meals": "Geparfumeerde maaltijden, geparfumeerde cocktails",
+            "more": "En nog veel meer..."
+          }
+        },
+        "cadeaux": {
+          "title": "Bedrijfscadeau",
+          "description": "Een made in Belgium cadeau voor uw werknemers, klanten, leveranciers... Wij bieden u verschillende formules aangepast aan uw behoeften en budget."
+        }
+      },
+      "cta": {
+        "title": "Een project in gedachten?",
+        "subtitle": "Neem contact met ons op om uw behoeften te bespreken. We reageren met een op maat gemaakt voorstel.",
+        "button": "Offerte aanvragen",
+        "phone": "Of bel ons"
+      }
+    }
+  },
   "footer": {
     "description": "Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons Naams atelier.",
     "creations": "Creaties",

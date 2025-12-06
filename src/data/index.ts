@@ -65,3 +65,20 @@ export {
   footerNavigation,
   socialLinks,
 } from './navigation'
+
+// ============ SUR MESURE ============
+export {
+  processSteps,
+  occasions,
+  servicesB2B,
+  realisations,
+  getServicesWithImage,
+  getServicesWithoutImage,
+} from './sur-mesure'
+
+export type {
+  ProcessStep,
+  Occasion,
+  ServiceB2B,
+  Realisation,
+} from './sur-mesure'

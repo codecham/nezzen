@@ -444,6 +444,143 @@
     },
     "cta": { "title": "Ready to live the experience?", "subtitle": "Book your workshop or contact us to organize your bespoke event.", "button": "Contact us", "phone": "Or call us" }
   },
+  "surMesure": {
+    "particuliers": {
+      "hero": {
+        "badge": "Bespoke creation",
+        "title": "Create your own perfume",
+        "subtitle": "Want to treat yourself and create a unique perfume that reflects you? Your dream will come true when you walk through our doors."
+      },
+      "product": {
+        "title": "The product",
+        "description": "We offer you the possibility to create your own perfume or home fragrance. You will have exclusivity on the formula, it will only be produced at your request."
+      },
+      "process": {
+        "title": "How does it work?",
+        "step1": {
+          "title": "Make an appointment",
+          "description": "Fill out the contact form to make an appointment with the perfumer and schedule the first creation session."
+        },
+        "step2": {
+          "title": "First appointment",
+          "description": "You will discuss what you like, the scents that appeal to you, and establish the criteria that the perfumer will use to create some perfumes."
+        },
+        "step3": {
+          "title": "Evaluation and adjustments",
+          "description": "During your second appointment, you will evaluate together the different creations to define those you like and continue the work. These steps will be repeated until your complete satisfaction."
+        }
+      },
+      "included": {
+        "title": "Our prices include",
+        "registration": {
+          "title": "Registration fees",
+          "description": "Each perfume must meet European Community conditions and be registered (~€1,200 for a home fragrance, ~€1,500 for a perfume - no margin on our part)"
+        },
+        "samples": {
+          "title": "Sample creation",
+          "description": "Several prototypes created according to your criteria"
+        },
+        "stability": {
+          "title": "Stability tests",
+          "description": "Verification of durability and quality over time"
+        },
+        "sessions": {
+          "title": "Sessions with the perfumer",
+          "description": "Different modules available depending on the chosen package"
+        },
+        "bottles": {
+          "title": "Bottles of your creation",
+          "description": "1 or 2 bottles included depending on the package"
+        }
+      },
+      "forfaits": {
+        "title": "Our packages",
+        "subtitle": "Choose the formula suited to your project",
+        "ambiance": {
+          "title": "Home fragrances",
+          "description": "Create your personalized home fragrance"
+        },
+        "parfum": {
+          "title": "Perfumes",
+          "description": "Create your unique eau de parfum"
+        },
+        "card": {
+          "from": "From",
+          "includes": "Includes",
+          "flacons": "{count} bottle(s)",
+          "consultation": "{hours}h consultation",
+          "prototypes": "{count} prototypes",
+          "supplement": "Additional bottle",
+          "per": "per"
+        }
+      },
+      "note": {
+        "title": "Good to know",
+        "text": "Prices are indicative and may be adjusted according to consultation hours, quantity of finished product ordered, possible technical tests to be carried out or the type of raw materials used and registration fees. Don't hesitate to ask us for a personalized quote if you don't find what you're looking for in the proposed formulas."
+      },
+      "cta": {
+        "title": "Ready to create your perfume?",
+        "subtitle": "Contact us to make an appointment with our perfumer.",
+        "button": "Contact us",
+        "phone": "Or call us"
+      }
+    },
+    "entreprises": {
+      "hero": {
+        "badge": "B2B Services",
+        "title": "Business services",
+        "subtitle": "Our service and creativity at the service of your company. Tailored advice in the fields of olfactory marketing, creating your perfume range, creating personalized workshops..."
+      },
+      "services": {
+        "title": "Our services",
+        "subtitle": "Solutions adapted to every need",
+        "fragrance": {
+          "title": "Create and market your fragrance",
+          "description": "You want to create your own perfume or home fragrance to market. We help you create your product from start to launch according to your needs. Don't hesitate to contact us for a detailed quote. It takes a few months for the project to come to fruition.",
+          "parfum": {
+            "title": "For a perfume",
+            "prototypes": "€1,200 for the first prototypes",
+            "tests": "€50 for stability tests",
+            "registration": "€1,200 for registration fees (legal requirement)",
+            "total": "€2,450 excl. VAT"
+          },
+          "ambiance": {
+            "title": "For a home fragrance",
+            "prototypes": "€1,000 for the first prototypes",
+            "tests": "€50 for stability tests",
+            "registration": "€1,000 for registration fees (legal requirement)",
+            "total": "€2,050 excl. VAT"
+          }
+        },
+        "marketing": {
+          "title": "Scent your workspace / business",
+          "description": "For small commercial spaces, offices, B&Bs... we scent your rooms with passive diffusion.",
+          "description2": "For larger spaces, in collaboration with our French partner, we offer you different nebulization systems that scent rooms up to 300m²."
+        },
+        "ateliers": {
+          "title": "Group activity",
+          "description": "Want to create a fun activity around perfume? Don't hesitate to consult us. Small or large group, we can offer you different types of activities adapted to your needs:",
+          "list": {
+            "history": "Workshops on the history of perfumery, different olfactory families...",
+            "accords": "Perfume-wine / perfume-tea pairing workshops...",
+            "creative": "Creative workshops",
+            "meals": "Scented meals, scented cocktails",
+            "more": "And much more..."
+          }
+        },
+        "cadeaux": {
+          "title": "Corporate gift",
+          "description": "A made in Belgium gift for your employees, customers, suppliers... We offer you different formulas adapted to your needs and budget."
+        }
+      },
+      "cta": {
+        "title": "Have a project in mind?",
+        "subtitle": "Contact us to discuss your needs. We'll respond with a tailored proposal.",
+        "button": "Request a quote",
+        "phone": "Or call us"
+      }
+    }
+  },
   "footer": {
     "description": "Each fragrance is an invitation to travel, created with passion in our Namur workshop.",
     "creations": "Creations",
