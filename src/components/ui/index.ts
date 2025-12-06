@@ -1,3 +1,5 @@
+// src/components/ui/index.ts
+
 // Layout
 export { Container } from './Container'
 
@@ -27,3 +29,42 @@ export { Select } from './Select'
 
 // Navigation
 export { StyledLink, ExternalLink } from './Link'
+
+// Overlays
+export {
+  Modal,
+  ModalHeader,
+  ModalTitle,
+  ModalBody,
+  ModalFooter,
+  ModalGallery,
+} from './Modal'
+
+// Tabs
+export {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+  TabsListPill,
+  TabsTriggerPill,
+  TabsListUnderlined,
+  TabsTriggerUnderlined,
+} from './Tabs'
+
+// Accordion
+export {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+  FAQAccordion,
+} from './Accordion'
+
+// Toast / Notifications
+export {
+  Toast,
+  ToastProvider,
+  useToast,
+  toast,
+} from './Toast'

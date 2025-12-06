@@ -116,13 +116,13 @@
 - [x] `Link` — liens stylisés
 
 ### Composants Avancés
-- [ ] `Modal` — pour galerie photos
-- [ ] `Tabs` — pour les détails produits
-- [ ] `Accordion` — pour FAQ éventuelle
-- [ ] `Toast` — notifications
+- [x] `Modal` — pour galerie photos
+- [x] `Tabs` — pour les détails produits
+- [x] `Accordion` — pour FAQ éventuelle
+- [x] `Toast` — notifications
 
 ### Export centralisé
-- [ ] Créer `components/ui/index.ts`
+- [x] Créer `components/ui/index.ts`
 
 ---
 
