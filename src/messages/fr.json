@@ -581,6 +581,301 @@
       }
     }
   },
+  "aPropos": {
+    "notreApproche": {
+      "meta": {
+        "title": "Notre Approche",
+        "description": "Découvrez l'histoire de NeZ ZeN, parfumerie artisanale belge fondée par Romain et Aurélie à Namur."
+      },
+      "hero": {
+        "badge": "Notre Histoire",
+        "title": "Une parfumerie qui met en valeur les ingrédients",
+        "subtitle": "NeZ ZeN, c'est avant tout une histoire de passion, de créativité et de savoir-faire artisanal belge."
+      },
+      "intro": {
+        "title": "Le NeZ et le ZeN",
+        "paragraph1": "NeZ ZeN, parfumerie artisanale belge emmenée par le NeZ Romain Pantoustier et le ZeN Aurélie Gillon qui ont décidé de vivre leur rêve en créant une boutique dédiée aux plaisirs olfactifs.",
+        "paragraph2": "En passant nos portes vous trouverez, dans une ambiance détendue, une gamme de parfums uniques ainsi que des parfums d'intérieur, cosmétiques...",
+        "paragraph3": "N'hésitez pas à venir discuter avec notre parfumeur et découvrir comment nos élixirs sont préparés et se différencient des autres.",
+        "roles": "Le NeZ & Le ZeN"
+      },
+      "principles": {
+        "title": "Nos quatre principes de création",
+        "subtitle": "Ce qui guide chacune de nos créations",
+        "jus": {
+          "title": "Le \"Jus\" au centre",
+          "description": "Des créations de caractère. Le parfum est au cœur de notre produit, avec des concentrations élevées et des matières premières de qualité."
+        },
+        "experience": {
+          "title": "Une expérience unique",
+          "description": "Découvrez nos matières et suivez les conseils de notre équipe pour trouver le parfum qui vous correspond."
+        },
+        "transparence": {
+          "title": "La transparence",
+          "description": "Dans notre processus de fabrication et la qualité de nos ingrédients. Venez voir comment nos élixirs sont préparés."
+        },
+        "innovation": {
+          "title": "Une approche innovante",
+          "description": "De création qui met en avant la beauté du produit et de son utilisateur. Des parfums hors des sentiers battus."
+        },
+        "note": "Même si nos collections évoluent au fil du temps et de l'inspiration de notre parfumeur, il vous sera toujours possible de commander votre parfum préféré même s'il n'est plus disponible en magasin."
+      },
+      "distinctions": {
+        "title": "Reconnaissances & Distinctions",
+        "subtitle": "Notre savoir-faire reconnu",
+        "artisan": {
+          "title": "Artisan Certifié",
+          "description": "Reconnu par le SPF Économie belge pour nos principes de création et notre savoir-faire unique."
+        },
+        "artOlfaction": {
+          "title": "Art & Olfaction Awards",
+          "description": "Finaliste mondial avec notre parfum \"La Bibliothèque\" parmi l'élite de la parfumerie indépendante."
+        },
+        "vitrine": {
+          "title": "Vitrine de l'Artisan",
+          "description": "Prix coup de cœur du jury parmi près de 500 candidatures d'artisans belges."
+        },
+        "trophee": {
+          "title": "Trophée de l'Indépendant",
+          "description": "2ème place parmi plus de 250 indépendants pour la qualité d'accueil, de service et de produit."
+        }
+      },
+      "press": {
+        "title": "Ils parlent de nous",
+        "subtitle": "Dans la presse",
+        "avenir": {
+          "date": "17 janvier 2017",
+          "title": "L'Avenir",
+          "description": "Interview découverte de notre parfumerie artisanale au cœur de Namur."
+        },
+        "proximag": {
+          "date": "Février 2017",
+          "title": "Proximag Namur",
+          "description": "Portrait de notre atelier-boutique et de notre approche de la parfumerie."
+        }
+      },
+      "cta": {
+        "title": "Prêt à découvrir nos créations ?",
+        "subtitle": "Explorez notre collection de parfums artisanaux, chacun raconte une histoire unique.",
+        "button": "Voir nos parfums",
+        "contact": "Nous contacter"
+      }
+    },
+    "experience": {
+      "meta": {
+        "title": "Plus qu'une Parfumerie",
+        "description": "Découvrez l'expérience NeZ ZeN : collaborations culinaires, dégustations et partage de notre passion."
+      },
+      "hero": {
+        "badge": "L'Expérience",
+        "title": "Plus qu'une parfumerie",
+        "subtitle": "Quand la parfumerie rencontre la gastronomie, le vin et le thé pour des expériences sensorielles uniques."
+      },
+      "collaborations": {
+        "title": "Nos collaborations",
+        "subtitle": "Quand un parfumeur rencontre d'autres passionnés",
+        "chef": {
+          "title": "Quand un parfumeur rencontre un chef",
+          "description": "Nous avons eu le plaisir de collaborer avec plusieurs chefs pour la création de mets parfumés. Notamment avec le restaurant le D'Arville et Arabelle Meirlaen qui a créé un dessert sur base de notre parfum Terre de Feu.",
+          "partner": "Restaurant Le D'Arville",
+          "partnerDesc": "Collaboration gastronomique"
+        },
+        "vin": {
+          "title": "Quand un parfumeur vous fait (re)découvrir le vin",
+          "description": "En collaboration avec les vins d'Alsace, nous avons eu l'opportunité de participer à une masterclass autour du Gewurztraminer. Nous avons décomposé deux crus des maisons Engel et Hugel en arômes primaires. Un beau moment de partage qui permet de découvrir un vin de manière différente.",
+          "partner": "Vins d'Alsace",
+          "partnerDesc": "Masterclass Gewurztraminer"
+        },
+        "the": {
+          "title": "Parfumeur et sommelier du thé",
+          "description": "Une rencontre spéciale avec l'équipe du Palais des Thés Namur. Les deux équipes de passionnés ont travaillé autour de thés parfumés pour vous faire redécouvrir ces créations parfumées.",
+          "partner": "Palais des Thés Namur",
+          "partnerDesc": "Expérience thés & parfums"
+        }
+      },
+      "partage": {
+        "badge": "Notre valeur",
+        "title": "NeZ ZeN et le partage",
+        "description": "Une de nos valeurs le partage, alors dès que nous en avons l'occasion nous partageons notre passion, dans notre atelier au quotidien mais aussi lors d'événements spécifiques.",
+        "items": {
+          "osmotheque": {
+            "title": "L'Osmothèque de Versailles",
+            "description": "Participation aux journées du patrimoine au musée mondial de la parfumerie."
+          },
+          "artisan": {
+            "title": "Journée de l'Artisan",
+            "description": "Partage de notre métier et de notre savoir-faire lors des événements dédiés à l'artisanat."
+          },
+          "ecoles": {
+            "title": "Interventions en écoles",
+            "description": "Moments de discussion avec des élèves pour faire découvrir le métier de parfumeur."
+          }
+        }
+      },
+      "cta": {
+        "visit": {
+          "title": "Envie de nous rendre visite ?",
+          "description": "Venez découvrir notre atelier-boutique au cœur de Namur et vivez l'expérience NeZ ZeN.",
+          "button": "Nous trouver"
+        },
+        "ateliers": {
+          "title": "Participez à un atelier",
+          "description": "Découvrez nos ateliers créatifs et vivez une expérience sensorielle unique.",
+          "button": "Voir les ateliers"
+        }
+      }
+    },
+    "galerie": {
+      "meta": {
+        "title": "Galerie Photos",
+        "description": "Découvrez en images l'univers NeZ ZeN : notre boutique, nos créations, nos ateliers et nos événements."
+      },
+      "hero": {
+        "badge": "Galerie",
+        "title": "Souvenirs & Inspirations",
+        "subtitle": "Un aperçu de notre univers, de notre boutique et des moments partagés avec vous."
+      },
+      "categories": {
+        "all": "Tout",
+        "boutique": "La Boutique",
+        "creation": "Création",
+        "produits": "Produits",
+        "ateliers": "Ateliers",
+        "evenements": "Événements"
+      },
+      "empty": "Aucune photo dans cette catégorie.",
+      "lightbox": {
+        "close": "Fermer",
+        "previous": "Photo précédente",
+        "next": "Photo suivante"
+      }
+    },
+    "temoignages": {
+      "meta": {
+        "title": "Témoignages",
+        "description": "Découvrez les témoignages de nos clients et partenaires qui nous ont fait confiance."
+      },
+      "hero": {
+        "badge": "Témoignages",
+        "title": "Ils nous ont fait confiance",
+        "subtitle": "Particuliers, entreprises, artisans... Découvrez leurs expériences avec NeZ ZeN."
+      },
+      "entreprises": {
+        "title": "Nos collaborations entreprises",
+        "subtitle": "Des partenariats créatifs avec des professionnels passionnés",
+        "visitWebsite": "Visiter le site",
+        "mike-meys": {
+          "name": "Atelier Création Mike Meys",
+          "type": "Créateur belge",
+          "description": "Le créateur belge Mike Meys nous a fait confiance pour le développement de sa signature olfactive. Après une collaboration de près de 9 mois est né Hard'heure, un parfum inspiré par la descente aux enfers de la Divine Comédie de Dante.",
+          "result": "Parfum créé : Hard'heure - Un parfum intense qui débute avec séduction dans une grande fraîcheur aromatique pour finir vers une sérénité mystique."
+        },
+        "chris-alexxa": {
+          "name": "Chris Alexxa Jewels",
+          "type": "Bijoutière - Liège",
+          "description": "La rencontre entre deux artisans passionnés. Nous avons eu le plaisir de créer l'ambiance olfactive de Chris Alexxa Jewels, une bijoutière de Liège.",
+          "result": "Signature olfactive : Une composition originale, intemporelle et sensuelle reflétant l'univers organique de la marque."
+        },
+        "ores": {
+          "name": "Orès",
+          "type": "Team Building",
+          "description": "Une envie de créer un team building sur mesure pour aider les équipes à amorcer le changement. Nous avons créé un événement sur mesure comprenant un atelier création de cocktail, un repas parfumé, un aperçu de l'évolution de la parfumerie.",
+          "result": "Événement sur mesure : Atelier cocktail + repas parfumé + découverte de la parfumerie dans une ambiance détendue."
+        },
+        "villa-servais": {
+          "name": "La Villa Servais",
+          "type": "Chambres d'hôtes",
+          "description": "Création d'une ambiance olfactive sur mesure pour cette maison d'hôtes de charme.",
+          "result": "Parfum d'ambiance personnalisé pour créer une atmosphère unique et mémorable."
+        }
+      },
+      "avis": {
+        "title": "Ce que disent nos clients",
+        "subtitle": "Des expériences partagées avec passion"
+      },
+      "google": {
+        "reviewCount": "Basé sur {count}+ avis Google",
+        "leaveReview": "Laisser un avis"
+      },
+      "cta": {
+        "title": "Vous aussi, faites-nous confiance",
+        "subtitle": "Que vous soyez un particulier ou une entreprise, nous avons une solution pour vous.",
+        "entreprise": "Offres entreprises",
+        "contact": "Nous contacter"
+      }
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact | NeZ ZeN",
+      "description": "Contactez NeZ ZeN, parfumerie artisanale à Namur. Formulaire de contact, horaires, adresse et informations pratiques."
+    },
+    "hero": {
+      "badge": "Contact",
+      "title": "Prenons contact",
+      "subtitle": "Une question, une envie de découvrir nos créations ou de réserver un atelier ? Nous sommes à votre écoute."
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "subtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone (optionnel)",
+      "phonePlaceholder": "+32 XXX XX XX XX",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sélectionnez un sujet",
+      "subjects": {
+        "renseignement": "Renseignement général",
+        "commande": "Commande / Produit",
+        "atelier": "Réservation d'atelier",
+        "surMesure": "Création sur mesure",
+        "autre": "Autre demande"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre demande...",
+      "privacy": "En soumettant ce formulaire, vous acceptez que vos données soient utilisées pour vous recontacter. Notre politique de confidentialité s'applique.",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": {
+        "title": "Message envoyé !",
+        "message": "Merci pour votre message. Nous vous répondrons dans les plus brefs délais."
+      },
+      "error": "Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone."
+    },
+    "info": {
+      "title": "Informations pratiques",
+      "address": {
+        "title": "Adresse",
+        "directions": "Itinéraire Google Maps"
+      },
+      "phone": {
+        "title": "Téléphone"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Horaires",
+        "weekdays": "Mercredi - Samedi : 10h30 - 18h00",
+        "note": "Ou sur rendez-vous"
+      },
+      "urgent": {
+        "title": "Besoin d'une réponse rapide ?",
+        "message": "Appelez-nous directement au +32 81 24 12 94 pendant nos heures d'ouverture."
+      }
+    },
+    "social": {
+      "title": "Suivez-nous",
+      "subtitle": "Retrouvez nos dernières créations et actualités sur les réseaux sociaux."
+    },
+    "map": {
+      "title": "Localisation de NeZ ZeN - Parfumerie Artisanale à Namur"
+    }
+  },
   "footer": {
     "description": "Chaque fragrance est une invitation au voyage, créée avec passion dans notre atelier namurois.",
     "creations": "Créations",

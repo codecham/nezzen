@@ -581,6 +581,301 @@
       }
     }
   },
+  "aPropos": {
+    "notreApproche": {
+      "meta": {
+        "title": "Onze Aanpak",
+        "description": "Ontdek het verhaal van NeZ ZeN, een Belgische ambachtelijke parfumerie opgericht door Romain en Aurélie in Namen."
+      },
+      "hero": {
+        "badge": "Ons Verhaal",
+        "title": "Een parfumerie die ingrediënten in de kijker zet",
+        "subtitle": "NeZ ZeN is bovenal een verhaal van passie, creativiteit en Belgisch ambachtelijk vakmanschap."
+      },
+      "intro": {
+        "title": "De NeZ en de ZeN",
+        "paragraph1": "NeZ ZeN, een Belgische ambachtelijke parfumerie geleid door de NeZ Romain Pantoustier en de ZeN Aurélie Gillon die besloten hun droom waar te maken door een boetiek te creëren gewijd aan olfactorische genoegens.",
+        "paragraph2": "Door onze deuren te passeren vindt u, in een ontspannen sfeer, een assortiment unieke parfums evenals huisgeuren, cosmetica...",
+        "paragraph3": "Aarzel niet om langs te komen voor een praatje met onze parfumeur en te ontdekken hoe onze elixers worden bereid en wat ze anders maakt.",
+        "roles": "De NeZ & De ZeN"
+      },
+      "principles": {
+        "title": "Onze vier creatieprincipes",
+        "subtitle": "Wat elke creatie leidt",
+        "jus": {
+          "title": "Het \"Sap\" centraal",
+          "description": "Karaktervolle creaties. Het parfum staat centraal in ons product, met hoge concentraties en kwaliteitsgrondstoffen."
+        },
+        "experience": {
+          "title": "Een unieke ervaring",
+          "description": "Ontdek onze materialen en volg het advies van ons team om het parfum te vinden dat bij u past."
+        },
+        "transparence": {
+          "title": "Transparantie",
+          "description": "In ons productieproces en de kwaliteit van onze ingrediënten. Kom kijken hoe onze elixers worden bereid."
+        },
+        "innovation": {
+          "title": "Een innovatieve aanpak",
+          "description": "Van creatie die de schoonheid van het product en de gebruiker benadrukt. Parfums buiten de gebaande paden."
+        },
+        "note": "Ook al evolueren onze collecties in de loop van de tijd en de inspiratie van onze parfumeur, u kunt altijd uw favoriete parfum bestellen, ook als het niet meer in de winkel verkrijgbaar is."
+      },
+      "distinctions": {
+        "title": "Erkenning & Onderscheidingen",
+        "subtitle": "Onze erkende expertise",
+        "artisan": {
+          "title": "Gecertificeerd Ambachtsman",
+          "description": "Erkend door de Belgische FOD Economie voor onze creatieprincipes en unieke knowhow."
+        },
+        "artOlfaction": {
+          "title": "Art & Olfaction Awards",
+          "description": "Wereldwijde finalist met ons parfum \"La Bibliothèque\" onder de elite van de onafhankelijke parfumerie."
+        },
+        "vitrine": {
+          "title": "Ambachtsman Etalage",
+          "description": "Favorietenprijs van de jury onder bijna 500 Belgische ambachtelijke kandidaten."
+        },
+        "trophee": {
+          "title": "Zelfstandigen Trofee",
+          "description": "2de plaats onder meer dan 250 zelfstandigen voor kwaliteit van ontvangst, service en product."
+        }
+      },
+      "press": {
+        "title": "In de Pers",
+        "subtitle": "Ze praten over ons",
+        "avenir": {
+          "date": "17 januari 2017",
+          "title": "L'Avenir",
+          "description": "Ontdekkingsinterview van onze ambachtelijke parfumerie in het hart van Namen."
+        },
+        "proximag": {
+          "date": "Februari 2017",
+          "title": "Proximag Namur",
+          "description": "Portret van onze atelier-boetiek en onze benadering van parfumerie."
+        }
+      },
+      "cta": {
+        "title": "Klaar om onze creaties te ontdekken?",
+        "subtitle": "Ontdek onze collectie ambachtelijke parfums, elk vertelt een uniek verhaal.",
+        "button": "Bekijk onze parfums",
+        "contact": "Contacteer ons"
+      }
+    },
+    "experience": {
+      "meta": {
+        "title": "Meer Dan Een Parfumerie",
+        "description": "Ontdek de NeZ ZeN ervaring: culinaire samenwerkingen, proeverijen en het delen van onze passie."
+      },
+      "hero": {
+        "badge": "De Ervaring",
+        "title": "Meer dan een parfumerie",
+        "subtitle": "Wanneer parfumerie gastronomie, wijn en thee ontmoet voor unieke zintuiglijke ervaringen."
+      },
+      "collaborations": {
+        "title": "Onze samenwerkingen",
+        "subtitle": "Wanneer een parfumeur andere liefhebbers ontmoet",
+        "chef": {
+          "title": "Wanneer een parfumeur een chef ontmoet",
+          "description": "We hadden het genoegen om samen te werken met verschillende chefs voor het creëren van geparfumeerde gerechten. Met name met restaurant D'Arville en Arabelle Meirlaen die een dessert creëerde gebaseerd op ons parfum Terre de Feu.",
+          "partner": "Restaurant Le D'Arville",
+          "partnerDesc": "Gastronomische samenwerking"
+        },
+        "vin": {
+          "title": "Wanneer een parfumeur u wijn laat (her)ontdekken",
+          "description": "In samenwerking met de Elzas wijnen hadden we de kans om deel te nemen aan een masterclass rond Gewurztraminer. We ontleedden twee jaargangen van de huizen Engel en Hugel in primaire aroma's. Een mooi moment van delen dat u wijn anders laat ontdekken.",
+          "partner": "Elzas Wijnen",
+          "partnerDesc": "Gewurztraminer Masterclass"
+        },
+        "the": {
+          "title": "Parfumeur en thee sommelier",
+          "description": "Een speciale ontmoeting met het Palais des Thés Namen team. De twee teams van liefhebbers werkten rond geparfumeerde theeën om u deze geurige creaties te laten herontdekken.",
+          "partner": "Palais des Thés Namen",
+          "partnerDesc": "Thee & parfum ervaring"
+        }
+      },
+      "partage": {
+        "badge": "Onze waarde",
+        "title": "NeZ ZeN en delen",
+        "description": "Een van onze waarden is delen, dus wanneer we de kans krijgen delen we onze passie, dagelijks in ons atelier maar ook tijdens specifieke evenementen.",
+        "items": {
+          "osmotheque": {
+            "title": "De Osmothèque in Versailles",
+            "description": "Deelname aan erfgoeddagen in het wereldparfumeriemuseum."
+          },
+          "artisan": {
+            "title": "Dag van de Ambachtsman",
+            "description": "Het delen van ons vak en knowhow tijdens evenementen gewijd aan ambacht."
+          },
+          "ecoles": {
+            "title": "Schoolbezoeken",
+            "description": "Gesprekken met leerlingen om het beroep van parfumeur te introduceren."
+          }
+        }
+      },
+      "cta": {
+        "visit": {
+          "title": "Wilt u ons bezoeken?",
+          "description": "Kom onze atelier-boetiek ontdekken in het hart van Namen en beleef NeZ ZeN.",
+          "button": "Vind ons"
+        },
+        "ateliers": {
+          "title": "Neem deel aan een workshop",
+          "description": "Ontdek onze creatieve workshops en beleef een unieke zintuiglijke ervaring.",
+          "button": "Bekijk workshops"
+        }
+      }
+    },
+    "galerie": {
+      "meta": {
+        "title": "Fotogalerij",
+        "description": "Ontdek het NeZ ZeN universum in beeld: onze boetiek, creaties, workshops en evenementen."
+      },
+      "hero": {
+        "badge": "Galerij",
+        "title": "Herinneringen & Inspiraties",
+        "subtitle": "Een kijkje in ons universum, onze boetiek en momenten gedeeld met u."
+      },
+      "categories": {
+        "all": "Alles",
+        "boutique": "De Boetiek",
+        "creation": "Creatie",
+        "produits": "Producten",
+        "ateliers": "Workshops",
+        "evenements": "Evenementen"
+      },
+      "empty": "Geen foto's in deze categorie.",
+      "lightbox": {
+        "close": "Sluiten",
+        "previous": "Vorige foto",
+        "next": "Volgende foto"
+      }
+    },
+    "temoignages": {
+      "meta": {
+        "title": "Getuigenissen",
+        "description": "Ontdek getuigenissen van onze klanten en partners die ons vertrouwden."
+      },
+      "hero": {
+        "badge": "Getuigenissen",
+        "title": "Ze vertrouwden op ons",
+        "subtitle": "Particulieren, bedrijven, ambachtslieden... Ontdek hun ervaringen met NeZ ZeN."
+      },
+      "entreprises": {
+        "title": "Onze zakelijke samenwerkingen",
+        "subtitle": "Creatieve partnerschappen met gepassioneerde professionals",
+        "visitWebsite": "Bezoek website",
+        "mike-meys": {
+          "name": "Mike Meys Creatie Atelier",
+          "type": "Belgische ontwerper",
+          "description": "Belgische ontwerper Mike Meys vertrouwde op ons voor de ontwikkeling van zijn olfactorische handtekening. Na een samenwerking van bijna 9 maanden werd Hard'heure geboren, een parfum geïnspireerd door de afdaling naar de hel van Dante's Goddelijke Komedie.",
+          "result": "Gecreëerd parfum: Hard'heure - Een intens parfum dat begint met verleiding in grote aromatische frisheid om te eindigen naar een mystieke sereniteit."
+        },
+        "chris-alexxa": {
+          "name": "Chris Alexxa Jewels",
+          "type": "Juwelier - Luik",
+          "description": "De ontmoeting van twee gepassioneerde ambachtslieden. We hadden het genoegen de olfactorische sfeer te creëren voor Chris Alexxa Jewels, een juwelier uit Luik.",
+          "result": "Olfactorische handtekening: Een originele, tijdloze en sensuele compositie die het organische universum van het merk weerspiegelt."
+        },
+        "ores": {
+          "name": "Orès",
+          "type": "Team Building",
+          "description": "Een verlangen om een op maat gemaakte teambuilding te creëren om teams te helpen verandering in gang te zetten. We creëerden een evenement op maat met een cocktailcreatie workshop, een geparfumeerde maaltijd, een overzicht van de evolutie van de parfumerie.",
+          "result": "Evenement op maat: Cocktailworkshop + geparfumeerde maaltijd + parfumerieontdekking in een ontspannen sfeer."
+        },
+        "villa-servais": {
+          "name": "Villa Servais",
+          "type": "Gastenkamers",
+          "description": "Creatie van een op maat gemaakte olfactorische sfeer voor dit charmante gastenverblijf.",
+          "result": "Gepersonaliseerde huisgeur om een unieke en onvergetelijke sfeer te creëren."
+        }
+      },
+      "avis": {
+        "title": "Wat onze klanten zeggen",
+        "subtitle": "Ervaringen gedeeld met passie"
+      },
+      "google": {
+        "reviewCount": "Gebaseerd op {count}+ Google reviews",
+        "leaveReview": "Laat een review achter"
+      },
+      "cta": {
+        "title": "Vertrouw ook op ons",
+        "subtitle": "Of u nu een particulier of een bedrijf bent, wij hebben een oplossing voor u.",
+        "entreprise": "Zakelijke aanbiedingen",
+        "contact": "Contacteer ons"
+      }
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact | NeZ ZeN",
+      "description": "Neem contact op met NeZ ZeN, ambachtelijke parfumerie in Namen. Contactformulier, openingstijden, adres en praktische informatie."
+    },
+    "hero": {
+      "badge": "Contact",
+      "title": "Neem contact op",
+      "subtitle": "Een vraag, zin om onze creaties te ontdekken of een workshop te boeken? Wij staan voor u klaar."
+    },
+    "form": {
+      "title": "Stuur ons een bericht",
+      "subtitle": "Vul het onderstaande formulier in en wij nemen zo snel mogelijk contact met u op.",
+      "firstName": "Voornaam",
+      "firstNamePlaceholder": "Uw voornaam",
+      "lastName": "Achternaam",
+      "lastNamePlaceholder": "Uw achternaam",
+      "email": "E-mail",
+      "emailPlaceholder": "uw@email.com",
+      "phone": "Telefoon (optioneel)",
+      "phonePlaceholder": "+32 XXX XX XX XX",
+      "subject": "Onderwerp",
+      "subjectPlaceholder": "Selecteer een onderwerp",
+      "subjects": {
+        "renseignement": "Algemene vraag",
+        "commande": "Bestelling / Product",
+        "atelier": "Workshop reservering",
+        "surMesure": "Op maat creatie",
+        "autre": "Ander verzoek"
+      },
+      "message": "Bericht",
+      "messagePlaceholder": "Beschrijf uw verzoek...",
+      "privacy": "Door dit formulier in te dienen, gaat u ermee akkoord dat uw gegevens worden gebruikt om contact met u op te nemen. Ons privacybeleid is van toepassing.",
+      "submit": "Bericht versturen",
+      "sending": "Verzenden...",
+      "success": {
+        "title": "Bericht verzonden!",
+        "message": "Bedankt voor uw bericht. Wij nemen zo snel mogelijk contact met u op."
+      },
+      "error": "Er is een fout opgetreden. Probeer het opnieuw of neem telefonisch contact met ons op."
+    },
+    "info": {
+      "title": "Praktische informatie",
+      "address": {
+        "title": "Adres",
+        "directions": "Google Maps routebeschrijving"
+      },
+      "phone": {
+        "title": "Telefoon"
+      },
+      "email": {
+        "title": "E-mail"
+      },
+      "hours": {
+        "title": "Openingstijden",
+        "weekdays": "Woensdag - Zaterdag: 10:30 - 18:00",
+        "note": "Of op afspraak"
+      },
+      "urgent": {
+        "title": "Snel antwoord nodig?",
+        "message": "Bel ons rechtstreeks op +32 81 24 12 94 tijdens onze openingstijden."
+      }
+    },
+    "social": {
+      "title": "Volg ons",
+      "subtitle": "Ontdek onze laatste creaties en nieuws op sociale media."
+    },
+    "map": {
+      "title": "NeZ ZeN locatie - Ambachtelijke parfumerie in Namen"
+    }
+  },
   "footer": {
     "description": "Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons Naams atelier.",
     "creations": "Creaties",

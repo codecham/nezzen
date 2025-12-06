@@ -581,6 +581,301 @@
       }
     }
   },
+  "aPropos": {
+    "notreApproche": {
+      "meta": {
+        "title": "Our Approach",
+        "description": "Discover the story of NeZ ZeN, a Belgian artisanal perfumery founded by Romain and Aurélie in Namur."
+      },
+      "hero": {
+        "badge": "Our Story",
+        "title": "A perfumery that highlights ingredients",
+        "subtitle": "NeZ ZeN is above all a story of passion, creativity and Belgian artisanal craftsmanship."
+      },
+      "intro": {
+        "title": "The NeZ and the ZeN",
+        "paragraph1": "NeZ ZeN, a Belgian artisanal perfumery led by the NeZ Romain Pantoustier and the ZeN Aurélie Gillon who decided to live their dream by creating a boutique dedicated to olfactory pleasures.",
+        "paragraph2": "By passing through our doors you will find, in a relaxed atmosphere, a range of unique perfumes as well as home fragrances, cosmetics...",
+        "paragraph3": "Don't hesitate to come and chat with our perfumer and discover how our elixirs are prepared and what makes them different.",
+        "roles": "The NeZ & The ZeN"
+      },
+      "principles": {
+        "title": "Our four creation principles",
+        "subtitle": "What guides each of our creations",
+        "jus": {
+          "title": "The \"Juice\" at the center",
+          "description": "Character creations. The perfume is at the heart of our product, with high concentrations and quality raw materials."
+        },
+        "experience": {
+          "title": "A unique experience",
+          "description": "Discover our materials and follow our team's advice to find the perfume that suits you."
+        },
+        "transparence": {
+          "title": "Transparency",
+          "description": "In our manufacturing process and the quality of our ingredients. Come see how our elixirs are prepared."
+        },
+        "innovation": {
+          "title": "An innovative approach",
+          "description": "To creation that highlights the beauty of the product and its user. Perfumes off the beaten track."
+        },
+        "note": "Even if our collections evolve over time and the inspiration of our perfumer, you will always be able to order your favorite perfume even if it is no longer available in store."
+      },
+      "distinctions": {
+        "title": "Recognition & Awards",
+        "subtitle": "Our recognized expertise",
+        "artisan": {
+          "title": "Certified Artisan",
+          "description": "Recognized by the Belgian FPS Economy for our creation principles and unique know-how."
+        },
+        "artOlfaction": {
+          "title": "Art & Olfaction Awards",
+          "description": "Global finalist with our perfume \"La Bibliothèque\" among the elite of independent perfumery."
+        },
+        "vitrine": {
+          "title": "Artisan Showcase",
+          "description": "Jury's favorite award among nearly 500 Belgian artisan candidates."
+        },
+        "trophee": {
+          "title": "Independent Trophy",
+          "description": "2nd place among over 250 independents for quality of welcome, service and product."
+        }
+      },
+      "press": {
+        "title": "In the Press",
+        "subtitle": "They talk about us",
+        "avenir": {
+          "date": "January 17, 2017",
+          "title": "L'Avenir",
+          "description": "Discovery interview of our artisanal perfumery in the heart of Namur."
+        },
+        "proximag": {
+          "date": "February 2017",
+          "title": "Proximag Namur",
+          "description": "Portrait of our workshop-boutique and our approach to perfumery."
+        }
+      },
+      "cta": {
+        "title": "Ready to discover our creations?",
+        "subtitle": "Explore our collection of artisanal perfumes, each tells a unique story.",
+        "button": "View our perfumes",
+        "contact": "Contact us"
+      }
+    },
+    "experience": {
+      "meta": {
+        "title": "More Than a Perfumery",
+        "description": "Discover the NeZ ZeN experience: culinary collaborations, tastings and sharing our passion."
+      },
+      "hero": {
+        "badge": "The Experience",
+        "title": "More than a perfumery",
+        "subtitle": "When perfumery meets gastronomy, wine and tea for unique sensory experiences."
+      },
+      "collaborations": {
+        "title": "Our collaborations",
+        "subtitle": "When a perfumer meets other enthusiasts",
+        "chef": {
+          "title": "When a perfumer meets a chef",
+          "description": "We had the pleasure of collaborating with several chefs to create perfumed dishes. Notably with the D'Arville restaurant and Arabelle Meirlaen who created a dessert based on our Terre de Feu perfume.",
+          "partner": "Restaurant Le D'Arville",
+          "partnerDesc": "Gastronomic collaboration"
+        },
+        "vin": {
+          "title": "When a perfumer helps you (re)discover wine",
+          "description": "In collaboration with Alsace wines, we had the opportunity to participate in a masterclass around Gewurztraminer. We broke down two vintages from Engel and Hugel houses into primary aromas. A beautiful moment of sharing that allows you to discover wine differently.",
+          "partner": "Alsace Wines",
+          "partnerDesc": "Gewurztraminer Masterclass"
+        },
+        "the": {
+          "title": "Perfumer and tea sommelier",
+          "description": "A special meeting with the Palais des Thés Namur team. The two teams of enthusiasts worked around perfumed teas to help you rediscover these fragrant creations.",
+          "partner": "Palais des Thés Namur",
+          "partnerDesc": "Teas & perfumes experience"
+        }
+      },
+      "partage": {
+        "badge": "Our value",
+        "title": "NeZ ZeN and sharing",
+        "description": "One of our values is sharing, so whenever we have the opportunity we share our passion, in our workshop daily but also during specific events.",
+        "items": {
+          "osmotheque": {
+            "title": "The Osmothèque in Versailles",
+            "description": "Participation in heritage days at the world perfumery museum."
+          },
+          "artisan": {
+            "title": "Artisan Day",
+            "description": "Sharing our craft and know-how during events dedicated to craftsmanship."
+          },
+          "ecoles": {
+            "title": "School visits",
+            "description": "Discussion sessions with students to introduce the perfumer's profession."
+          }
+        }
+      },
+      "cta": {
+        "visit": {
+          "title": "Want to visit us?",
+          "description": "Come discover our workshop-boutique in the heart of Namur and experience NeZ ZeN.",
+          "button": "Find us"
+        },
+        "ateliers": {
+          "title": "Join a workshop",
+          "description": "Discover our creative workshops and live a unique sensory experience.",
+          "button": "View workshops"
+        }
+      }
+    },
+    "galerie": {
+      "meta": {
+        "title": "Photo Gallery",
+        "description": "Discover the NeZ ZeN universe in pictures: our boutique, creations, workshops and events."
+      },
+      "hero": {
+        "badge": "Gallery",
+        "title": "Memories & Inspirations",
+        "subtitle": "A glimpse into our universe, our boutique and moments shared with you."
+      },
+      "categories": {
+        "all": "All",
+        "boutique": "The Boutique",
+        "creation": "Creation",
+        "produits": "Products",
+        "ateliers": "Workshops",
+        "evenements": "Events"
+      },
+      "empty": "No photos in this category.",
+      "lightbox": {
+        "close": "Close",
+        "previous": "Previous photo",
+        "next": "Next photo"
+      }
+    },
+    "temoignages": {
+      "meta": {
+        "title": "Testimonials",
+        "description": "Discover testimonials from our clients and partners who trusted us."
+      },
+      "hero": {
+        "badge": "Testimonials",
+        "title": "They trusted us",
+        "subtitle": "Individuals, businesses, artisans... Discover their experiences with NeZ ZeN."
+      },
+      "entreprises": {
+        "title": "Our business collaborations",
+        "subtitle": "Creative partnerships with passionate professionals",
+        "visitWebsite": "Visit website",
+        "mike-meys": {
+          "name": "Mike Meys Creation Studio",
+          "type": "Belgian creator",
+          "description": "Belgian creator Mike Meys trusted us to develop his olfactory signature. After a collaboration of nearly 9 months, Hard'heure was born, a perfume inspired by the descent into hell of Dante's Divine Comedy.",
+          "result": "Created perfume: Hard'heure - An intense perfume that begins with seduction in great aromatic freshness to end towards a mystical serenity."
+        },
+        "chris-alexxa": {
+          "name": "Chris Alexxa Jewels",
+          "type": "Jeweler - Liège",
+          "description": "The meeting of two passionate artisans. We had the pleasure of creating the olfactory ambiance for Chris Alexxa Jewels, a jeweler from Liège.",
+          "result": "Olfactory signature: An original, timeless and sensual composition reflecting the organic universe of the brand."
+        },
+        "ores": {
+          "name": "Orès",
+          "type": "Team Building",
+          "description": "A desire to create a custom team building to help teams initiate change. We created a bespoke event including a cocktail creation workshop, a perfumed meal, an overview of the evolution of perfumery.",
+          "result": "Custom event: Cocktail workshop + perfumed meal + perfumery discovery in a relaxed atmosphere."
+        },
+        "villa-servais": {
+          "name": "Villa Servais",
+          "type": "Guest house",
+          "description": "Creation of a custom olfactory ambiance for this charming guest house.",
+          "result": "Personalized home fragrance to create a unique and memorable atmosphere."
+        }
+      },
+      "avis": {
+        "title": "What our clients say",
+        "subtitle": "Experiences shared with passion"
+      },
+      "google": {
+        "reviewCount": "Based on {count}+ Google reviews",
+        "leaveReview": "Leave a review"
+      },
+      "cta": {
+        "title": "Trust us too",
+        "subtitle": "Whether you're an individual or a business, we have a solution for you.",
+        "entreprise": "Business offers",
+        "contact": "Contact us"
+      }
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact | NeZ ZeN",
+      "description": "Contact NeZ ZeN, artisan perfumery in Namur. Contact form, opening hours, address and practical information."
+    },
+    "hero": {
+      "badge": "Contact",
+      "title": "Get in touch",
+      "subtitle": "Have a question, want to discover our creations or book a workshop? We're here to help."
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+      "firstName": "First name",
+      "firstNamePlaceholder": "Your first name",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Your last name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+32 XXX XX XX XX",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjects": {
+        "renseignement": "General inquiry",
+        "commande": "Order / Product",
+        "atelier": "Workshop booking",
+        "surMesure": "Custom creation",
+        "autre": "Other request"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Describe your request...",
+      "privacy": "By submitting this form, you agree that your data may be used to contact you. Our privacy policy applies.",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": {
+        "title": "Message sent!",
+        "message": "Thank you for your message. We will get back to you as soon as possible."
+      },
+      "error": "An error occurred. Please try again or contact us by phone."
+    },
+    "info": {
+      "title": "Practical information",
+      "address": {
+        "title": "Address",
+        "directions": "Google Maps directions"
+      },
+      "phone": {
+        "title": "Phone"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Opening hours",
+        "weekdays": "Wednesday - Saturday: 10:30 AM - 6:00 PM",
+        "note": "Or by appointment"
+      },
+      "urgent": {
+        "title": "Need a quick answer?",
+        "message": "Call us directly at +32 81 24 12 94 during our opening hours."
+      }
+    },
+    "social": {
+      "title": "Follow us",
+      "subtitle": "Discover our latest creations and news on social media."
+    },
+    "map": {
+      "title": "NeZ ZeN location - Artisan Perfumery in Namur"
+    }
+  },
   "footer": {
     "description": "Each fragrance is an invitation to travel, created with passion in our Namur workshop.",
     "creations": "Creations",

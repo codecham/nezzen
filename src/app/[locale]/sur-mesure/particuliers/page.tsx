@@ -6,9 +6,8 @@ import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { Container, Button } from '@/components/ui'
 import { SectionHeading } from '@/components/shared/SectionHeading'
-import { forfaits, tarifsInclus, getAmbianceForfaits, getParfumForfaits } from '@/data/sur-mesure'
+import { tarifsInclus, getAmbianceForfaits, getParfumForfaits } from '@/data/sur-mesure'
 import type { Forfait } from '@/data/sur-mesure'
-import { cn } from '@/lib/utils'
 import {
   FileCheck,
   Beaker,
@@ -139,7 +138,7 @@ function ProductSection({ t }: SectionProps) {
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Image */}
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:aspect-square">
+          <div className="relative aspect-4/3 overflow-hidden rounded-2xl lg:aspect-square">
             <Image
               src="/images/sur-mesure/particulier-creation.jpg"
               alt="Romain, notre parfumeur, en pleine création"
@@ -147,7 +146,7 @@ function ProductSection({ t }: SectionProps) {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-foreground/20 to-transparent" />
           </div>
 
           {/* Content */}

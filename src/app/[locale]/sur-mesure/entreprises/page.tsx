@@ -143,7 +143,7 @@ function ServicesSection({ t }: SectionProps) {
                 {/* Image */}
                 <div
                   className={cn(
-                    'relative aspect-[4/3] overflow-hidden rounded-2xl',
+                    'relative aspect-4/3 overflow-hidden rounded-2xl',
                     isReversed && 'lg:[direction:ltr]'
                   )}
                 >

@@ -270,40 +270,40 @@
 ## ✅ Phase 9 : Pages À Propos
 
 ### Notre Approche
-- [ ] L'histoire de NeZ ZeN
-- [ ] Le duo (Romain le NeZ, Aurélie le ZeN)
-- [ ] Les 4 principes de création
-- [ ] Valeurs (vegan, éco-responsable, artisanal)
+- [x] L'histoire de NeZ ZeN
+- [x] Le duo (Romain le NeZ, Aurélie le ZeN)
+- [x] Les 4 principes de création
+- [x] Valeurs (vegan, éco-responsable, artisanal)
 
 ### Plus qu'une Parfumerie (L'Expérience)
-- [ ] Description de l'expérience en boutique
-- [ ] Le concept atelier-boutique
-- [ ] Photos ambiance
+- [x] Description de l'expérience en boutique
+- [x] Le concept atelier-boutique
+- [x] Photos ambiance
 
 ### Galerie Photos
-- [ ] Grid de photos
-- [ ] Lightbox pour agrandir
-- [ ] Catégories (boutique, ateliers, produits, événements)
+- [x] Grid de photos
+- [x] Lightbox pour agrandir
+- [x] Catégories (boutique, ateliers, produits, événements)
 
 ### Témoignages
-- [ ] Histoires de clients/entreprises
-- [ ] Format storytelling
-- [ ] Photos si disponibles
+- [x] Histoires de clients/entreprises
+- [x] Format storytelling
+- [x] Photos si disponibles
 
 ---
 
 ## ✅ Phase 10 : Page Contact
 
-- [ ] `ContactForm` — formulaire complet
-  - [ ] Nom, email, téléphone
-  - [ ] Sujet (dropdown: Renseignement, Commande, Atelier, Sur mesure, Autre)
-  - [ ] Message
-- [ ] Infos pratiques
-  - [ ] Adresse avec lien Google Maps
-  - [ ] Téléphone cliquable
-  - [ ] Email cliquable
-  - [ ] Horaires d'ouverture
-- [ ] Carte interactive (embed Google Maps ou statique)
+- [x] `ContactForm` — formulaire complet
+  - [x] Nom, email, téléphone
+  - [x] Sujet (dropdown: Renseignement, Commande, Atelier, Sur mesure, Autre)
+  - [x] Message
+- [x] Infos pratiques
+  - [x] Adresse avec lien Google Maps
+  - [x] Téléphone cliquable
+  - [x] Email cliquable
+  - [x] Horaires d'ouverture
+- [x] Carte interactive (embed Google Maps ou statique)
 
 ---
 
