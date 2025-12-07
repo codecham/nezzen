@@ -76,7 +76,7 @@ export function IntroSection({ className }: IntroSectionProps) {
               <AnimateOnScroll animation="fade-in-left" delay={150}>
                 <div className="relative">
                   {/* Placeholder pour photo des fondateurs */}
-                  <div className="aspect-[4/3] overflow-hidden rounded-lg bg-muted/30 transition-transform duration-500 hover:scale-[1.02]">
+                  <div className="aspect-4/3 overflow-hidden rounded-lg bg-muted/30 transition-transform duration-500 hover:scale-[1.02]">
                     <div className="flex h-full items-center justify-center">
                       <div className="text-center">
                         {/* Cercle Enso stylisé */}

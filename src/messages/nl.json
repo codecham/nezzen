@@ -366,37 +366,42 @@
     "options": {
       "parfum": {
         "title": "Parfum Cadeaubon",
-        "description": "Kies het formaat dat u wilt geven (15ml, 50ml of 100ml). De ontvanger kan elk parfum kiezen in de winkel.",
-        "includes": "Persoonlijk advies in de winkel inbegrepen",
-        "formats": "15ml: €29 • 50ml: €78 • 100ml: €128",
+        "description": "Geef een parfum uit onze collectie. De ontvanger kan zijn geur kiezen in de winkel.",
+        "selectionLabel": "Kies een formaat",
         "shipping": "Verzendkosten niet inbegrepen",
-        "delivery": "3 tot 5 dagen levertijd",
-        "cta": "Bestel deze cadeaubon"
+        "delivery": "3 tot 5 dagen",
+        "cta": "Toevoegen aan winkelwagen",
+        "ctaDisabled": "Selecteer een formaat",
+        "toastTitle": "Toegevoegd aan winkelwagen!",
+        "toastDescription": "Parfum bon %format% (%price%) toegevoegd aan uw winkelwagen."
       },
       "montant": {
         "title": "Cadeaubon Vrij Bedrag",
-        "description": "Kies het bedrag en het verschijnt op de bon. De ontvanger is vrij om alles te kiezen in onze winkel. Wij kunnen de bon personaliseren indien gewenst.",
-        "includes": "Geldig op alle producten en workshops",
-        "amounts": "Beschikbare bedragen",
-        "custom": "U kunt meerdere bonnen bestellen en wij tellen de bedragen op. Vermeld dit in de opmerkingen van uw bestelling.",
+        "description": "Geef een bedrag naar keuze. De ontvanger is vrij om alles te kiezen in onze winkel.",
+        "selectionLabel": "Kies een bedrag",
+        "customLabel": "Of voer een aangepast bedrag in",
+        "customPlaceholder": "Ander bedrag",
         "shipping": "Verzendkosten niet inbegrepen",
-        "delivery": "3 tot 5 dagen levertijd",
-        "cta": "Bestel deze cadeaubon"
+        "delivery": "3 tot 5 dagen",
+        "cta": "Toevoegen aan winkelwagen",
+        "ctaDisabled": "Selecteer een bedrag",
+        "toastTitle": "Toegevoegd aan winkelwagen!",
+        "toastDescription": "Cadeaubon van %amount% toegevoegd aan uw winkelwagen."
       }
     },
     "info": {
       "title": "Hoe werkt het?",
       "steps": {
         "order": {
-          "title": "1. Bestel",
+          "title": "Bestel",
           "description": "Online, telefonisch of in de winkel"
         },
         "receive": {
-          "title": "2. Ontvang",
+          "title": "Ontvang",
           "description": "Uw bon in een mooie cadeaupochette"
         },
         "enjoy": {
-          "title": "3. Geef",
+          "title": "Geef",
           "description": "Een unieke geurervaring"
         }
       },

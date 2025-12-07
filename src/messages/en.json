@@ -366,37 +366,42 @@
     "options": {
       "parfum": {
         "title": "Perfume Gift Card",
-        "description": "Choose the format you want to give (15ml, 50ml or 100ml). The recipient can choose any perfume in store.",
-        "includes": "Personalized advice in store included",
-        "formats": "15ml: €29 • 50ml: €78 • 100ml: €128",
+        "description": "Offer a perfume from our collection. The recipient can choose their fragrance in store.",
+        "selectionLabel": "Choose a size",
         "shipping": "Shipping not included",
-        "delivery": "3 to 5 days delivery",
-        "cta": "Order this gift card"
+        "delivery": "3 to 5 days",
+        "cta": "Add to cart",
+        "ctaDisabled": "Select a size",
+        "toastTitle": "Added to cart!",
+        "toastDescription": "Perfume voucher %format% (%price%) added to your cart."
       },
       "montant": {
-        "title": "Custom Amount Gift Card",
-        "description": "Choose the amount and it will appear on the voucher. The recipient is free to choose anything in our store. We can personalize the voucher if you wish.",
-        "includes": "Valid on all products and workshops",
-        "amounts": "Available amounts",
-        "custom": "You can order multiple vouchers and we'll combine the amounts. Just indicate it in your order comments.",
+        "title": "Custom Amount Voucher",
+        "description": "Offer any amount. The recipient will be free to choose anything in our shop.",
+        "selectionLabel": "Choose an amount",
+        "customLabel": "Or enter a custom amount",
+        "customPlaceholder": "Other amount",
         "shipping": "Shipping not included",
-        "delivery": "3 to 5 days delivery",
-        "cta": "Order this gift card"
+        "delivery": "3 to 5 days",
+        "cta": "Add to cart",
+        "ctaDisabled": "Select an amount",
+        "toastTitle": "Added to cart!",
+        "toastDescription": "Gift voucher of %amount% added to your cart."
       }
     },
     "info": {
       "title": "How does it work?",
       "steps": {
         "order": {
-          "title": "1. Order",
+          "title": "Order",
           "description": "Online, by phone or in store"
         },
         "receive": {
-          "title": "2. Receive",
+          "title": "Receive",
           "description": "Your voucher in a beautiful gift pouch"
         },
         "enjoy": {
-          "title": "3. Give",
+          "title": "Give",
           "description": "A unique olfactory experience"
         }
       },

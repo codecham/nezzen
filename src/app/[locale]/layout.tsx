@@ -6,6 +6,7 @@ import { getMessages } from 'next-intl/server'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import { routing } from '@/i18n/routing'
 import { Header, Footer } from '@/components/layout'
+import { ToastProvider } from '@/components/ui'
 import '../globals.css'
 
 // Font pour les titres (élégante, serif)
@@ -60,14 +61,16 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} className={`${cormorant.variable} ${inter.variable}`}>
       <body className="min-h-screen bg-background font-body text-foreground antialiased">
         <NextIntlClientProvider messages={messages}>
-          {/* Header sticky */}
-          <Header />
+          <ToastProvider position="bottom-right" maxToasts={5}>
+            {/* Header sticky */}
+            <Header />
 
-          {/* Contenu principal */}
-          <main className="min-h-screen">{children}</main>
+            {/* Contenu principal */}
+            <main className="min-h-screen">{children}</main>
 
-          {/* Footer */}
-          <Footer />
+            {/* Footer */}
+            <Footer />
+          </ToastProvider>
         </NextIntlClientProvider>
       </body>
     </html>

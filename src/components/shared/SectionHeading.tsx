@@ -37,6 +37,13 @@ export function SectionHeading({
     right: 'justify-end',
   }
 
+  // Classes pour le sous-titre selon l'alignement
+  const subtitleClasses = {
+    left: 'mr-auto', // Aligné à gauche
+    center: 'mx-auto', // Centré
+    right: 'ml-auto', // Aligné à droite
+  }
+
   return (
     <div className={cn('mb-12 lg:mb-16', alignClasses[align], className)}>
       {/* Ornement décoratif - cercle enso stylisé */}
@@ -73,9 +80,12 @@ export function SectionHeading({
         {title}
       </h2>
 
-      {/* Sous-titre */}
+      {/* Sous-titre - maintenant aligné selon la prop align */}
       {subtitle && (
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground lg:text-xl">
+        <p className={cn(
+          'mt-4 max-w-2xl text-lg text-muted-foreground lg:text-xl',
+          subtitleClasses[align]
+        )}>
           {subtitle}
         </p>
       )}

@@ -366,37 +366,42 @@
     "options": {
       "parfum": {
         "title": "Bon pour un Parfum",
-        "description": "Choisissez le conditionnement que vous souhaitez offrir (15ml, 50ml ou 100ml). La personne pourra choisir le parfum de son choix en boutique.",
-        "includes": "Conseil personnalisé en boutique inclus",
-        "formats": "15ml : 29€ • 50ml : 78€ • 100ml : 128€",
+        "description": "Offrez un parfum de notre collection. La personne pourra choisir la fragrance de son choix en boutique.",
+        "selectionLabel": "Choisissez un format",
         "shipping": "Frais de port non compris",
-        "delivery": "3 à 5 jours de délai de livraison",
-        "cta": "Commander ce bon"
+        "delivery": "3 à 5 jours",
+        "cta": "Ajouter au panier",
+        "ctaDisabled": "Sélectionnez un format",
+        "toastTitle": "Ajouté au panier !",
+        "toastDescription": "Bon parfum %format% (%price%) ajouté à votre panier."
       },
       "montant": {
         "title": "Bon Montant Libre",
-        "description": "Choisissez le montant et il apparaîtra sur le bon. La personne sera libre de choisir ce qu'elle veut dans notre boutique. Nous pouvons personnaliser le bon si vous le souhaitez.",
-        "includes": "Valable sur tous les produits et ateliers",
-        "amounts": "Montants disponibles",
-        "custom": "Vous pouvez commander plusieurs bons et nous ferons leur somme. Indiquez-le dans les commentaires de votre commande.",
+        "description": "Offrez un montant au choix. La personne sera libre de choisir ce qu'elle veut dans notre boutique.",
+        "selectionLabel": "Choisissez un montant",
+        "customLabel": "Ou entrez un montant personnalisé",
+        "customPlaceholder": "Autre montant",
         "shipping": "Frais de port non compris",
-        "delivery": "3 à 5 jours de délai de livraison",
-        "cta": "Commander ce bon"
+        "delivery": "3 à 5 jours",
+        "cta": "Ajouter au panier",
+        "ctaDisabled": "Sélectionnez un montant",
+        "toastTitle": "Ajouté au panier !",
+        "toastDescription": "Bon cadeau de %amount% ajouté à votre panier."
       }
     },
     "info": {
       "title": "Comment ça marche ?",
       "steps": {
         "order": {
-          "title": "1. Commandez",
+          "title": "Commandez",
           "description": "En ligne, par téléphone ou en boutique"
         },
         "receive": {
-          "title": "2. Recevez",
+          "title": "Recevez",
           "description": "Votre bon dans une jolie pochette cadeau"
         },
         "enjoy": {
-          "title": "3. Offrez",
+          "title": "Offrez",
           "description": "Une expérience olfactive unique"
         }
       },

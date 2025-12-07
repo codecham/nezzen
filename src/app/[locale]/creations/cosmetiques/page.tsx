@@ -72,7 +72,7 @@ export default function CosmetiquesPage() {
           <SectionHeading
             title={t('gelsDouche.title')}
             subtitle={t('gelsDouche.subtitle')}
-            align="left"
+            align="center"
           />
 
           {/* Products Grid */}
@@ -90,7 +90,7 @@ export default function CosmetiquesPage() {
           <SectionHeading
             title={t('laitsHydratants.title')}
             subtitle={t('laitsHydratants.subtitle')}
-            align="left"
+            align="center"
           />
 
           {/* Products Grid */}

@@ -71,7 +71,7 @@ export default function NezzenHomePage() {
           <SectionHeading
             title={t('diffuseurs.title')}
             subtitle={t('diffuseurs.subtitle')}
-            align="left"
+            align="center"
           />
 
           {/* Info badges */}
@@ -105,7 +105,7 @@ export default function NezzenHomePage() {
           <SectionHeading
             title={t('bougies.title')}
             subtitle={t('bougies.subtitle')}
-            align="left"
+            align="center"
           />
 
           {/* Products Grid */}

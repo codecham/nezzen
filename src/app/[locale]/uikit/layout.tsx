@@ -1,5 +1,4 @@
 // src/app/[locale]/uikit/layout.tsx
-import { ToastProvider } from '@/components/ui'
 
 interface UIKitLayoutProps {
   children: React.ReactNode
@@ -7,12 +6,8 @@ interface UIKitLayoutProps {
 
 /**
  * Layout pour la page UIKit
- * Inclut le ToastProvider pour les démonstrations
+ * Le ToastProvider est maintenant dans le layout principal
  */
 export default function UIKitLayout({ children }: UIKitLayoutProps) {
-  return (
-    <ToastProvider position="bottom-right" maxToasts={5}>
-      {children}
-    </ToastProvider>
-  )
+  return <>{children}</>
 }

@@ -10,6 +10,9 @@ export { OlfactoryPyramid } from './OlfactoryPyramid'
 export { RelatedParfums } from './RelatedParfums'
 export { ParfumCategoryFilter } from './ParfumCategoryFilter'
 
+// Gift Cards
+export { GiftCardSelector } from './GiftCardSelector'
+
 // Testimonials
 export { TestimonialCard } from './TestimonialCard'
 
