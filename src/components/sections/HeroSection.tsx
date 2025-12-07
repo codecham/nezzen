@@ -13,17 +13,15 @@ interface HeroSectionProps {
 }
 
 /**
- * Section Hero de la page d'accueil
- * Design immersif avec animations d'entrée sophistiquées
+ * Section Hero minimaliste
+ * Design épuré zen avec animations subtiles
  */
 export function HeroSection({ className }: HeroSectionProps) {
   const t = useTranslations('home.hero')
   const [isLoaded, setIsLoaded] = useState(false)
 
-  // Déclencher les animations après le montage
   useEffect(() => {
-    // Petit délai pour s'assurer que le CSS est chargé
-    const timer = setTimeout(() => setIsLoaded(true), 100)
+    const timer = setTimeout(() => setIsLoaded(true), 50)
     return () => clearTimeout(timer)
   }, [])
 
@@ -35,83 +33,86 @@ export function HeroSection({ className }: HeroSectionProps) {
         className
       )}
     >
-      {/* Background avec texture subtile */}
-      <div className="absolute inset-0 bg-background">
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-transparent via-background/50 to-background" />
-        
-        {/* Pattern subtil zen */}
-        <div 
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5C15 5 5 18 5 32c0 14 10 23 23 21' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E")`,
-            backgroundSize: '120px 120px',
-          }}
-        />
-      </div>
+      {/* Background simple */}
+      <div className="absolute inset-0 bg-background" />
 
-      {/* Cercle Enso décoratif en arrière-plan avec animation */}
-      <div 
-        className={cn(
-          'absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
-          'transition-all duration-1500 ease-out',
-          isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-        )}
-      >
+      {/* Cercle Enso décoratif */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
         <svg
           viewBox="0 0 400 400"
-          className="h-[500px] w-[500px] text-muted-foreground/5 lg:h-[700px] lg:w-[700px]"
+          className="h-[400px] w-[400px] lg:h-[550px] lg:w-[550px]"
           aria-hidden="true"
         >
+          {/* Cercle principal */}
           <path
-            d="M 200 30 C 100 30, 30 110, 30 210 C 30 310, 100 370, 180 360"
+            d="M 200 40 C 95 40, 40 120, 40 210 C 40 300, 105 360, 190 350"
             fill="none"
             stroke="currentColor"
-            strokeWidth="8"
+            strokeWidth="2"
             strokeLinecap="round"
-            className="text-foreground/5"
+            className={cn(
+              'text-foreground/[0.04]',
+              isLoaded && 'animate-draw-slow'
+            )}
+            style={{
+              strokeDasharray: 600,
+              strokeDashoffset: isLoaded ? 0 : 600,
+              transition: 'stroke-dashoffset 2.5s cubic-bezier(0.23, 1, 0.32, 1)',
+              transitionDelay: '0.3s',
+            }}
           />
+          {/* Second trait plus léger */}
           <path
-            d="M 210 30 C 310 30, 370 110, 370 210 C 370 310, 300 370, 220 360"
+            d="M 210 40 C 310 45, 360 125, 360 215 C 360 305, 290 360, 205 350"
             fill="none"
             stroke="currentColor"
-            strokeWidth="6"
+            strokeWidth="1.5"
             strokeLinecap="round"
-            className="text-muted-foreground/5"
+            className="text-foreground/[0.025]"
+            style={{
+              strokeDasharray: 580,
+              strokeDashoffset: isLoaded ? 0 : 580,
+              transition: 'stroke-dashoffset 3s cubic-bezier(0.23, 1, 0.32, 1)',
+              transitionDelay: '0.6s',
+            }}
           />
         </svg>
       </div>
 
       {/* Contenu */}
       <Container className="relative z-10">
-        <div className="mx-auto max-w-4xl text-center">
-          {/* Badge artisan */}
+        <div className="mx-auto max-w-3xl text-center">
+          
+          {/* Badge */}
           <div 
             className={cn(
-              'mb-8 inline-flex items-center gap-2 rounded-full border border-border/50 bg-surface/50 px-4 py-2 backdrop-blur-sm',
-              'transition-all duration-700 ease-out',
+              'mb-8 inline-flex items-center gap-2 rounded-full',
+              'border border-border bg-surface/80 backdrop-blur-sm',
+              'px-4 py-2',
+              'transition-all duration-500 ease-out',
               isLoaded 
                 ? 'opacity-100 translate-y-0' 
                 : 'opacity-0 -translate-y-4'
             )}
-            style={{ transitionDelay: '200ms' }}
+            style={{ transitionDelay: '100ms' }}
           >
-            <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-sm font-medium text-muted-foreground">
+            <span className="h-1.5 w-1.5 rounded-full bg-foreground/60" />
+            <span className="text-sm text-muted-foreground">
               {t('badge')}
             </span>
           </div>
 
-          {/* Titre principal */}
+          {/* Titre */}
           <h1 
             className={cn(
-              'font-heading text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl',
+              'font-heading text-4xl font-medium leading-[1.15] tracking-tight text-foreground',
+              'sm:text-5xl md:text-6xl',
               'transition-all duration-700 ease-out',
               isLoaded 
                 ? 'opacity-100 translate-y-0' 
-                : 'opacity-0 translate-y-8'
+                : 'opacity-0 translate-y-6'
             )}
-            style={{ transitionDelay: '400ms' }}
+            style={{ transitionDelay: '200ms' }}
           >
             {t('title')}
           </h1>
@@ -119,32 +120,33 @@ export function HeroSection({ className }: HeroSectionProps) {
           {/* Sous-titre */}
           <p 
             className={cn(
-              'mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl lg:mt-8 lg:text-2xl',
+              'mx-auto mt-6 max-w-xl text-lg text-muted-foreground',
+              'sm:text-xl',
               'transition-all duration-700 ease-out',
               isLoaded 
                 ? 'opacity-100 translate-y-0' 
-                : 'opacity-0 translate-y-8'
+                : 'opacity-0 translate-y-6'
             )}
-            style={{ transitionDelay: '600ms' }}
+            style={{ transitionDelay: '350ms' }}
           >
             {t('subtitle')}
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA */}
           <div 
             className={cn(
-              'mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:mt-12',
+              'mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row',
               'transition-all duration-700 ease-out',
               isLoaded 
                 ? 'opacity-100 translate-y-0' 
-                : 'opacity-0 translate-y-8'
+                : 'opacity-0 translate-y-6'
             )}
-            style={{ transitionDelay: '800ms' }}
+            style={{ transitionDelay: '500ms' }}
           >
-            <Button asChild size="lg" className="group">
+            <Button asChild size="lg">
               <Link href="/creations/parfums">
                 {t('cta.primary')}
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
@@ -154,50 +156,50 @@ export function HeroSection({ className }: HeroSectionProps) {
             </Button>
           </div>
 
-          {/* Badges de confiance */}
+          {/* Trust badges */}
           <div 
             className={cn(
-              'mt-16 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground lg:mt-20',
+              'mt-16 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground',
               'transition-all duration-700 ease-out',
               isLoaded 
                 ? 'opacity-100 translate-y-0' 
-                : 'opacity-0 translate-y-8'
+                : 'opacity-0 translate-y-4'
             )}
-            style={{ transitionDelay: '1000ms' }}
+            style={{ transitionDelay: '650ms' }}
           >
-            <div className="flex items-center gap-2 transition-colors hover:text-foreground">
-              <Award className="h-4 w-4 text-accent" />
+            <div className="flex items-center gap-2">
+              <Award className="h-4 w-4" />
               <span>{t('trust.artisan')}</span>
             </div>
-            <div className="hidden h-4 w-px bg-border sm:block" />
-            <div className="flex items-center gap-2 transition-colors hover:text-foreground">
-              <Leaf className="h-4 w-4 text-accent" />
+            <span className="hidden h-3 w-px bg-border sm:block" />
+            <div className="flex items-center gap-2">
+              <Leaf className="h-4 w-4" />
               <span>{t('trust.vegan')}</span>
             </div>
-            <div className="hidden h-4 w-px bg-border sm:block" />
-            <div className="flex items-center gap-2 transition-colors hover:text-foreground">
-              <MapPin className="h-4 w-4 text-accent" />
+            <span className="hidden h-3 w-px bg-border sm:block" />
+            <div className="flex items-center gap-2">
+              <MapPin className="h-4 w-4" />
               <span>{t('trust.location')}</span>
             </div>
           </div>
         </div>
       </Container>
 
-      {/* Indicateur de scroll */}
+      {/* Scroll indicator */}
       <div 
         className={cn(
           'absolute bottom-8 left-1/2 -translate-x-1/2',
           'transition-all duration-700 ease-out',
           isLoaded 
-            ? 'opacity-100 translate-y-0' 
-            : 'opacity-0 translate-y-4'
+            ? 'opacity-100' 
+            : 'opacity-0'
         )}
-        style={{ transitionDelay: '1200ms' }}
+        style={{ transitionDelay: '900ms' }}
       >
         <div className="flex flex-col items-center gap-2 text-muted-foreground">
-          <span className="text-xs uppercase tracking-widest">{t('scroll')}</span>
-          <div className="h-10 w-6 rounded-full border border-border p-1">
-            <div className="h-2 w-1 rounded-full bg-muted-foreground animate-bounce mx-auto" />
+          <span className="text-[10px] uppercase tracking-widest">{t('scroll')}</span>
+          <div className="h-8 w-5 rounded-full border border-border">
+            <div className="mx-auto mt-1.5 h-1.5 w-0.5 rounded-full bg-muted-foreground animate-bounce" />
           </div>
         </div>
       </div>

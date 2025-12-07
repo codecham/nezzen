@@ -1,3 +1,4 @@
+// src/components/ui/Card.tsx
 import { type ComponentProps } from 'react'
 import { cn } from '@/lib/utils'
 
@@ -38,12 +39,14 @@ export function Card({
   return (
     <article
       className={cn(
-        'overflow-hidden transition-all duration-300',
+        'overflow-hidden rounded-sm',
+        'transition-all duration-300 ease-out',
         variantClasses[variant],
         paddingClasses[padding],
         hoverable && [
           'cursor-pointer',
-          'hover:shadow-md hover:-translate-y-1',
+          'hover:-translate-y-1',
+          'hover:shadow-md',
         ],
         className
       )}
@@ -60,17 +63,21 @@ export function Card({
 
 interface CardImageProps extends ComponentProps<'div'> {
   /** Ratio d'aspect */
-  aspectRatio?: 'square' | 'video' | 'portrait'
+  aspectRatio?: 'square' | 'video' | 'portrait' | 'wide'
+  /** Effet de zoom au hover */
+  zoomOnHover?: boolean
 }
 
 const aspectClasses = {
   square: 'aspect-square',
   video: 'aspect-video',
   portrait: 'aspect-[3/4]',
+  wide: 'aspect-[16/9]',
 }
 
 export function CardImage({
   aspectRatio = 'square',
+  zoomOnHover = true,
   className,
   children,
   ...props
@@ -84,7 +91,17 @@ export function CardImage({
       )}
       {...props}
     >
-      {children}
+      <div
+        className={cn(
+          'absolute inset-0',
+          zoomOnHover && [
+            'transition-transform duration-500 ease-out',
+            'group-hover:scale-[1.03]',
+          ]
+        )}
+      >
+        {children}
+      </div>
     </div>
   )
 }
@@ -94,8 +111,13 @@ export function CardImage({
    ================================ */
 
 interface CardContentProps extends ComponentProps<'div'> {
-  /** Padding du contenu */
   padding?: 'sm' | 'md' | 'lg'
+}
+
+const contentPaddingClasses = {
+  sm: 'p-4',
+  md: 'p-5',
+  lg: 'p-6',
 }
 
 export function CardContent({
@@ -106,7 +128,7 @@ export function CardContent({
 }: CardContentProps) {
   return (
     <div
-      className={cn(paddingClasses[padding], className)}
+      className={cn(contentPaddingClasses[padding], className)}
       {...props}
     >
       {children}
@@ -134,15 +156,22 @@ export function CardHeader({
    Card Title
    ================================ */
 
+interface CardTitleProps extends ComponentProps<'h3'> {
+  /** Transition au hover parent */
+  hoverEffect?: boolean
+}
+
 export function CardTitle({
+  hoverEffect = false,
   className,
   children,
   ...props
-}: ComponentProps<'h3'>) {
+}: CardTitleProps) {
   return (
     <h3
       className={cn(
         'font-heading text-lg font-medium text-foreground',
+        hoverEffect && 'transition-opacity duration-200 group-hover:opacity-70',
         className
       )}
       {...props}
@@ -163,7 +192,7 @@ export function CardDescription({
 }: ComponentProps<'p'>) {
   return (
     <p
-      className={cn('text-sm text-muted-foreground', className)}
+      className={cn('text-sm text-muted-foreground leading-relaxed', className)}
       {...props}
     >
       {children}
@@ -187,5 +216,24 @@ export function CardFooter({
     >
       {children}
     </footer>
+  )
+}
+
+/* ================================
+   Card Badges Container
+   ================================ */
+
+export function CardBadges({
+  className,
+  children,
+  ...props
+}: ComponentProps<'div'>) {
+  return (
+    <div
+      className={cn('absolute left-3 top-3 z-10 flex flex-col gap-2', className)}
+      {...props}
+    >
+      {children}
+    </div>
   )
 }
