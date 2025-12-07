@@ -31,20 +31,20 @@ export function SectionHeading({
     right: 'text-right',
   }
 
-  const ornamentAlignClasses = {
-    left: 'mr-auto',
-    center: 'mx-auto',
-    right: 'ml-auto',
+  const ornamentContainerClasses = {
+    left: 'justify-start',
+    center: 'justify-center',
+    right: 'justify-end',
   }
 
   return (
     <div className={cn('mb-12 lg:mb-16', alignClasses[align], className)}>
       {/* Ornement décoratif - cercle enso stylisé */}
       {showOrnament && (
-        <div className={cn('mb-6', ornamentAlignClasses[align])}>
+        <div className={cn('mb-6 flex', ornamentContainerClasses[align])}>
           <svg
             viewBox="0 0 60 60"
-            className="h-10 w-10 text-muted-foreground/30"
+            className="h-10 w-10"
             aria-hidden="true"
           >
             {/* Arc zen simplifié */}
