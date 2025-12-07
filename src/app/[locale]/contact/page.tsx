@@ -452,7 +452,7 @@ function MapSection({ t }: SectionProps) {
         <div className="overflow-hidden rounded-2xl border border-border">
           {/* Google Maps Embed */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.234567890123!2d4.8619!3d50.4623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1997c6c61f0ed%3A0x9a2070cea9deeb75!2sNeZ%20ZeN%20-%20Parfumerie%20Artisanale!5e0!3m2!1sfr!2sbe!4v1701234567890"
+            src="https://www.google.com/maps?q=NeZ+ZeN+Parfumerie+Artisanale+Rue+Haute+Marcelle+22+Namur+Belgium&output=embed"
             width="100%"
             height="400"
             style={{ border: 0 }}
@@ -460,7 +460,7 @@ function MapSection({ t }: SectionProps) {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title={t('map.title')}
-            className="grayscale transition-all duration-300 hover:grayscale-0"
+            className="transition-all duration-300 hover:grayscale-0"
           />
         </div>
 

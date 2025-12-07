@@ -310,9 +310,9 @@
 ## ✅ Phase 11 : Finitions & Polish
 
 ### Responsive
-- [ ] Tester toutes les pages sur mobile
-- [ ] Tester sur tablette
-- [ ] Ajuster les breakpoints si nécessaire
+- [x] Tester toutes les pages sur mobile
+- [x] Tester sur tablette
+- [x] Ajuster les breakpoints si nécessaire
 
 ### Animations
 - [ ] Transitions de page (optionnel)
