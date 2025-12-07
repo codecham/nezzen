@@ -1,9 +1,12 @@
 // src/components/sections/HeroSection.tsx
+'use client'
+
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { Container, Button } from '@/components/ui'
 import { ArrowRight, Award, Leaf, MapPin } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 interface HeroSectionProps {
   className?: string
@@ -11,10 +14,18 @@ interface HeroSectionProps {
 
 /**
  * Section Hero de la page d'accueil
- * Design immersif avec titre, baseline et CTA
+ * Design immersif avec animations d'entrée sophistiquées
  */
 export function HeroSection({ className }: HeroSectionProps) {
   const t = useTranslations('home.hero')
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  // Déclencher les animations après le montage
+  useEffect(() => {
+    // Petit délai pour s'assurer que le CSS est chargé
+    const timer = setTimeout(() => setIsLoaded(true), 100)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <section
@@ -39,8 +50,14 @@ export function HeroSection({ className }: HeroSectionProps) {
         />
       </div>
 
-      {/* Cercle Enso décoratif en arrière-plan */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+      {/* Cercle Enso décoratif en arrière-plan avec animation */}
+      <div 
+        className={cn(
+          'absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
+          'transition-all duration-1500 ease-out',
+          isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+        )}
+      >
         <svg
           viewBox="0 0 400 400"
           className="h-[500px] w-[500px] text-muted-foreground/5 lg:h-[700px] lg:w-[700px]"
@@ -69,63 +86,119 @@ export function HeroSection({ className }: HeroSectionProps) {
       <Container className="relative z-10">
         <div className="mx-auto max-w-4xl text-center">
           {/* Badge artisan */}
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border/50 bg-surface/50 px-4 py-2 backdrop-blur-sm">
-            <span className="h-2 w-2 rounded-full bg-accent" />
+          <div 
+            className={cn(
+              'mb-8 inline-flex items-center gap-2 rounded-full border border-border/50 bg-surface/50 px-4 py-2 backdrop-blur-sm',
+              'transition-all duration-700 ease-out',
+              isLoaded 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 -translate-y-4'
+            )}
+            style={{ transitionDelay: '200ms' }}
+          >
+            <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
             <span className="text-sm font-medium text-muted-foreground">
               {t('badge')}
             </span>
           </div>
 
           {/* Titre principal */}
-          <h1 className="font-heading text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 
+            className={cn(
+              'font-heading text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl',
+              'transition-all duration-700 ease-out',
+              isLoaded 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            )}
+            style={{ transitionDelay: '400ms' }}
+          >
             {t('title')}
           </h1>
 
           {/* Sous-titre */}
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl lg:mt-8 lg:text-2xl">
+          <p 
+            className={cn(
+              'mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl lg:mt-8 lg:text-2xl',
+              'transition-all duration-700 ease-out',
+              isLoaded 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            )}
+            style={{ transitionDelay: '600ms' }}
+          >
             {t('subtitle')}
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:mt-12">
-            <Button asChild size="lg">
-              <Link href="/creations">
+          <div 
+            className={cn(
+              'mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:mt-12',
+              'transition-all duration-700 ease-out',
+              isLoaded 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            )}
+            style={{ transitionDelay: '800ms' }}
+          >
+            <Button asChild size="lg" className="group">
+              <Link href="/creations/parfums">
                 {t('cta.primary')}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/ateliers">
+              <Link href="/a-propos/notre-approche">
                 {t('cta.secondary')}
               </Link>
             </Button>
           </div>
 
-          {/* Indicateurs de confiance */}
-          <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground lg:mt-20">
-            <div className="flex items-center gap-2">
-              <Award className="h-4 w-4" strokeWidth={1.5} />
+          {/* Badges de confiance */}
+          <div 
+            className={cn(
+              'mt-16 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground lg:mt-20',
+              'transition-all duration-700 ease-out',
+              isLoaded 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            )}
+            style={{ transitionDelay: '1000ms' }}
+          >
+            <div className="flex items-center gap-2 transition-colors hover:text-foreground">
+              <Award className="h-4 w-4 text-accent" />
               <span>{t('trust.artisan')}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Leaf className="h-4 w-4" strokeWidth={1.5} />
+            <div className="hidden h-4 w-px bg-border sm:block" />
+            <div className="flex items-center gap-2 transition-colors hover:text-foreground">
+              <Leaf className="h-4 w-4 text-accent" />
               <span>{t('trust.vegan')}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" strokeWidth={1.5} />
+            <div className="hidden h-4 w-px bg-border sm:block" />
+            <div className="flex items-center gap-2 transition-colors hover:text-foreground">
+              <MapPin className="h-4 w-4 text-accent" />
               <span>{t('trust.location')}</span>
             </div>
           </div>
         </div>
       </Container>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-xs uppercase tracking-widest text-muted-foreground">
-            {t('scroll')}
-          </span>
-          <div className="h-12 w-px bg-linear-to-b from-muted-foreground/50 to-transparent" />
+      {/* Indicateur de scroll */}
+      <div 
+        className={cn(
+          'absolute bottom-8 left-1/2 -translate-x-1/2',
+          'transition-all duration-700 ease-out',
+          isLoaded 
+            ? 'opacity-100 translate-y-0' 
+            : 'opacity-0 translate-y-4'
+        )}
+        style={{ transitionDelay: '1200ms' }}
+      >
+        <div className="flex flex-col items-center gap-2 text-muted-foreground">
+          <span className="text-xs uppercase tracking-widest">{t('scroll')}</span>
+          <div className="h-10 w-6 rounded-full border border-border p-1">
+            <div className="h-2 w-1 rounded-full bg-muted-foreground animate-bounce mx-auto" />
+          </div>
         </div>
       </div>
     </section>

@@ -1,8 +1,11 @@
 // src/components/sections/RefillSection.tsx
+'use client'
+
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
-import { Container } from '@/components/ui'
+import { Container, AnimateOnScroll } from '@/components/ui'
 import { Recycle, Leaf, Heart } from 'lucide-react'
+import { useInView } from '@/hooks'
 
 interface RefillSectionProps {
   className?: string
@@ -10,9 +13,11 @@ interface RefillSectionProps {
 
 /**
  * Section mettant en avant l'engagement éco-responsable et les flacons rechargeables
+ * Avec animations au scroll
  */
 export function RefillSection({ className }: RefillSectionProps) {
   const t = useTranslations('home.refill')
+  const { ref, hasBeenInView } = useInView({ threshold: 0.2, triggerOnce: true })
 
   return (
     <section
@@ -33,24 +38,42 @@ export function RefillSection({ className }: RefillSectionProps) {
       <Container className="relative">
         <div className="mx-auto max-w-4xl text-center">
           {/* Icône */}
-          <div className="mb-8 inline-flex items-center justify-center rounded-full bg-background/10 p-4">
-            <Recycle className="h-8 w-8" strokeWidth={1.5} />
-          </div>
+          <AnimateOnScroll animation="scale-in" duration={500}>
+            <div className="mb-8 inline-flex items-center justify-center rounded-full bg-background/10 p-4 transition-transform duration-300 hover:scale-110">
+              <Recycle className="h-8 w-8" strokeWidth={1.5} />
+            </div>
+          </AnimateOnScroll>
 
           {/* Titre */}
-          <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-            {t('title')}
-          </h2>
+          <AnimateOnScroll animation="fade-in-up" delay={100}>
+            <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+              {t('title')}
+            </h2>
+          </AnimateOnScroll>
 
           {/* Sous-titre */}
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-background/80 lg:text-xl">
-            {t('subtitle')}
-          </p>
+          <AnimateOnScroll animation="fade-in-up" delay={200}>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-background/80 lg:text-xl">
+              {t('subtitle')}
+            </p>
+          </AnimateOnScroll>
 
-          {/* Points clés */}
-          <div className="mt-12 grid gap-8 sm:grid-cols-3">
-            <div className="flex flex-col items-center">
-              <div className="mb-3 rounded-full bg-background/10 p-3">
+          {/* Points clés avec animation staggerée */}
+          <div 
+            ref={ref as React.RefObject<HTMLDivElement>}
+            className="mt-12 grid gap-8 sm:grid-cols-3"
+          >
+            {/* Refill */}
+            <div 
+              className={cn(
+                'flex flex-col items-center transition-all duration-500',
+                hasBeenInView 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-6'
+              )}
+              style={{ transitionDelay: '300ms' }}
+            >
+              <div className="mb-3 rounded-full bg-background/10 p-3 transition-all duration-300 hover:bg-background/20 hover:scale-110">
                 <Recycle className="h-5 w-5" strokeWidth={1.5} />
               </div>
               <h3 className="font-medium">{t('points.refill.title')}</h3>
@@ -58,8 +81,18 @@ export function RefillSection({ className }: RefillSectionProps) {
                 {t('points.refill.description')}
               </p>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="mb-3 rounded-full bg-background/10 p-3">
+
+            {/* Natural */}
+            <div 
+              className={cn(
+                'flex flex-col items-center transition-all duration-500',
+                hasBeenInView 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-6'
+              )}
+              style={{ transitionDelay: '400ms' }}
+            >
+              <div className="mb-3 rounded-full bg-background/10 p-3 transition-all duration-300 hover:bg-background/20 hover:scale-110">
                 <Leaf className="h-5 w-5" strokeWidth={1.5} />
               </div>
               <h3 className="font-medium">{t('points.natural.title')}</h3>
@@ -67,8 +100,18 @@ export function RefillSection({ className }: RefillSectionProps) {
                 {t('points.natural.description')}
               </p>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="mb-3 rounded-full bg-background/10 p-3">
+
+            {/* Local */}
+            <div 
+              className={cn(
+                'flex flex-col items-center transition-all duration-500',
+                hasBeenInView 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-6'
+              )}
+              style={{ transitionDelay: '500ms' }}
+            >
+              <div className="mb-3 rounded-full bg-background/10 p-3 transition-all duration-300 hover:bg-background/20 hover:scale-110">
                 <Heart className="h-5 w-5" strokeWidth={1.5} />
               </div>
               <h3 className="font-medium">{t('points.local.title')}</h3>
@@ -79,11 +122,13 @@ export function RefillSection({ className }: RefillSectionProps) {
           </div>
 
           {/* Citation */}
-          <blockquote className="mt-12 border-t border-background/20 pt-8">
-            <p className="font-heading text-xl italic text-background/90 lg:text-2xl">
-              "{t('quote')}"
-            </p>
-          </blockquote>
+          <AnimateOnScroll animation="fade-in-up" delay={600}>
+            <blockquote className="mt-12 border-t border-background/20 pt-8">
+              <p className="font-heading text-xl italic text-background/90 lg:text-2xl">
+                &ldquo;{t('quote')}&rdquo;
+              </p>
+            </blockquote>
+          </AnimateOnScroll>
         </div>
       </Container>
     </section>

@@ -1,8 +1,11 @@
 // src/components/sections/CertificationsSection.tsx
+'use client'
+
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { Container } from '@/components/ui'
 import { Award, Leaf, Trophy, Medal } from 'lucide-react'
+import { useInView } from '@/hooks'
 
 interface CertificationsSectionProps {
   className?: string
@@ -29,29 +32,48 @@ const certifications = [
 
 /**
  * Section des certifications et récompenses
+ * Avec animations au scroll
  */
 export function CertificationsSection({ className }: CertificationsSectionProps) {
   const t = useTranslations('home.certifications')
+  const { ref, hasBeenInView } = useInView({ threshold: 0.2, triggerOnce: true })
 
   return (
     <section className={cn('py-16 lg:py-24 border-y border-border', className)}>
       <Container>
-        <div className="text-center">
+        <div 
+          className={cn(
+            'text-center transition-all duration-600',
+            hasBeenInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          )}
+        >
           <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
             {t('title')}
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {certifications.map((cert) => (
+        <div 
+          ref={ref as React.RefObject<HTMLDivElement>}
+          className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          {certifications.map((cert, index) => (
             <div
               key={cert.key}
-              className="group flex flex-col items-center text-center"
+              className={cn(
+                'group flex flex-col items-center text-center',
+                'transition-all duration-500',
+                hasBeenInView 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-6'
+              )}
+              style={{
+                transitionDelay: hasBeenInView ? `${index * 100}ms` : '0ms',
+              }}
             >
               {/* Icône */}
-              <div className="mb-4 rounded-full bg-muted/30 p-4">
+              <div className="mb-4 rounded-full bg-muted/30 p-4 transition-all duration-300 group-hover:bg-accent/10 group-hover:scale-110">
                 <cert.icon 
-                  className="h-6 w-6 text-foreground" 
+                  className="h-6 w-6 text-foreground transition-colors duration-300 group-hover:text-accent" 
                   strokeWidth={1.5} 
                 />
               </div>
