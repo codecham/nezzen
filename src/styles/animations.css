@@ -85,6 +85,18 @@
   }
 }
 
+@keyframes bounce-slow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
 @keyframes rotate-slow {
   from {
     transform: rotate(0deg);
@@ -119,6 +131,10 @@
 
 .animate-bounce-subtle {
   animation: bounce-subtle 1s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
 }
 
 .animate-rotate-slow {
@@ -418,4 +434,13 @@
 .text-highlight:hover::before,
 .group:hover .text-highlight::before {
   transform: scaleX(1);
+}
+
+/* ===========================
+   SECTION DIVIDER ANIMATIONS
+   =========================== */
+
+.section-divider-fade {
+  opacity: 0;
+  animation: fade-in 0.6s var(--ease-out) forwards;
 }

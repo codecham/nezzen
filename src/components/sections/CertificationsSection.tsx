@@ -33,13 +33,15 @@ const certifications = [
 /**
  * Section des certifications et récompenses
  * Avec animations au scroll
+ * 
+ * Note: Les bordures et fonds sont maintenant gérés par le parent (page)
  */
 export function CertificationsSection({ className }: CertificationsSectionProps) {
   const t = useTranslations('home.certifications')
   const { ref, hasBeenInView } = useInView({ threshold: 0.2, triggerOnce: true })
 
   return (
-    <section className={cn('py-16 lg:py-24 border-y border-border', className)}>
+    <section className={cn('py-16 lg:py-24', className)}>
       <Container>
         <div 
           className={cn(

@@ -885,6 +885,28 @@
       "title": "NeZ ZeN locatie - Ambachtelijke parfumerie in Namen"
     }
   },
+  "actualites": {
+    "meta": {
+      "title": "Nieuws | NeZ ZeN",
+      "description": "Ontdek het laatste nieuws, nieuwe producten en evenementen van NeZ ZeN, ambachtelijke parfumerie in Namen."
+    },
+    "hero": {
+      "badge": "Nieuws",
+      "title": "Ons Nieuws",
+      "subtitle": "Nieuwe producten, evenementen en achter de schermen van ons atelier. Blijf verbonden met het NeZ ZeN universum."
+    },
+    "archives": {
+      "title": "Blijf op de hoogte",
+      "subtitle": "Volg ons op sociale media of kom langs in onze boetiek om niets te missen.",
+      "backHome": "Terug naar home",
+      "contact": "Contacteer ons"
+    },
+    "newsletter": {
+      "title": "Mis geen nieuws",
+      "description": "Volg ons op sociale media om onze nieuwste creaties, achter de schermen van het atelier en onze evenementen te ontdekken.",
+      "followUs": "Vind ons op:"
+    }
+  },
   "footer": {
     "description": "Elke geur is een uitnodiging om te reizen, met passie gecreëerd in ons Naams atelier.",
     "creations": "Creaties",

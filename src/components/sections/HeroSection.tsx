@@ -5,8 +5,8 @@ import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { Container, Button } from '@/components/ui'
-import { ArrowRight, Award, Leaf, MapPin } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { ArrowRight, Award, Leaf, MapPin, ChevronDown } from 'lucide-react'
+import { useEffect, useState, useCallback } from 'react'
 
 interface HeroSectionProps {
   className?: string
@@ -15,6 +15,7 @@ interface HeroSectionProps {
 /**
  * Section Hero minimaliste
  * Design épuré zen avec animations subtiles
+ * Flèche "Découvrir" scrolle vers la section #intro
  */
 export function HeroSection({ className }: HeroSectionProps) {
   const t = useTranslations('home.hero')
@@ -23,6 +24,17 @@ export function HeroSection({ className }: HeroSectionProps) {
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 50)
     return () => clearTimeout(timer)
+  }, [])
+
+  // Smooth scroll vers la section intro
+  const scrollToIntro = useCallback(() => {
+    const introSection = document.getElementById('intro')
+    if (introSection) {
+      introSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
   }, [])
 
   return (
@@ -185,24 +197,38 @@ export function HeroSection({ className }: HeroSectionProps) {
         </div>
       </Container>
 
-      {/* Scroll indicator */}
-      <div 
+      {/* Scroll indicator - CLIQUABLE avec flèche animée */}
+      <button 
+        onClick={scrollToIntro}
         className={cn(
           'absolute bottom-8 left-1/2 -translate-x-1/2',
+          'group cursor-pointer',
           'transition-all duration-700 ease-out',
+          'hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2',
           isLoaded 
             ? 'opacity-100' 
             : 'opacity-0'
         )}
         style={{ transitionDelay: '900ms' }}
+        aria-label="Défiler vers le contenu"
       >
-        <div className="flex flex-col items-center gap-2 text-muted-foreground">
+        <div className="flex flex-col items-center gap-2 text-muted-foreground transition-colors group-hover:text-foreground">
           <span className="text-[10px] uppercase tracking-widest">{t('scroll')}</span>
-          <div className="h-8 w-5 rounded-full border border-border">
-            <div className="mx-auto mt-1.5 h-1.5 w-0.5 rounded-full bg-muted-foreground animate-bounce" />
+          
+          {/* Flèche animée avec effet bounce */}
+          <div className="relative">
+            <ChevronDown 
+              className={cn(
+                'h-5 w-5',
+                'animate-bounce-slow',
+                'transition-transform duration-300',
+                'group-hover:translate-y-0.5'
+              )}
+              strokeWidth={1.5}
+            />
           </div>
         </div>
-      </div>
+      </button>
     </section>
   )
 }

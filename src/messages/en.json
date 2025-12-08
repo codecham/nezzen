@@ -898,6 +898,28 @@
     "vegan": "100% Vegan",
     "artisan": "Certified Artisan"
   },
+  "actualites": {
+    "meta": {
+      "title": "News | NeZ ZeN",
+      "description": "Discover the latest news, new releases and events from NeZ ZeN, artisan perfumery in Namur."
+    },
+    "hero": {
+      "badge": "What's New",
+      "title": "Our News",
+      "subtitle": "New releases, events and behind-the-scenes of our workshop. Stay connected to the NeZ ZeN universe."
+    },
+    "archives": {
+      "title": "Stay Informed",
+      "subtitle": "Follow us on social media or visit our boutique to stay up to date.",
+      "backHome": "Back to home",
+      "contact": "Contact us"
+    },
+    "newsletter": {
+      "title": "Don't miss any news",
+      "description": "Follow us on social media to discover our latest creations, behind-the-scenes of the workshop and our events.",
+      "followUs": "Find us on:"
+    }
+  },
   "common": {
     "learnMore": "Learn more",
     "viewAll": "View all",

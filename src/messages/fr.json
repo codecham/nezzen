@@ -885,6 +885,28 @@
       "title": "Localisation de NeZ ZeN - Parfumerie Artisanale à Namur"
     }
   },
+  "actualites": {
+    "meta": {
+      "title": "Actualités | NeZ ZeN",
+      "description": "Découvrez les dernières actualités, nouveautés et événements de NeZ ZeN, parfumerie artisanale à Namur."
+    },
+    "hero": {
+      "badge": "À la une",
+      "title": "Nos Actualités",
+      "subtitle": "Nouveautés, événements et coulisses de notre atelier. Restez connectés à l'univers NeZ ZeN."
+    },
+    "archives": {
+      "title": "Restez informés",
+      "subtitle": "Suivez-nous sur les réseaux sociaux ou passez nous voir en boutique pour ne rien manquer.",
+      "backHome": "Retour à l'accueil",
+      "contact": "Nous contacter"
+    },
+    "newsletter": {
+      "title": "Ne manquez aucune nouveauté",
+      "description": "Suivez-nous sur les réseaux sociaux pour découvrir nos dernières créations, les coulisses de l'atelier et nos événements.",
+      "followUs": "Retrouvez-nous sur :"
+    }
+  },
   "footer": {
     "description": "Chaque fragrance est une invitation au voyage, créée avec passion dans notre atelier namurois.",
     "creations": "Créations",
