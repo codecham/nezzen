@@ -18,6 +18,8 @@ interface FeaturedParfumsSectionProps {
 /**
  * Section présentant les parfums mis en avant
  * Avec animations au scroll staggerées
+ * 
+ * Note: Le fond est géré par le parent (page.tsx), pas par ce composant
  */
 export function FeaturedParfumsSection({ className }: FeaturedParfumsSectionProps) {
   const t = useTranslations('home.parfums')
@@ -28,7 +30,7 @@ export function FeaturedParfumsSection({ className }: FeaturedParfumsSectionProp
   const [mainParfum, ...otherParfums] = featuredParfums
 
   return (
-    <section className={cn('py-20 lg:py-32 bg-muted/20', className)}>
+    <section className={cn('py-20 lg:py-32', className)}>
       <Container>
         <AnimateOnScroll animation="fade-in-up" duration={600}>
           <SectionHeading
@@ -44,7 +46,7 @@ export function FeaturedParfumsSection({ className }: FeaturedParfumsSectionProp
               <ProductCard
                 parfum={mainParfum}
                 variant="featured"
-                className="bg-surface"
+                className="bg-neutral-50"
               />
             </AnimateOnScroll>
           )}
@@ -70,17 +72,17 @@ export function FeaturedParfumsSection({ className }: FeaturedParfumsSectionProp
                 <ProductCard
                   parfum={parfum}
                   variant="default"
-                  className="bg-surface"
+                  className="bg-neutral-50"
                 />
               </div>
             ))}
           </div>
         </div>
 
-        {/* CTA voir tous les parfums */}
+        {/* CTA */}
         <AnimateOnScroll animation="fade-in-up" delay={400}>
-          <div className="mt-12 text-center lg:mt-16">
-            <Button asChild variant="outline" size="lg">
+          <div className="mt-12 text-center">
+            <Button asChild size="lg" variant="outline" className="group">
               <Link href="/creations/parfums">
                 {t('cta')}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

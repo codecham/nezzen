@@ -5,7 +5,13 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import { routing } from '@/i18n/routing'
-import { Header, Footer, NavigationProgress } from '@/components/layout'
+import { 
+  Header, 
+  Footer, 
+  NavigationProgress,
+  ScrollIndicator,
+  ScrollToTop,
+} from '@/components/layout'
 import { ToastProvider } from '@/components/ui'
 import '../globals.css'
 import '@/styles/animations.css'
@@ -74,6 +80,17 @@ export default async function LocaleLayout({ children, params }: Props) {
 
             {/* Footer */}
             <Footer />
+
+            {/* ═══════════════════════════════════════════════════════════
+                NOUVEAUX COMPOSANTS UX
+                ═══════════════════════════════════════════════════════════ */}
+            
+            {/* Indicateur de section (dots sur le côté) - Desktop uniquement */}
+            <ScrollIndicator showOnlyOnHome />
+
+            {/* Bouton retour en haut */}
+            <ScrollToTop showAfter={400} />
+            
           </ToastProvider>
         </NextIntlClientProvider>
       </body>

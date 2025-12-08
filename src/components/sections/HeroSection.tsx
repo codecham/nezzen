@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { Container, Button } from '@/components/ui'
 import { ArrowRight, Award, Leaf, MapPin, ChevronDown } from 'lucide-react'
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState } from 'react'
 
 interface HeroSectionProps {
   className?: string
@@ -15,7 +15,7 @@ interface HeroSectionProps {
 /**
  * Section Hero minimaliste
  * Design épuré zen avec animations subtiles
- * Flèche "Découvrir" scrolle vers la section #intro
+ * Lien "Découvrir" scrolle vers #intro et met à jour l'URL
  */
 export function HeroSection({ className }: HeroSectionProps) {
   const t = useTranslations('home.hero')
@@ -26,19 +26,9 @@ export function HeroSection({ className }: HeroSectionProps) {
     return () => clearTimeout(timer)
   }, [])
 
-  // Smooth scroll vers la section intro
-  const scrollToIntro = useCallback(() => {
-    const introSection = document.getElementById('intro')
-    if (introSection) {
-      introSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      })
-    }
-  }, [])
-
   return (
     <section
+      id="hero"
       className={cn(
         'relative min-h-[90vh] flex items-center justify-center',
         'overflow-hidden',
@@ -197,14 +187,14 @@ export function HeroSection({ className }: HeroSectionProps) {
         </div>
       </Container>
 
-      {/* Scroll indicator - CLIQUABLE avec flèche animée */}
-      <button 
-        onClick={scrollToIntro}
+      {/* Scroll indicator - VRAI LIEN ANCRE pour mettre à jour l'URL */}
+      <a 
+        href="#intro"
         className={cn(
           'absolute bottom-8 left-1/2 -translate-x-1/2',
           'group cursor-pointer',
           'transition-all duration-700 ease-out',
-          'hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2',
+          'hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:rounded-lg',
           isLoaded 
             ? 'opacity-100' 
             : 'opacity-0'
@@ -228,7 +218,7 @@ export function HeroSection({ className }: HeroSectionProps) {
             />
           </div>
         </div>
-      </button>
+      </a>
     </section>
   )
 }

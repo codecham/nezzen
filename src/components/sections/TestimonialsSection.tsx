@@ -17,6 +17,8 @@ interface TestimonialsSectionProps {
 /**
  * Section des témoignages clients
  * Avec animations au scroll
+ * 
+ * Note: Le fond est géré par le parent (page.tsx), pas par ce composant
  */
 export function TestimonialsSection({ className }: TestimonialsSectionProps) {
   const t = useTranslations('home.temoignages')
@@ -24,7 +26,7 @@ export function TestimonialsSection({ className }: TestimonialsSectionProps) {
   const { ref, hasBeenInView } = useInView({ threshold: 0.1, triggerOnce: true })
 
   return (
-    <section className={cn('py-20 lg:py-32 bg-muted/20', className)}>
+    <section className={cn('py-20 lg:py-32', className)}>
       <Container>
         <AnimateOnScroll animation="fade-in-up" duration={600}>
           <SectionHeading
@@ -41,7 +43,7 @@ export function TestimonialsSection({ className }: TestimonialsSectionProps) {
                 <Star
                   key={i}
                   className={cn(
-                    'h-5 w-5 fill-accent text-accent',
+                    'h-5 w-5 fill-amber-400 text-amber-400',
                     'transition-transform duration-300',
                     'hover:scale-125'
                   )}

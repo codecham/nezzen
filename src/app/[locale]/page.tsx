@@ -10,7 +10,7 @@ import {
   CertificationsSection,
   CTASection,
 } from '@/components/sections'
-import { SectionDivider } from '@/components/shared'
+// import { SectionDivider } from '@/components/shared'
 
 /**
  * Page d'accueil NeZ ZeN
@@ -40,7 +40,7 @@ export default function HomePage() {
 
       {/* Séparateur zen */}
       <div className="bg-surface">
-        <SectionDivider variant="enso" size="md" />
+        {/* <SectionDivider variant="enso" size="md" /> */}
       </div>
 
       {/* ═══════════════════════════════════════════════════════════════════
@@ -60,7 +60,7 @@ export default function HomePage() {
       </section>
 
       {/* Séparateur gradient */}
-      <SectionDivider variant="gradient" size="lg" />
+      {/* <SectionDivider variant="gradient" size="lg" /> */}
 
       {/* ═══════════════════════════════════════════════════════════════════
           REFILL ATTITUDE - Éco-responsabilité
@@ -79,7 +79,7 @@ export default function HomePage() {
       </section>
 
       {/* Séparateur trois points */}
-      <SectionDivider variant="dots" size="lg" className="bg-muted/20" />
+      {/* <SectionDivider variant="dots" size="lg" className="bg-muted/20" /> */}
 
       {/* ═══════════════════════════════════════════════════════════════════
           TÉMOIGNAGES

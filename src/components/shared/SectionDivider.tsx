@@ -25,9 +25,9 @@ export function SectionDivider({
 }: SectionDividerProps) {
   // Classes de taille pour le container
   const sizeClasses = {
-    sm: 'py-4',
-    md: 'py-8',
-    lg: 'py-12',
+    sm: 'py-6',
+    md: 'py-10',
+    lg: 'py-14',
   }
 
   return (
@@ -53,13 +53,13 @@ export function SectionDivider({
 
 function LineDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
   const widthClasses = {
-    sm: 'w-16',
-    md: 'w-24',
-    lg: 'w-32',
+    sm: 'w-20',
+    md: 'w-32',
+    lg: 'w-48',
   }
 
   return (
-    <div className={cn('h-px bg-border', widthClasses[size])} />
+    <div className={cn('h-px bg-neutral-300', widthClasses[size])} />
   )
 }
 
@@ -69,9 +69,9 @@ function LineDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
 
 function EnsoDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
   const sizeMap = {
-    sm: { width: 32, height: 32 },
-    md: { width: 48, height: 48 },
-    lg: { width: 64, height: 64 },
+    sm: { width: 40, height: 40 },
+    md: { width: 60, height: 60 },
+    lg: { width: 80, height: 80 },
   }
 
   const { width, height } = sizeMap[size]
@@ -81,25 +81,24 @@ function EnsoDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
       viewBox="0 0 60 60"
       width={width}
       height={height}
-      className="text-border"
+      className="text-neutral-400"
     >
       {/* Arc principal - style brush */}
       <path
         d="M 30 8 C 16 8, 8 18, 8 32 C 8 46, 18 52, 28 50"
         fill="none"
         stroke="currentColor"
-        strokeWidth="2.5"
+        strokeWidth="3"
         strokeLinecap="round"
-        className="opacity-60"
       />
       {/* Second arc plus léger */}
       <path
         d="M 32 8 C 46 8, 52 18, 52 32 C 52 46, 42 52, 32 50"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="2"
         strokeLinecap="round"
-        className="opacity-30"
+        className="opacity-50"
       />
     </svg>
   )
@@ -111,22 +110,22 @@ function EnsoDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
 
 function DotsDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
   const dotSizeClasses = {
-    sm: 'h-1 w-1',
-    md: 'h-1.5 w-1.5',
-    lg: 'h-2 w-2',
+    sm: 'h-1.5 w-1.5',
+    md: 'h-2 w-2',
+    lg: 'h-2.5 w-2.5',
   }
 
   const gapClasses = {
-    sm: 'gap-2',
-    md: 'gap-3',
-    lg: 'gap-4',
+    sm: 'gap-3',
+    md: 'gap-4',
+    lg: 'gap-5',
   }
 
   return (
     <div className={cn('flex items-center', gapClasses[size])}>
-      <div className={cn('rounded-full bg-border/60', dotSizeClasses[size])} />
-      <div className={cn('rounded-full bg-accent/40', dotSizeClasses[size])} />
-      <div className={cn('rounded-full bg-border/60', dotSizeClasses[size])} />
+      <div className={cn('rounded-full bg-neutral-300', dotSizeClasses[size])} />
+      <div className={cn('rounded-full bg-neutral-400', dotSizeClasses[size])} />
+      <div className={cn('rounded-full bg-neutral-300', dotSizeClasses[size])} />
     </div>
   )
 }
@@ -137,9 +136,9 @@ function DotsDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
 
 function GradientDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
   const widthClasses = {
-    sm: 'w-32',
-    md: 'w-48',
-    lg: 'w-64',
+    sm: 'w-40',
+    md: 'w-64',
+    lg: 'w-80',
   }
 
   return (
@@ -147,7 +146,7 @@ function GradientDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
       className={cn(
         'h-px',
         widthClasses[size],
-        'bg-gradient-to-r from-transparent via-border to-transparent'
+        'bg-gradient-to-r from-transparent via-neutral-300 to-transparent'
       )} 
     />
   )
