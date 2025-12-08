@@ -216,7 +216,7 @@ export function CarouselSlide({ children, className, ...props }: CarouselSlidePr
   return (
     <div
       data-carousel-slide
-      className={cn('w-full flex-shrink-0', className)}
+      className={cn('w-full shrink-0', className)}
       role="group"
       aria-roledescription="slide"
       {...props}
@@ -243,6 +243,7 @@ export function CarouselNavigation({
   variant = 'default',
   alwaysShow = false,
 }: CarouselNavigationProps) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { goToPrevious, goToNext, totalSlides, currentIndex } = useCarousel()
 
   if (!alwaysShow && totalSlides <= 1) return null

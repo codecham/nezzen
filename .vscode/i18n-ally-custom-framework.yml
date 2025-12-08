@@ -1,0 +1,10 @@
+# .vscode/i18n-ally-custom-framework.yml
+languageIds:
+  - json
+
+usageMatchRegex:
+  - "[^\\w\\d]t\\(['\"`]({key})['\"`]"
+  - "useTranslations\\(['\"`]({key})['\"`]\\)"
+  - "getTranslations\\(['\"`]({key})['\"`]\\)"
+
+monopoly: true

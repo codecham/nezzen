@@ -263,7 +263,7 @@ export const parfums: Parfum[] = [
       fond: ['Bois', 'Musc'],
     },
     formats: PRIX_STANDARD,
-    image: '/images/parfums/verbier.jpg',
+    image: '/images/parfums/verbier.png',
     isVegan: true,
   },
 
