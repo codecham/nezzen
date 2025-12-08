@@ -18,3 +18,7 @@ export { TestimonialCard } from './TestimonialCard'
 
 // Section Components
 export { SectionHeading } from './SectionHeading'
+
+// Page Components
+export { PageHero, PageHeader } from './PageHero'
+export { CategoriesGrid } from './CategoriesGrid'

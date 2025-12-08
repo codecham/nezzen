@@ -51,7 +51,7 @@ export function HeroSection({ className }: HeroSectionProps) {
             strokeWidth="2"
             strokeLinecap="round"
             className={cn(
-              'text-foreground/[0.04]',
+              'text-foreground/4',
               isLoaded && 'animate-draw-slow'
             )}
             style={{
@@ -68,7 +68,7 @@ export function HeroSection({ className }: HeroSectionProps) {
             stroke="currentColor"
             strokeWidth="1.5"
             strokeLinecap="round"
-            className="text-foreground/[0.025]"
+            className="text-foreground/2.5"
             style={{
               strokeDasharray: 580,
               strokeDashoffset: isLoaded ? 0 : 580,
@@ -144,13 +144,13 @@ export function HeroSection({ className }: HeroSectionProps) {
             style={{ transitionDelay: '500ms' }}
           >
             <Button asChild size="lg">
-              <Link href="/creations/parfums">
+              <Link href="/creations">
                 {t('cta.primary')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/a-propos/notre-approche">
+              <Link href="/ateliers">
                 {t('cta.secondary')}
               </Link>
             </Button>

@@ -2,9 +2,9 @@
 import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
-import { Container } from '@/components/ui'
+import { Container, AnimateOnScroll } from '@/components/ui'
+import { PageHero, ParfumCategoryFilter } from '@/components/shared'
 import { parfums } from '@/data/parfums'
-import { ParfumCategoryFilter } from '@/components/shared/ParfumCategoryFilter'
 
 // Metadata
 export async function generateMetadata(): Promise<Metadata> {
@@ -33,37 +33,19 @@ export default function ParfumsPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-muted/30 py-16 lg:py-24">
-        {/* Decorative background */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-1/2 right-0 h-96 w-96 rounded-full bg-accent/5 blur-3xl" />
-          <div className="absolute bottom-0 left-1/4 h-64 w-64 rounded-full bg-muted/30 blur-3xl" />
-        </div>
-
-        <Container className="relative">
-          <div className="mx-auto max-w-3xl text-center">
-            {/* Badge */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-surface px-4 py-2 shadow-sm">
-              <span className="text-sm font-medium text-muted-foreground">
-                {t('hero.badge', { count: parfums.length })}
-              </span>
-            </div>
-
-            <h1 className="font-heading text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-              {t('hero.title')}
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-              {t('hero.subtitle')}
-            </p>
-          </div>
-        </Container>
-      </section>
+      {/* Hero Section avec animations */}
+      <PageHero
+        badge={t('hero.badge', { count: parfums.length })}
+        badgeIcon="droplets"
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
+        variant="muted"
+        size="md"
+      />
 
       {/* Filters + Products Grid */}
       <section className="py-12 lg:py-20">
         <Container>
-          {/* Category Filter - Client Component */}
           <ParfumCategoryFilter 
             categories={categories}
             parfums={parfums}
@@ -71,30 +53,43 @@ export default function ParfumsPage() {
         </Container>
       </section>
 
-      {/* Bottom Info */}
-      <section className="border-t border-border bg-muted/20 py-12">
-        <Container>
+      {/* Bottom Info avec animation */}
+      <ParfumsFooter />
+    </>
+  )
+}
+
+/**
+ * Section footer avec informations sur les parfums
+ */
+function ParfumsFooter() {
+  const t = useTranslations('parfums')
+
+  return (
+    <section className="border-t border-border bg-muted/20 py-12">
+      <Container>
+        <AnimateOnScroll animation="fade-in-up" duration={500}>
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-muted-foreground">
               {t('info.refill')}
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 transition-transform duration-300 hover:scale-105">
                 <span className="h-2 w-2 rounded-full bg-emerald-500" />
                 {t('info.vegan')}
               </span>
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 transition-transform duration-300 hover:scale-105">
                 <span className="h-2 w-2 rounded-full bg-amber-500" />
                 {t('info.artisan')}
               </span>
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 transition-transform duration-300 hover:scale-105">
                 <span className="h-2 w-2 rounded-full bg-sky-500" />
                 {t('info.formats')}
               </span>
             </div>
           </div>
-        </Container>
-      </section>
-    </>
+        </AnimateOnScroll>
+      </Container>
+    </section>
   )
 }

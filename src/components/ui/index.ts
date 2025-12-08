@@ -75,6 +75,12 @@ export {
   AnimateStagger,
 } from './AnimateOnScroll'
 
+// Page Transitions
+export {
+  PageTransition,
+  PageEnterAnimation,
+} from './PageTransition'
+
 // Loading States
 export {
   Skeleton,
@@ -86,3 +92,9 @@ export {
   ProductGridSkeleton,
   SectionSkeleton,
 } from './Skeleton'
+
+// Progress / Navigation
+export {
+  ProgressBar,
+  SimpleProgressBar,
+} from './ProgressBar'

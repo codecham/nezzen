@@ -5,9 +5,10 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import { routing } from '@/i18n/routing'
-import { Header, Footer } from '@/components/layout'
+import { Header, Footer, NavigationProgress } from '@/components/layout'
 import { ToastProvider } from '@/components/ui'
 import '../globals.css'
+import '@/styles/animations.css'
 
 // Font pour les titres (élégante, serif)
 const cormorant = Cormorant_Garamond({
@@ -62,10 +63,13 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body className="min-h-screen bg-background font-body text-foreground antialiased">
         <NextIntlClientProvider messages={messages}>
           <ToastProvider position="bottom-right" maxToasts={5}>
+            {/* Barre de progression de navigation */}
+            <NavigationProgress />
+
             {/* Header sticky */}
             <Header />
 
-            {/* Contenu principal */}
+            {/* Contenu principal avec transition */}
             <main className="min-h-screen">{children}</main>
 
             {/* Footer */}
