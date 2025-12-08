@@ -33,6 +33,10 @@
       },
       "scroll": "Découvrir"
     },
+    "news": {
+      "title": "À la une",
+      "subtitle": "Découvrez nos dernières nouveautés et actualités"
+    },
     "intro": {
       "title": "L'histoire d'un rêve devenu réalité",
       "paragraph1": "NeZ ZeN, c'est la rencontre entre le NeZ de Romain, parfumeur passionné, et le ZeN d'Aurélie, qui vous accueille dans une ambiance détendue et chaleureuse.",

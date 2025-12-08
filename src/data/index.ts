@@ -9,6 +9,7 @@ export {
   getParfumsByCategory,
   getAllParfums,
   getNewParfums,
+  getParfumsCount,
 } from './parfums'
 
 // ============ ATELIERS ============
@@ -68,17 +69,27 @@ export {
 
 // ============ SUR MESURE ============
 export {
-  processSteps,
-  occasions,
   servicesB2B,
-  realisations,
-  getServicesWithImage,
-  getServicesWithoutImage,
 } from './sur-mesure'
 
 export type {
-  ProcessStep,
-  Occasion,
   ServiceB2B,
-  Realisation,
 } from './sur-mesure'
+
+// ============ ACTUALITÉS / HIGHLIGHTS ============
+export {
+  highlights,
+  getActiveHighlights,
+  getHighlightsByType,
+  getTopHighlights,
+  getHighlightById,
+  typeDefaultIcons,
+  typeDefaultColors,
+} from './news'
+
+export type {
+  HighlightItem,
+  HighlightType,
+} from './news'
+
+

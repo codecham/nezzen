@@ -1,13 +1,35 @@
 // src/data/parfums.ts
-// Données réelles collectées depuis nezzen.be et Fragrantica
+// Données réelles collectées depuis nezzen.be
+// CORRIGÉ : Notes et prix vérifiés sur le site officiel
 
 import type { Parfum } from '@/types'
 
 /**
  * Collection complète des parfums NeZ ZeN
- * 15 parfums listés sur Fragrantica + parfums additionnels
+ * 22 parfums selon le site officiel
  * Créateur : Romain Pantoustier
+ * 
+ * PRIX : Deux gammes existent
+ * - Gamme Standard (26.50€/15ml) : Verbier, Jasmin d'été, Jardin des roses, La ballerine, 1001 Nuits, Pleine Lune, etc.
+ * - Gamme Premium (29€/15ml) : Niwa, Deep in a Dream, Fireflies, Mont Blanc, New York, Lemon Tree, Violet Rain, Cefalù, Baby this night
  */
+
+// Prix standards
+const PRIX_STANDARD = [
+  { size: '15ml' as const, price: 26.5 },
+  { size: '30ml' as const, price: 42 },
+  { size: '50ml' as const, price: 62 },
+  { size: '100ml' as const, price: 95 },
+]
+
+// Prix premium (parfums plus récents ou plus complexes)
+const PRIX_PREMIUM = [
+  { size: '15ml' as const, price: 29 },
+  { size: '30ml' as const, price: 52 },
+  { size: '50ml' as const, price: 78 },
+  { size: '100ml' as const, price: 128 },
+]
+
 export const parfums: Parfum[] = [
   // ============ LES CLASSIQUES ============
   {
@@ -18,16 +40,11 @@ export const parfums: Parfum[] = [
     shortDescription: 'Finaliste Art & Olfaction Awards 2019.',
     fullDescription: 'Dans cette pièce aux vieilles boiseries, sur un sofa en cuir, je voyage à travers les pages jaunies par le temps. Un patchouli très précieux sublimé par les épices, le bois et le cuir.',
     notes: {
-      tete: ['Amande', 'Cèdre', 'Jasmin'],
-      coeur: ['Bois de santal', 'Patchouli', 'Cuir'],
-      fond: ['Fève de tonka', 'Ambre', 'Vanille', 'Musc', 'Clou de girofle'],
+      tete: ['Cèdre', 'Amande', 'Jasmin'],
+      coeur: ['Santal', 'Cuir', 'Patchouli'],
+      fond: ['Ambre', 'Tonka', 'Musc', 'Vanille', 'Girofle'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/la_bibliotheque.png',
     isVegan: true,
     isFeatured: true,
@@ -45,12 +62,7 @@ export const parfums: Parfum[] = [
       coeur: ['Vétiver', 'Curcuma'],
       fond: ['Ambre gris', 'Cèdre de Virginie'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/vetivier_epice.jpg',
     isVegan: true,
     isFeatured: true,
@@ -67,12 +79,7 @@ export const parfums: Parfum[] = [
       coeur: ['Lavande', 'Géranium'],
       fond: ['Patchouli', 'Mousse de chêne'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/fougere_sauvage.jpg',
     isVegan: true,
   },
@@ -88,12 +95,7 @@ export const parfums: Parfum[] = [
       coeur: ['Vétiver', 'Fève de tonka'],
       fond: ['Mousse de chêne', 'Bois de santal', 'Cèdre'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/indomptable.jpg',
     isVegan: true,
   },
@@ -111,12 +113,7 @@ export const parfums: Parfum[] = [
       coeur: ['Rose', 'Géranium', 'Jasmin', 'Violette'],
       fond: ['Cèdre', 'Musc', 'Ambre'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/jardin_des_roses.jpg',
     isVegan: true,
     isFeatured: true,
@@ -133,12 +130,7 @@ export const parfums: Parfum[] = [
       coeur: ['Jasmin', 'Ylang-Ylang', 'Rose'],
       fond: ['Ambre', 'Clou de girofle', 'Musc'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/jasmin_ete.jpg',
     isVegan: true,
   },
@@ -147,19 +139,14 @@ export const parfums: Parfum[] = [
     slug: 'new-york',
     name: 'New York',
     category: 'floraux',
-    shortDescription: 'Une tubéreuse pure et très classe.',
-    fullDescription: 'Une tubéreuse pure et très classe, légèrement poudrée et cosmétique. Un parfum qui sent naturel grâce à la qualité des ingrédients et de la composition.',
+    shortDescription: 'La Simplicité est la Sophistication suprême.',
+    fullDescription: '"La Simplicité est la Sophistication suprême" - Léonard de Vinci. Comme cette fragrance... comme cette ville... L\'opulence délicate de la tubéreuse rafraîchie par la fleur d\'oranger.',
     notes: {
-      tete: ['Rose', 'Fleur d\'oranger'],
-      coeur: ['Tubéreuse', 'Jasmin'],
-      fond: ['Ambre gris', 'Musc blanc'],
+      tete: ['Fleur d\'oranger', 'Soupçon de rose'],
+      coeur: ['Tubéreuse', 'Soupçon de jasmin'],
+      fond: ['Muscs blancs', 'Ambre gris'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_PREMIUM,
     image: '/images/parfums/new_york.jpg',
     isVegan: true,
   },
@@ -175,35 +162,25 @@ export const parfums: Parfum[] = [
       coeur: ['Rose', 'Ylang-Ylang'],
       fond: ['Musc', 'Cèdre'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/la_ballerine.jpg',
     isVegan: true,
   },
 
-  // ============ LES VOYAGES ============
+  // ============ LES VOYAGES / DESTINATIONS ============
   {
     id: 'niwa',
     slug: 'niwa',
     name: 'Niwa',
     category: 'voyages',
     shortDescription: 'Une fraîcheur unique inspirée des jardins japonais.',
-    fullDescription: 'Une fraîcheur unique en son genre inspirée du vent dans les bambous, par la sérénité et la puissance des jardins japonais. Niwa signifie "jardin" en japonais.',
+    fullDescription: '"La fleur de quel arbre. Impossible de savoir. Mais un tel parfum." - Matsuo Bashô. Une fraîcheur unique en son genre inspirée du vent dans les bambous, par la sérénité et la puissance des jardins japonais. Niwa signifie "jardin" en japonais.',
     notes: {
-      tete: ['Cassis', 'Pamplemousse rose'],
-      coeur: ['Feuille de figuier', 'Iris'],
-      fond: ['Poivre', 'Mousse de chêne'],
+      tete: ['Pamplemousse rose', 'Bourgeons de cassis'],
+      coeur: ['Iris', 'Feuilles de figuier'],
+      fond: ['Mousse de chêne', 'Poivres'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_PREMIUM,
     image: '/images/parfums/niwa.jpg',
     isVegan: true,
     isFeatured: true,
@@ -214,18 +191,13 @@ export const parfums: Parfum[] = [
     name: 'Mont Blanc',
     category: 'voyages',
     shortDescription: 'La pureté des sommets enneigés.',
-    fullDescription: 'Un parfum qui combine la pureté des sommets enneigés, la force de la roche ancienne et la fraîcheur des pâturages de montagne.',
+    fullDescription: 'Un parfum qui allie la pureté des sommets enneigés, la force de la roche millénaire et la fraîcheur des alpages.',
     notes: {
-      tete: ['Menthe', 'Cassis', 'Pastèque'],
-      coeur: ['Muguet', 'Galbanum', 'Myrrhe'],
+      tete: ['Menthes', 'Cassis', 'Pastèque'],
+      coeur: ['Muguet', 'Galbanum', 'Myrrhe douce'],
       fond: ['Coriandre', 'Ambre', 'Bois de Gaïac'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_PREMIUM,
     image: '/images/parfums/mont_blanc.jpg',
     isVegan: true,
   },
@@ -241,12 +213,7 @@ export const parfums: Parfum[] = [
       coeur: ['Bois exotiques'],
       fond: ['Ambre', 'Poivre'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/terre_de_feu.jpg',
     isVegan: true,
     isFeatured: true,
@@ -257,19 +224,46 @@ export const parfums: Parfum[] = [
     name: 'Carnaval',
     category: 'voyages',
     shortDescription: 'Inspiré par les notes du folklore carnavalesque.',
-    fullDescription: 'Inspiré par les notes du folklore carnavalesque, chaud en couleur et en émotion pour une journée pleine de peps et de fraîcheur. Cette fragrance dégage de la fraîcheur grâce à sa multitude d\'agrumes soulignés par la profondeur épicée de la marjolaine et de l\'ylang-ylang.',
+    fullDescription: 'Inspiré des notes de folklore du carnaval, chaud en couleur et en émotion pour une journée pleine de peps et de fraîcheur. Cette fragrance dégage de la fraîcheur grâce à sa multitude d\'agrumes soulignés par la profondeur épicée de la marjolaine et de l\'ylang-ylang.',
     notes: {
       tete: ['Citron', 'Myrte', 'Orange amère'],
       coeur: ['Ylang-Ylang', 'Marjolaine'],
       fond: ['Musc', 'Benjoin'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/carnaval.jpg',
+    isVegan: true,
+  },
+  {
+    id: 'cefalu',
+    slug: 'cefalu',
+    name: 'Cefalù',
+    category: 'voyages',
+    shortDescription: 'Inspiré de la ville sicilienne.',
+    fullDescription: 'Inspiré par la beauté de cette ville côtière sicilienne, ce parfum capture l\'essence de la Méditerranée avec ses notes florales et solaires.',
+    notes: {
+      tete: ['Agrumes', 'Bergamote'],
+      coeur: ['Tubéreuse', 'Fleur d\'oranger'],
+      fond: ['Musc blanc', 'Bois'],
+    },
+    formats: PRIX_PREMIUM,
+    image: '/images/parfums/cefalu.jpg',
+    isVegan: true,
+  },
+  {
+    id: 'verbier',
+    slug: 'verbier',
+    name: 'Verbier',
+    category: 'voyages',
+    shortDescription: 'La fraîcheur des montagnes suisses.',
+    fullDescription: 'Inspiré par les pistes enneigées et l\'air pur des Alpes suisses, ce parfum évoque la fraîcheur et l\'évasion.',
+    notes: {
+      tete: ['Agrumes frais', 'Notes vertes'],
+      coeur: ['Conifères', 'Notes aromatiques'],
+      fond: ['Bois', 'Musc'],
+    },
+    formats: PRIX_STANDARD,
+    image: '/images/parfums/verbier.jpg',
     isVegan: true,
   },
 
@@ -280,18 +274,13 @@ export const parfums: Parfum[] = [
     name: '1001 Nuits',
     category: 'gourmands',
     shortDescription: 'Un parfum doux, sucré, chaud et épicé.',
-    fullDescription: 'Ce parfum est doux, sucré, chaud relevé par des notes épicées et quelques notes de fleurs blanches. Un voyage oriental envoûtant.',
+    fullDescription: 'Ce parfum respire le rêve et l\'envoûtement vous transportant dans un palais du Sud lors d\'une soirée chaude et sensuelle. Ce parfum est doux, sucré, chaud relevé par des notes épicées et quelques notes de fleurs blanches.',
     notes: {
       tete: ['Pomme', 'Poire', 'Fraise'],
-      coeur: ['Jasmin', 'Noix de coco', 'Cannelle'],
-      fond: ['Fève de tonka', 'Vanille', 'Clou de girofle'],
+      coeur: ['Jasmin', 'Coco', 'Cannelle'],
+      fond: ['Tonka', 'Vanille', 'Girofle'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/1001_nuits.jpg',
     isVegan: true,
   },
@@ -300,19 +289,14 @@ export const parfums: Parfum[] = [
     slug: 'earl-grey',
     name: 'Earl Grey',
     category: 'gourmands',
-    shortDescription: 'Inspiré par le célèbre thé anglais.',
-    fullDescription: 'Une création inspirée par le célèbre thé anglais, avec ses notes de bergamote caractéristiques et une touche de sophistication britannique.',
+    shortDescription: 'Découvrez toute la fraîcheur d\'un thé à la bergamote.',
+    fullDescription: 'Une expression de la palette des agrumes pour une fraîcheur intense soulignée par la subtilité aérienne de notes florales épicées.',
     notes: {
-      tete: ['Bergamote', 'Agrumes'],
-      coeur: ['Thé noir', 'Fleurs blanches'],
-      fond: ['Bois', 'Musc'],
+      tete: ['Citron', 'Bergamote', 'Bigarade', 'Pamplemousse'],
+      coeur: ['Géranium', 'Eau de rose'],
+      fond: ['Ambre', 'Jasmin'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/earl_grey.png',
     isVegan: true,
   },
@@ -322,18 +306,13 @@ export const parfums: Parfum[] = [
     name: 'Pleine Lune',
     category: 'gourmands',
     shortDescription: 'Laissez-vous envoûter par le côté sensuel et mystique.',
-    fullDescription: 'Laissez-vous envoûter par le côté sensuel et mystique de ce parfum. Une fragrance délicate qui marie les notes chyprées et musquées avec une pointe de violette pour lui donner cette petite touche de sensualité.',
+    fullDescription: 'Laissez-vous envoûter par le côté sensuel et mystique de ce parfum. Un parfum délicat qui marie les notes chyprées et musquées avec une pointe de violette pour lui donner cette petite touche de sensualité.',
     notes: {
       tete: ['Feuille de violette', 'Agrumes'],
-      coeur: ['Rose', 'Tubéreuse'],
-      fond: ['Bois précieux', 'Patchouli'],
+      coeur: ['Tubéreuse', 'Rose'],
+      fond: ['Bois précieux', 'Soupçon de patchouli'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_STANDARD,
     image: '/images/parfums/pleine_lune.jpg',
     isVegan: true,
   },
@@ -345,18 +324,15 @@ export const parfums: Parfum[] = [
     name: 'Baby This Night',
     category: 'voyages',
     shortDescription: 'Inspiré de la chanson qui a ouvert notre mariage.',
-    fullDescription: 'Ce parfum vous transportera au gré de notes épicées et chaleureuses. Inspiré de la chanson qui a ouvert le mariage des fondateurs, une création romantique et enveloppante.',
+    fullDescription: '"Baby this night, This night\'s for us. And baby this night, Can only be seen as yours and mine, Like a blessing dear..." - Hawksley Workman. Ce parfum vous transportera au gré de notes épicées et chaleureuses. Inspiré de la chanson qui a ouvert le mariage des fondateurs.',
+    // NOTES CORRIGÉES selon le site officiel
     notes: {
-      tete: ['Bergamote', 'Poivre rose'],
-      coeur: ['Cannelle', 'Rose', 'Iris'],
-      fond: ['Vanille', 'Bois de santal', 'Musc'],
+      tete: ['Cardamome', 'Rhubarbe', 'Myrte'],
+      coeur: ['Elemi', 'Violette', 'Lavande'],
+      fond: ['Santal', 'Benjoin', 'Baume du Pérou'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    // PRIX CORRIGÉS selon le site officiel
+    formats: PRIX_PREMIUM,
     image: '/images/parfums/baby_this_night.jpg',
     isVegan: true,
     isNew: true,
@@ -374,12 +350,7 @@ export const parfums: Parfum[] = [
       coeur: ['Violette', 'Fleurs blanches'],
       fond: ['Musc', 'Bois blanc'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_PREMIUM,
     image: '/images/parfums/violet_rain.jpg',
     isVegan: true,
   },
@@ -395,33 +366,39 @@ export const parfums: Parfum[] = [
       coeur: ['Géranium', 'Feuille de figuier', 'Myrte'],
       fond: ['Bois', 'Musc blanc'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_PREMIUM,
     image: '/images/parfums/lemon_tree.jpg',
+    isVegan: true,
+  },
+  {
+    id: 'deep-in-a-dream',
+    slug: 'deep-in-a-dream',
+    name: 'Deep in a Dream',
+    category: 'voyages',
+    shortDescription: 'The walls of my room fade away in the blue...',
+    fullDescription: '"The walls of my room fade away in the blue, and I\'m deep in a dream of you." - Chet Baker. Un parfum onirique et enveloppant.',
+    notes: {
+      tete: ['Notes fraîches', 'Agrumes'],
+      coeur: ['Fleurs blanches', 'Notes poudrées'],
+      fond: ['Bois', 'Musc', 'Ambre'],
+    },
+    formats: PRIX_PREMIUM,
+    image: '/images/parfums/deep_in_a_dream.jpg',
     isVegan: true,
   },
   {
     id: 'fireflies',
     slug: 'fireflies',
     name: 'Fireflies',
-    category: 'gourmands',
-    shortDescription: 'Une chanson qui parle de lucioles pendant un feu d\'artifice.',
-    fullDescription: 'Une ambiance chaleureuse et envoûtante aux notes de oud, vanille combinées à la fraîcheur de l\'encens. Une chanson qui parle de lucioles pendant un feu d\'artifice.',
+    category: 'voyages',
+    shortDescription: 'You would not believe your eyes if ten million fireflies...',
+    fullDescription: '"You would not believe your eyes if ten million fireflies lit up the world as I fell asleep..." - Owl City. Une ambiance chaleureuse et envoûtante inspirée par cette chanson magique.',
     notes: {
       tete: ['Encens', 'Agrumes'],
       coeur: ['Oud', 'Fleurs blanches'],
       fond: ['Vanille', 'Bois précieux', 'Ambre'],
     },
-    formats: [
-      { size: '15ml', price: 26.5 },
-      { size: '30ml', price: 42 },
-      { size: '50ml', price: 62 },
-      { size: '100ml', price: 95 },
-    ],
+    formats: PRIX_PREMIUM,
     image: '/images/parfums/fireflies.jpg',
     isVegan: true,
   },
@@ -461,4 +438,11 @@ export function getAllParfums(): Parfum[] {
  */
 export function getNewParfums(): Parfum[] {
   return parfums.filter((p) => p.isNew)
+}
+
+/**
+ * Nombre total de parfums
+ */
+export function getParfumsCount(): number {
+  return parfums.length
 }

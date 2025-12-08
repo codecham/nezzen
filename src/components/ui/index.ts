@@ -98,3 +98,15 @@ export {
   ProgressBar,
   SimpleProgressBar,
 } from './ProgressBar'
+
+// Carousel
+export {
+  Carousel,
+  CarouselContent,
+  CarouselSlide,
+  CarouselNavigation,
+  CarouselArrows,
+  CarouselDots,
+  CarouselCounter,
+  useCarousel,
+} from './Carousel'

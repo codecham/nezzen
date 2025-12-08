@@ -1,6 +1,7 @@
 // src/app/[locale]/page.tsx
 import {
   HeroSection,
+  NewsSection,
   IntroSection,
   PhilosophieSection,
   FeaturedParfumsSection,
@@ -20,6 +21,9 @@ export default function HomePage() {
     <>
       {/* Hero - Accroche principale */}
       <HeroSection />
+
+      {/* Nouveautés - À la une (dynamique) */}
+      <NewsSection />
 
       {/* Introduction - Qui sommes-nous */}
       <IntroSection />
