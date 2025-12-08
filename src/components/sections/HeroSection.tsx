@@ -38,45 +38,28 @@ export function HeroSection({ className }: HeroSectionProps) {
       {/* Background simple */}
       <div className="absolute inset-0 bg-background" />
 
-      {/* Cercle Enso décoratif */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+      {/* Cercle Enso décoratif - Style épais comme IntroSection */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <svg
           viewBox="0 0 400 400"
-          className="h-[400px] w-[400px] lg:h-[550px] lg:w-[550px]"
+          className="h-[500px] w-[500px] text-muted-foreground/5 lg:h-[700px] lg:w-[700px]"
           aria-hidden="true"
         >
-          {/* Cercle principal */}
           <path
-            d="M 200 40 C 95 40, 40 120, 40 210 C 40 300, 105 360, 190 350"
+            d="M 200 30 C 100 30, 30 110, 30 210 C 30 310, 100 370, 180 360"
             fill="none"
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth="8"
             strokeLinecap="round"
-            className={cn(
-              'text-foreground/4',
-              isLoaded && 'animate-draw-slow'
-            )}
-            style={{
-              strokeDasharray: 600,
-              strokeDashoffset: isLoaded ? 0 : 600,
-              transition: 'stroke-dashoffset 2.5s cubic-bezier(0.23, 1, 0.32, 1)',
-              transitionDelay: '0.3s',
-            }}
+            className="text-foreground/5"
           />
-          {/* Second trait plus léger */}
           <path
-            d="M 210 40 C 310 45, 360 125, 360 215 C 360 305, 290 360, 205 350"
+            d="M 210 30 C 310 30, 370 110, 370 210 C 370 310, 300 370, 220 360"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.5"
+            strokeWidth="6"
             strokeLinecap="round"
-            className="text-foreground/2.5"
-            style={{
-              strokeDasharray: 580,
-              strokeDashoffset: isLoaded ? 0 : 580,
-              transition: 'stroke-dashoffset 3s cubic-bezier(0.23, 1, 0.32, 1)',
-              transitionDelay: '0.6s',
-            }}
+            className="text-muted-foreground/5"
           />
         </svg>
       </div>
@@ -196,27 +179,17 @@ export function HeroSection({ className }: HeroSectionProps) {
           'transition-all duration-700 ease-out',
           'hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:rounded-lg',
           isLoaded 
-            ? 'opacity-100' 
-            : 'opacity-0'
+            ? 'opacity-100 translate-y-0' 
+            : 'opacity-0 translate-y-4'
         )}
-        style={{ transitionDelay: '900ms' }}
-        aria-label="Défiler vers le contenu"
+        style={{ transitionDelay: '800ms' }}
+        aria-label={t('scroll')}
       >
-        <div className="flex flex-col items-center gap-2 text-muted-foreground transition-colors group-hover:text-foreground">
-          <span className="text-[10px] uppercase tracking-widest">{t('scroll')}</span>
-          
-          {/* Flèche animée avec effet bounce */}
-          <div className="relative">
-            <ChevronDown 
-              className={cn(
-                'h-5 w-5',
-                'animate-bounce-slow',
-                'transition-transform duration-300',
-                'group-hover:translate-y-0.5'
-              )}
-              strokeWidth={1.5}
-            />
-          </div>
+        <div className="flex flex-col items-center gap-2">
+          <span className="text-xs uppercase tracking-widest text-muted-foreground/60">
+            {t('scroll')}
+          </span>
+          <ChevronDown className="h-5 w-5 text-muted-foreground/40 animate-bounce" />
         </div>
       </a>
     </section>

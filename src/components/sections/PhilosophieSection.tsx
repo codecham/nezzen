@@ -46,6 +46,7 @@ export function PhilosophieSection({ className }: PhilosophieSectionProps) {
           <SectionHeading
             title={t('title')}
             subtitle={t('subtitle')}
+            showOrnament ={false}
           />
         </AnimateOnScroll>
 

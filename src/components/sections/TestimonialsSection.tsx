@@ -32,6 +32,7 @@ export function TestimonialsSection({ className }: TestimonialsSectionProps) {
           <SectionHeading
             title={t('title')}
             subtitle={t('subtitle')}
+            showOrnament ={false}
           />
         </AnimateOnScroll>
 

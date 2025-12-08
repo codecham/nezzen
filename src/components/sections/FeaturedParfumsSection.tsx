@@ -36,6 +36,7 @@ export function FeaturedParfumsSection({ className }: FeaturedParfumsSectionProp
           <SectionHeading
             title={t('title')}
             subtitle={t('subtitle')}
+            showOrnament ={false}
           />
         </AnimateOnScroll>
 
