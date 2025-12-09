@@ -70,7 +70,7 @@ export function TestimonialCard({
             isFeatured && 'lg:text-lg'
           )}
         >
-          "{isCompact ? temoignage.shortContent || temoignage.content : temoignage.content}"
+          &quot;{isCompact ? temoignage.shortContent || temoignage.content : temoignage.content}&quot;
         </p>
       </blockquote>
 

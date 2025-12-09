@@ -128,6 +128,7 @@ export function ToastProvider({
   const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true)
   }, [])
 
@@ -242,6 +243,7 @@ function ToastItem({ toast, onDismiss, index, fromTop }: ToastItemProps) {
     const progressFrame = requestAnimationFrame(updateProgress)
 
     const dismissTimer = setTimeout(() => {
+      // eslint-disable-next-line react-hooks/immutability
       handleDismiss()
     }, toast.duration)
 

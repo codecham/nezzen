@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils'
 import { Button, Badge } from '@/components/ui'
 import { OlfactoryPyramid } from './OlfactoryPyramid'
 import type { Parfum } from '@/types'
-import { 
+import {
   ArrowLeft, 
   Leaf, 
   Award, 
@@ -44,7 +44,7 @@ export function ParfumDetail({ parfum }: ParfumDetailProps) {
         </Link>
 
         {/* Main Image */}
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-muted/30">
+        <div className="relative aspect-4/5 overflow-hidden rounded-2xl bg-muted/30">
           {parfum.image && !imageError ? (
             <Image
               src={parfum.image}
@@ -57,7 +57,7 @@ export function ParfumDetail({ parfum }: ParfumDetailProps) {
             />
           ) : (
             // Placeholder élégant
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-muted/20 to-muted/40">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-linear-to-br from-muted/20 to-muted/40">
               <svg
                 viewBox="0 0 80 80"
                 className="mb-4 h-20 w-20 text-muted-foreground/20"
@@ -87,10 +87,10 @@ export function ParfumDetail({ parfum }: ParfumDetailProps) {
           {/* Badges overlay */}
           <div className="absolute left-4 top-4 flex flex-col gap-2">
             {parfum.isNew && (
-              <Badge variant="accent">{t('badges.new')}</Badge>
+              <Badge variant="default">{t('badges.new')}</Badge>
             )}
             {parfum.awards && parfum.awards.length > 0 && (
-              <Badge variant="secondary" className="gap-1">
+              <Badge variant="default" className="gap-1">
                 <Award className="h-3 w-3" />
                 {t('badges.awarded')}
               </Badge>

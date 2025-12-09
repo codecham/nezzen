@@ -149,7 +149,7 @@ export function GiftCardSelector({
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:shadow-lg">
       {/* Image */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
+      <div className="relative aspect-16/10 w-full overflow-hidden bg-muted">
         {/* Fallback icon */}
         <div className="absolute inset-0 flex items-center justify-center">
           <Gift className="h-16 w-16 text-muted-foreground/20" />

@@ -67,7 +67,7 @@ export default function UIKitPage() {
       <Container>
         {/* Header */}
         <div className="mb-16 text-center">
-          <Badge variant="accent" size="md" className="mb-4">
+          <Badge variant="default" size="md" className="mb-4">
             Design System
           </Badge>
           <Heading as="h1" size="h1">
@@ -338,7 +338,7 @@ function BadgesSection() {
           <Badge variant="default">Default</Badge>
           <Badge variant="outline">Outline</Badge>
           <Badge variant="success">Success</Badge>
-          <Badge variant="accent">Accent</Badge>
+          <Badge variant="dark">Dark</Badge>
         </div>
       </Showcase>
 
@@ -351,7 +351,7 @@ function BadgesSection() {
 
       <Showcase title="Use Cases">
         <div className="flex flex-wrap gap-3">
-          <Badge variant="accent">Nouveau</Badge>
+          <Badge variant="dark">Nouveau</Badge>
           <Badge variant="success">100% Vegan</Badge>
           <Badge variant="outline">Artisan Certifié</Badge>
           <Badge>Best-seller</Badge>
@@ -406,7 +406,7 @@ function CardsSection() {
               </div>
             </CardImage>
             <CardContent padding="md">
-              <Badge variant="accent" size="sm" className="mb-2">
+              <Badge variant="dark" size="sm" className="mb-2">
                 Nouveau
               </Badge>
               <CardTitle>Nom du Produit</CardTitle>

@@ -146,7 +146,7 @@ function GradientDivider({ size }: { size: 'sm' | 'md' | 'lg' }) {
       className={cn(
         'h-px',
         widthClasses[size],
-        'bg-gradient-to-r from-transparent via-neutral-300 to-transparent'
+        'bg-linear-to-r from-transparent via-neutral-300 to-transparent'
       )} 
     />
   )

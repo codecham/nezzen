@@ -107,7 +107,7 @@ export function ProductCard({
         {/* Badges */}
         <div className="absolute left-3 top-3 flex flex-col gap-2">
           {parfum.isNew && (
-            <Badge variant="accent" size="sm">
+            <Badge variant="default" size="sm">
               Nouveau
             </Badge>
           )}

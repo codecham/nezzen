@@ -108,7 +108,7 @@ function FeaturedCategoryCard({ category, t }: FeaturedCategoryCardProps) {
         href={category.href}
         className={cn(
           'group relative flex min-h-80 flex-col justify-end overflow-hidden rounded-2xl',
-          'bg-gradient-to-br shadow-sm',
+          'bg-linear-to-br shadow-sm',
           category.color,
           'border border-transparent transition-all duration-500',
           'hover:border-border hover:shadow-lg hover:-translate-y-1'
@@ -123,7 +123,7 @@ function FeaturedCategoryCard({ category, t }: FeaturedCategoryCardProps) {
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-foreground/80 via-foreground/20 to-transparent" />
           </div>
         )}
 
@@ -171,7 +171,7 @@ function CategoryCard({ category, index, hasBeenInView, t }: CategoryCardProps) 
       href={category.href}
       className={cn(
         'group relative flex min-h-64 flex-col justify-end overflow-hidden rounded-xl',
-        'bg-gradient-to-br shadow-sm',
+        'bg-linear-to-br shadow-sm',
         category.color,
         'border border-transparent transition-all duration-500',
         'hover:border-border hover:shadow-md hover:-translate-y-1',
@@ -193,7 +193,7 @@ function CategoryCard({ category, index, hasBeenInView, t }: CategoryCardProps) 
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-foreground/70 via-foreground/10 to-transparent" />
         </div>
       )}
 
