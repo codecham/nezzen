@@ -76,7 +76,7 @@ function HeroSection({ t }: SectionProps) {
 
       <Container className="relative">
         <div className="mx-auto max-w-3xl text-center">
-          <Badge variant="accent" className="mb-6">
+          <Badge variant="default" className="mb-6">
             {t('hero.badge')}
           </Badge>
 
