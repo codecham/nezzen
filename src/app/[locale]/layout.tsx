@@ -32,6 +32,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  // URL de base pour les métadonnées (Open Graph, Twitter, etc.)
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://nezzen.vercel.app/fr'
+  ),
   title: {
     default: 'NeZ ZeN - Parfumerie Artisanale à Namur',
     template: '%s | NeZ ZeN',
@@ -46,6 +50,12 @@ export const metadata: Metadata = {
     'atelier parfum',
     'création sur mesure',
   ],
+  // Open Graph par défaut
+  openGraph: {
+    type: 'website',
+    locale: 'fr_BE',
+    siteName: 'NeZ ZeN - Parfumerie Artisanale',
+  },
 }
 
 type Props = {

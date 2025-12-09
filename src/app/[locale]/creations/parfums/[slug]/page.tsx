@@ -6,6 +6,7 @@ import { Container } from '@/components/ui'
 import { parfums, getParfumBySlug } from '@/data/parfums'
 import { ParfumDetail } from '@/components/shared/ParfumDetail'
 import { RelatedParfums } from '@/components/shared/RelatedParfums'
+import { locales } from '@/i18n/config'
 
 // Types
 type Props = {
@@ -13,10 +14,19 @@ type Props = {
 }
 
 // Génération des routes statiques
+// export async function generateStaticParams() {
+//   return parfums.map((parfum) => ({
+//     slug: parfum.slug,
+//   }))
+// }
+
 export async function generateStaticParams() {
-  return parfums.map((parfum) => ({
-    slug: parfum.slug,
-  }))
+  return locales.flatMap((locale) =>
+    parfums.map((parfum) => ({
+      locale,
+      slug: parfum.slug,
+    }))
+  )
 }
 
 // Metadata dynamique
